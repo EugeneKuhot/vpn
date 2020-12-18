@@ -1,0 +1,88 @@
+.header-nav {
+    display: flex;
+    width: 275px;
+    justify-content: space-between;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.header-nav a:hover {
+    color: #57addc;
+}
+
+.header-nav a {
+    padding: 0!important;
+    border: none!important;
+}
+
+ul {
+    list-style: none;
+}
+
+.ns-prefooter {
+    padding-top: 0!important;
+}
+
+.b-lazy.ns-section.ns-section--left-right.ns-section--bg-img.background-gray {
+    background: url("../img/bg-laptop-on-wooden-table.png")
+}
+
+#block-quicken-ns-driver-prefooter-featurettes {
+    padding-top: 50px;
+}
+
+.sign-in {
+    width: 150px;
+    background: #c32630;
+    color: #fff!important;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.sign-in:hover {
+    transform: scale(1.1);
+    transition: all .3s ease;
+}
+
+.social {
+    list-style: none;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: 30px;
+    width: 200px;
+    padding: 0;
+    margin: 0 auto 30px;
+}
+.social__item {
+    display: -webkit-box;
+    display: flex;
+    height: 100%;
+    width: 25%;
+}
+.social-link {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+}
+
+.social-link svg {
+    width: 30px;
+    height: 30px;
+    fill: #23498e;
+}
+
+
