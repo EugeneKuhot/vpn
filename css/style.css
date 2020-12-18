@@ -2,7 +2,7 @@
     display: flex;
     width: 275px;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 17px;
     text-transform: uppercase;
 }
 
@@ -86,3 +86,29 @@ ul {
 }
 
 
+.not-front .navbar::before,
+.not-front .navbar::after,
+.not-front .navbar-container::before,
+.not-front .navbar-container::after,
+.help {
+    display: none!important;
+}
+
+main.container-fluid + footer {
+   padding-top: 50px;
+}
+
+.novpromo-footer {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer-menu-container.container {
+    width: 1140px;
+}
+
+small {
+    display: block!important;
+    margin: auto;
+    width: fit-content;
+}
