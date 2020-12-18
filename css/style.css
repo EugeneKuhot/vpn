@@ -112,3 +112,28 @@ small {
     margin: auto;
     width: fit-content;
 }
+
+.gb-table-header--whitespace {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.activate-title {
+    text-align: center;
+}
+
+.activate-img {
+    display: block;
+    width: 400px;
+    margin: auto auto 50px;
+}
+
+h2.activate-title {
+    margin-bottom: 50px;
+}
+
+h1.activate-title {
+    margin-top: 50px;
+}

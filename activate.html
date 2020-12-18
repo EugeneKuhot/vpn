@@ -1,208 +1,1705 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#" dir="ltr" 
-  xmlns:og="http://ogp.me/ns#"
-  xmlns:article="http://ogp.me/ns/article#"
-  xmlns:book="http://ogp.me/ns/book#"
-  xmlns:profile="http://ogp.me/ns/profile#"
-  xmlns:video="http://ogp.me/ns/video#"
-  xmlns:product="http://ogp.me/ns/product#"
-  xmlns:content="http://purl.org/rss/1.0/modules/content/"
-  xmlns:dc="http://purl.org/dc/terms/"
-  xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:sioc="http://rdfs.org/sioc/ns#"
-  xmlns:sioct="http://rdfs.org/sioc/types#"
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-  xmlns:schema="http://schema.org/">
+<html prefix="og: http://ogp.me/ns#" dir="ltr"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:article="http://ogp.me/ns/article#"
+      xmlns:book="http://ogp.me/ns/book#"
+      xmlns:profile="http://ogp.me/ns/profile#"
+      xmlns:video="http://ogp.me/ns/video#"
+      xmlns:product="http://ogp.me/ns/product#"
+      xmlns:content="http://purl.org/rss/1.0/modules/content/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+      xmlns:schema="http://schema.org/">
 
 <head profile="http://www.w3.org/1999/xhtml/vocab">
-    <script>
-      var QuickenGlobal = {};
-      QuickenGlobal.start_page_time = Date.now();
-    </script>
+  <script>
+    var QuickenGlobal = {};
+    QuickenGlobal.start_page_time = Date.now();
+  </script>
   <script type="text/javascript" src="/sites/all/modules/custom/quicken_global/js/quicken_redirect.js"></script>
-<script type="text/javascript" src="https://www.googleoptimize.com/optimize.js?id=GTM-WN2PN6L"></script>
-<script type="text/javascript" src="https://cdn.optimizely.com/js/5465611416.js"></script>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQUCUVFVARABUVlXAQECVlY=",licenseKey:"4c035afe33",applicationID:"158560502"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var i,o=t("ee"),a=t(23),c={};try{i=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,i.indexOf("dev")!==-1&&(c.dev=!0),i.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&o.on("internal-error",function(t){r(t.stack)}),c.dev&&o.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{p?p-=1:i(c||new UncaughtException(t,e,n),!0)}catch(f){try{o("ierr",[f,s.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function i(t,e){var n=e?null:s.now();o("err",[t,n])}var o=t("handle"),a=t(24),c=t("ee"),s=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(9),t(8),"addEventListener"in window&&t(5),s.xhrWrappable&&t(10),d=!0)}c.on("fn-start",function(t,e,n){d&&(p+=1)}),c.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,i(n))}),c.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),c.on("internal-error",function(t){o("ierr",[t,s.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var i=t("ee"),o=t("handle"),a=t(9),c=t(8),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",g="pushState",y=t("loader");y.features.stn=!0,t(7),"addEventListener"in window&&t(5);var x=NREUM.o.EV;i.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),i.on(w,function(t,e){var n=t[0];n instanceof x&&o("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(w,function(t,e){o(v,[e,this.bstStart,y.now(),this.bstType])}),c.on(m,function(){this.bstStart=y.now()}),c.on(w,function(t,e){o(v,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),i.on(g+p,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),i.on(g+h,function(t){o("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){o(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){o(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&i(e)}function i(t){c.inPlace(t,[u,d],"-",o)}function o(t,e){return t[1]}var a=t("ee").get("events"),c=t("wrap-function")(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(i(window),i(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=o(arguments),e={};i.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var c=r.apply(this,t);return i.emit(n+"start",[t,a],c),c.then(function(t){return i.emit(n+"end",[null,t],c),t},function(t){throw i.emit(n+"end",[t],c),t})})}var i=t("ee").get("fetch"),o=t(24),a=t(23);e.exports=i;var c=window,s="fetch-",f=s+"body-",u=["arrayBuffer","blob","json","text","formData"],d=c.Request,l=c.Response,p=c.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(c,"fetch",s),i.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),i.emit(s+"done",[null,e],n)}else i.emit(s+"done",[t],n)}))},{}],7:[function(t,e,n){var r=t("ee").get("history"),i=t("wrap-function")(r);e.exports=r;var o=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;o&&o.pushState&&o.replaceState&&(a=o),i.inPlace(a,["pushState","replaceState"],"-")},{}],8:[function(t,e,n){var r=t("ee").get("raf"),i=t("wrap-function")(r),o="equestAnimationFrame";e.exports=r,i.inPlace(window,["r"+o,"mozR"+o,"webkitR"+o,"msR"+o],"raf-"),r.on("raf-start",function(t){t[0]=i(t[0],"fn-")})},{}],9:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function i(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var o=t("ee").get("timer"),a=t("wrap-function")(o),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=o,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),o.on(s+u,r),o.on(c+u,i)},{}],10:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function i(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",c)}function o(t){y.push(t),h&&(b?b.then(a):w?w(a):(E=-E,R.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(v,i,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),o(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!w&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],11:[function(t,e,n){function r(t){if(!c(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),w=Date.now(),v={spanId:h,traceId:m,timestamp:w};return(t.sameOrigin||s(t)&&l())&&(v.traceContextParentHeader=i(h,m),v.traceContextStateHeader=o(h,w,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&s(t)&&d())&&(v.newrelicHeader=a(h,m,w,n,r,f)),v}function i(t,e){return"00-"+e+"-"+t+"-01"}function o(t,e,n,r,i){var o=0,a="",c=1,s="",f="";return i+"@nr="+o+"-"+c+"-"+n+"-"+r+"-"+t+"-"+a+"-"+s+"-"+f+"-"+e}function a(t,e,n,r,i,o){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var c={v:[0,1],d:{ty:"Browser",ac:r,ap:i,id:t,tr:e,ti:n}};return o&&r!==o&&(c.d.tk=o),btoa(JSON.stringify(c))}function c(t){return f()&&s(t)}function s(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var i=h(n.allowed_origins[r]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(20),h=t(13);e.exports={generateTracePayload:r,shouldGenerateTrace:c}},{}],12:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):o(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime]))}}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=s(e),t.sameOrigin=t.parsedOrigin.sameOrigin}function o(t,e){t.params.status=e.status;var n=w(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(13),f=t(11).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(17),m=t(16),w=t(14),v=window.XMLHttpRequest;a.features.xhr=!0,t(10),t(6),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,t.addEventListener("load",function(n){o(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],i=this;if(n&&r){var o=m(r);o&&(n.txSize=o)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||i.loadCaptureCalled||(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<l;c++)e.addEventListener(d[c],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof v&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof v&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof v&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url&&(n=t[0].url),n&&(this.parsedOrigin=s(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=f(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if("string"==typeof t[0]){var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),e(o.headers,i)&&(this.dt=i),t.length>1?t[1]=o:t.push(o)}else t[0]&&t[0].headers&&e(t[0].headers,i)&&(this.dt=i)})}},{}],13:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,i={};e.href=t,i.port=e.port;var o=e.href.split("://");!i.port&&o[1]&&(i.port=o[1].split("/")[0].split("@").pop().split(":")[1]),i.port&&"0"!==i.port||(i.port="https"===o[0]?"443":"80"),i.hostname=e.hostname||n.hostname,i.pathname=e.pathname,i.protocol=o[0],"/"!==i.pathname.charAt(0)&&(i.pathname="/"+i.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,c=e.hostname===document.domain&&e.port===n.port;return i.sameOrigin=a&&(!e.hostname||c),"/"===i.pathname&&(r[t]=i),i}},{}],14:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?i(t.response):"text"===n||""===n||void 0===n?i(t.responseText):void 0}var i=t(16);e.exports=r},{}],15:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(23),c=t(24),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,e){u[e]=i(l+e,!0,"api")}),u.addPageAction=i(l+"addPageAction",!0),u.setCurrentRouteName=i(l+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(p+"tracer",[f.now(),t,n],r),function(){if(s.emit((i?"":"no-")+"fn-start",[f.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=i(p+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,f.now(),!1,e])}},{}],16:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],17:[function(t,e,n){var r=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(r=+i[1]),e.exports=r},{}],18:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(25);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],19:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof h&&!w){var e=Math.round(t.timeStamp),n={type:t.type};e<=l.now()?n.fid=l.now()-e:e>l.offset&&e<=Date.now()?(e-=l.offset,n.fid=l.now()-e):e=l.now(),w=!0,d("timing",["fi",e,n])}}function c(t){d("pageHide",[l.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var s,f,u,d=t("handle"),l=t("loader"),p=t(22),h=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(m){}f=new PerformanceObserver(i);try{f.observe({entryTypes:["largest-contentful-paint"]})}catch(m){}u=new PerformanceObserver(o);try{u.observe({type:"layout-shift",buffered:!0})}catch(m){}}if("addEventListener"in document){var w=!1,v=["click","keydown","mousedown","pointerdown","touchstart"];v.forEach(function(t){document.addEventListener(t,a,!1)})}p(c)}},{}],20:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var i,o="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<o.length;c++)i=o[c],"x"===i?a+=t().toString(16):"y"===i?(i=3&t()|8,a+=i.toString(16)):a+=i;return a}function i(){return a(16)}function o(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,i=window.crypto||window.msCrypto;i&&i.getRandomValues&&Uint8Array&&(n=i.getRandomValues(new Uint8Array(31)));for(var o=[],a=0;a<t;a++)o.push(e().toString(16));return o.join("")}e.exports={generateUuid:r,generateSpanId:i,generateTraceId:o}},{}],21:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,s=c.match(a);s&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=s[1])}e.exports={agent:i,version:o,match:r}},{}],22:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],23:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],24:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],25:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?s(t,c,o):o()}function n(n,r,i,o){if(!l.aborted||o){t&&t(n,r,i);for(var a=e(i),c=m(n),s=c.length,f=0;f<s;f++)c[f].apply(a,r);var d=u[y[n]];return d&&d.push([x,n,r,a]),a}}function p(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function w(t){return d[t]=d[t]||i(n)}function v(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var g={},y={},x={on:p,addEventListener:p,removeEventListener:h,emit:n,get:w,listeners:m,context:e,buffer:v,abort:a,aborted:!1};return x}function o(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(23),u={},d={},l=e.exports=i();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=x.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(g,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+x.offset],null,"api"),c("timing",["load",n]);var r=l.createElement("script");r.src="https://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+x.offset],null,"api")}var a=t(18),c=t("handle"),s=t(23),f=t("ee"),u=t(21),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},y=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),x=e.exports={offset:a.getLastTimestamp(),now:a,origin:v,features:{},xhrWrappable:y,userAgent:u};t(15),t(19),l[p]?(l[p]("DOMContentLoaded",o,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",i),d[h]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var b=0},{}],"wrap-function":[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var i=t("ee"),o=t(24),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,i){function nrWrapper(){var r,a,c,s;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,i],c])}u(e+"start",[r,a,i],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,i,o){i||(i="");var a,c,s,f="-"===i.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+i:i,o,c))}function u(n,r,i){if(!s||e){var o=s;s=!0;try{t.emit(n,r,i,e)}catch(a){l([a,n,r,i])}s=o}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var i in t)c.call(t,i)&&(e[i]=t[i]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=i),n.inPlace=f,n.flag=a,n}},{}]},{},["loader",2,12,4,3]);</script>
-<meta name="smartbanner:price" content="FREE" />
-<meta name="smartbanner:hide-path" content="/" />
-<meta name="smartbanner:close-label" content="Close" />
-<meta name="smartbanner:enabled-platforms" content="android,ios" />
-<meta name="smartbanner:button-url-google" content="https://play.google.com/store/apps/details?id=com.quicken.acme&amp;hl=en_US" />
-<meta name="smartbanner:button-url-apple" content="https://apps.apple.com/us/app/simplifi-money-management/id1449777194" />
-<meta name="smartbanner:button" content="VIEW" />
-<meta name="smartbanner:icon-google" content="https://www.simplifimoney.com/assets/images/simplifiBug.svg" />
-<meta name="smartbanner:icon-apple" content="https://www.simplifimoney.com/assets/images/simplifiBug.svg" />
-<meta name="smartbanner:price-suffix-google" content=" - In Google Play" />
-<meta name="smartbanner:price-suffix-apple" content=" - On the App Store" />
-<meta name="smartbanner:title" content="Simplifi: Money Management" />
-<meta name="smartbanner:author" content="Quicken Inc." />
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","url":"https://www.quicken.com/","name":"Quicken, Inc.","description":"For over three decades, Quicken has been providing the best money management software on the market. Get Quicken and take control of your finances today.","image":"https://www.quicken.com/sites/all/themes/custom/quicken_nessie/logo.svg","contactPoint":{"@type":"ContactPoint","telephone":"(650) 250-1900","contactType":"customer service","areaServed":"US","availableLanguage":"en"},"sameAs":["https://www.facebook.com/Quicken/","https://twitter.com/quicken","https://www.youtube.com/user/Quicken","https://www.linkedin.com/company/quicken-inc./","https://en.wikipedia.org/wiki/Quicken"],"brand":"Quicken","category":"budget, software, money management, personal finance"}</script>
-<link rel="shortcut icon" href="https://www.quicken.com/sites/all/themes/custom/quicken_embed/favicon.ico" type="image/vnd.microsoft.icon" />
-<meta name="robots" content="noindex,nofollow" />
-<meta name="smartbanner:hide-ttl" content="3600000" />
-<link rel="canonical" href="https://www.quicken.com/activate" />
-<link rel="shortlink" href="https://www.quicken.com/activate" />
-<meta property="og:site_name" content="Quicken" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.quicken.com/activate" />
-<meta property="og:title" content="Welcome to Quicken" />
-  <title>Welcome to Quicken | Quicken</title>
-  <meta name="msvalidate.01" content="239FF3A92EF8861DD243D288C94D5D04" />
-  <meta name="msapplication-config" content="none" />
+  <script type="text/javascript" src="https://www.googleoptimize.com/optimize.js?id=GTM-WN2PN6L"></script>
+  <script type="text/javascript" src="https://cdn.optimizely.com/js/5465611416.js"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <script type="text/javascript">(window.NREUM || (NREUM = {})).loader_config = {
+    xpid: "VQUCUVFVARABUVlXAQECVlY=",
+    licenseKey: "4c035afe33",
+    applicationID: "158560502"
+  };
+  window.NREUM || (NREUM = {}), __nr_require = function (t, e, n) {
+    function r(n) {
+      if (!e[n]) {
+        var i = e[n] = {exports: {}};
+        t[n][0].call(i.exports, function (e) {
+          var i = t[n][1][e];
+          return r(i || e)
+        }, i, i.exports)
+      }
+      return e[n].exports
+    }
+
+    if ("function" == typeof __nr_require) return __nr_require;
+    for (var i = 0; i < n.length; i++) r(n[i]);
+    return r
+  }({
+    1: [function (t, e, n) {
+      function r(t) {
+        try {
+          c.console && console.log(t)
+        } catch (e) {
+        }
+      }
+
+      var i, o = t("ee"), a = t(23), c = {};
+      try {
+        i = localStorage.getItem("__nr_flags").split(","), console && "function" == typeof console.log && (c.console = !0, i.indexOf("dev") !== -1 && (c.dev = !0), i.indexOf("nr_dev") !== -1 && (c.nrDev = !0))
+      } catch (s) {
+      }
+      c.nrDev && o.on("internal-error", function (t) {
+        r(t.stack)
+      }), c.dev && o.on("fn-err", function (t, e, n) {
+        r(n.stack)
+      }), c.dev && (r("NR AGENT IN DEVELOPMENT MODE"), r("flags: " + a(c, function (t, e) {
+        return t
+      }).join(", ")))
+    }, {}], 2: [function (t, e, n) {
+      function r(t, e, n, r, c) {
+        try {
+          p ? p -= 1 : i(c || new UncaughtException(t, e, n), !0)
+        } catch (f) {
+          try {
+            o("ierr", [f, s.now(), !0])
+          } catch (d) {
+          }
+        }
+        return "function" == typeof u && u.apply(this, a(arguments))
+      }
+
+      function UncaughtException(t, e, n) {
+        this.message = t || "Uncaught error with no additional information", this.sourceURL = e, this.line = n
+      }
+
+      function i(t, e) {
+        var n = e ? null : s.now();
+        o("err", [t, n])
+      }
+
+      var o = t("handle"), a = t(24), c = t("ee"), s = t("loader"), f = t("gos"), u = window.onerror, d = !1,
+              l = "nr@seenError", p = 0;
+      s.features.err = !0, t(1), window.onerror = r;
+      try {
+        throw new Error
+      } catch (h) {
+        "stack" in h && (t(9), t(8), "addEventListener" in window && t(5), s.xhrWrappable && t(10), d = !0)
+      }
+      c.on("fn-start", function (t, e, n) {
+        d && (p += 1)
+      }), c.on("fn-err", function (t, e, n) {
+        d && !n[l] && (f(n, l, function () {
+          return !0
+        }), this.thrown = !0, i(n))
+      }), c.on("fn-end", function () {
+        d && !this.thrown && p > 0 && (p -= 1)
+      }), c.on("internal-error", function (t) {
+        o("ierr", [t, s.now(), !0])
+      })
+    }, {}], 3: [function (t, e, n) {
+      t("loader").features.ins = !0
+    }, {}], 4: [function (t, e, n) {
+      function r(t) {
+      }
+
+      if (window.performance && window.performance.timing && window.performance.getEntriesByType) {
+        var i = t("ee"), o = t("handle"), a = t(9), c = t(8), s = "learResourceTimings", f = "addEventListener",
+                u = "resourcetimingbufferfull", d = "bstResource", l = "resource", p = "-start", h = "-end",
+                m = "fn" + p, w = "fn" + h, v = "bstTimer", g = "pushState", y = t("loader");
+        y.features.stn = !0, t(7), "addEventListener" in window && t(5);
+        var x = NREUM.o.EV;
+        i.on(m, function (t, e) {
+          var n = t[0];
+          n instanceof x && (this.bstStart = y.now())
+        }), i.on(w, function (t, e) {
+          var n = t[0];
+          n instanceof x && o("bst", [n, e, this.bstStart, y.now()])
+        }), a.on(m, function (t, e, n) {
+          this.bstStart = y.now(), this.bstType = n
+        }), a.on(w, function (t, e) {
+          o(v, [e, this.bstStart, y.now(), this.bstType])
+        }), c.on(m, function () {
+          this.bstStart = y.now()
+        }), c.on(w, function (t, e) {
+          o(v, [e, this.bstStart, y.now(), "requestAnimationFrame"])
+        }), i.on(g + p, function (t) {
+          this.time = y.now(), this.startPath = location.pathname + location.hash
+        }), i.on(g + h, function (t) {
+          o("bstHist", [location.pathname + location.hash, this.startPath, this.time])
+        }), f in window.performance && (window.performance["c" + s] ? window.performance[f](u, function (t) {
+          o(d, [window.performance.getEntriesByType(l)]), window.performance["c" + s]()
+        }, !1) : window.performance[f]("webkit" + u, function (t) {
+          o(d, [window.performance.getEntriesByType(l)]), window.performance["webkitC" + s]()
+        }, !1)), document[f]("scroll", r, {passive: !0}), document[f]("keypress", r, !1), document[f]("click", r, !1)
+      }
+    }, {}], 5: [function (t, e, n) {
+      function r(t) {
+        for (var e = t; e && !e.hasOwnProperty(u);) e = Object.getPrototypeOf(e);
+        e && i(e)
+      }
+
+      function i(t) {
+        c.inPlace(t, [u, d], "-", o)
+      }
+
+      function o(t, e) {
+        return t[1]
+      }
+
+      var a = t("ee").get("events"), c = t("wrap-function")(a, !0), s = t("gos"), f = XMLHttpRequest,
+              u = "addEventListener", d = "removeEventListener";
+      e.exports = a, "getPrototypeOf" in Object ? (r(document), r(window), r(f.prototype)) : f.prototype.hasOwnProperty(u) && (i(window), i(f.prototype)), a.on(u + "-start", function (t, e) {
+        var n = t[1], r = s(n, "nr@wrapped", function () {
+          function t() {
+            if ("function" == typeof n.handleEvent) return n.handleEvent.apply(n, arguments)
+          }
+
+          var e = {object: t, "function": n}[typeof n];
+          return e ? c(e, "fn-", null, e.name || "anonymous") : n
+        });
+        this.wrapped = t[1] = r
+      }), a.on(d + "-start", function (t) {
+        t[1] = this.wrapped || t[1]
+      })
+    }, {}], 6: [function (t, e, n) {
+      function r(t, e, n) {
+        var r = t[e];
+        "function" == typeof r && (t[e] = function () {
+          var t = o(arguments), e = {};
+          i.emit(n + "before-start", [t], e);
+          var a;
+          e[m] && e[m].dt && (a = e[m].dt);
+          var c = r.apply(this, t);
+          return i.emit(n + "start", [t, a], c), c.then(function (t) {
+            return i.emit(n + "end", [null, t], c), t
+          }, function (t) {
+            throw i.emit(n + "end", [t], c), t
+          })
+        })
+      }
+
+      var i = t("ee").get("fetch"), o = t(24), a = t(23);
+      e.exports = i;
+      var c = window, s = "fetch-", f = s + "body-", u = ["arrayBuffer", "blob", "json", "text", "formData"],
+              d = c.Request, l = c.Response, p = c.fetch, h = "prototype", m = "nr@context";
+      d && l && p && (a(u, function (t, e) {
+        r(d[h], e, f), r(l[h], e, f)
+      }), r(c, "fetch", s), i.on(s + "end", function (t, e) {
+        var n = this;
+        if (e) {
+          var r = e.headers.get("content-length");
+          null !== r && (n.rxSize = r), i.emit(s + "done", [null, e], n)
+        } else i.emit(s + "done", [t], n)
+      }))
+    }, {}], 7: [function (t, e, n) {
+      var r = t("ee").get("history"), i = t("wrap-function")(r);
+      e.exports = r;
+      var o = window.history && window.history.constructor && window.history.constructor.prototype,
+              a = window.history;
+      o && o.pushState && o.replaceState && (a = o), i.inPlace(a, ["pushState", "replaceState"], "-")
+    }, {}], 8: [function (t, e, n) {
+      var r = t("ee").get("raf"), i = t("wrap-function")(r), o = "equestAnimationFrame";
+      e.exports = r, i.inPlace(window, ["r" + o, "mozR" + o, "webkitR" + o, "msR" + o], "raf-"), r.on("raf-start", function (t) {
+        t[0] = i(t[0], "fn-")
+      })
+    }, {}], 9: [function (t, e, n) {
+      function r(t, e, n) {
+        t[0] = a(t[0], "fn-", null, n)
+      }
+
+      function i(t, e, n) {
+        this.method = n, this.timerDuration = isNaN(t[1]) ? 0 : +t[1], t[0] = a(t[0], "fn-", this, n)
+      }
+
+      var o = t("ee").get("timer"), a = t("wrap-function")(o), c = "setTimeout", s = "setInterval",
+              f = "clearTimeout", u = "-start", d = "-";
+      e.exports = o, a.inPlace(window, [c, "setImmediate"], c + d), a.inPlace(window, [s], s + d), a.inPlace(window, [f, "clearImmediate"], f + d), o.on(s + u, r), o.on(c + u, i)
+    }, {}], 10: [function (t, e, n) {
+      function r(t, e) {
+        d.inPlace(e, ["onreadystatechange"], "fn-", c)
+      }
+
+      function i() {
+        var t = this, e = u.context(t);
+        t.readyState > 3 && !e.resolved && (e.resolved = !0, u.emit("xhr-resolved", [], t)), d.inPlace(t, g, "fn-", c)
+      }
+
+      function o(t) {
+        y.push(t), h && (b ? b.then(a) : w ? w(a) : (E = -E, R.data = E))
+      }
+
+      function a() {
+        for (var t = 0; t < y.length; t++) r([], y[t]);
+        y.length && (y = [])
+      }
+
+      function c(t, e) {
+        return e
+      }
+
+      function s(t, e) {
+        for (var n in t) e[n] = t[n];
+        return e
+      }
+
+      t(5);
+      var f = t("ee"), u = f.get("xhr"), d = t("wrap-function")(u), l = NREUM.o, p = l.XHR, h = l.MO, m = l.PR,
+              w = l.SI, v = "readystatechange",
+              g = ["onload", "onerror", "onabort", "onloadstart", "onloadend", "onprogress", "ontimeout"], y = [];
+      e.exports = u;
+      var x = window.XMLHttpRequest = function (t) {
+        var e = new p(t);
+        try {
+          u.emit("new-xhr", [e], e), e.addEventListener(v, i, !1)
+        } catch (n) {
+          try {
+            u.emit("internal-error", [n])
+          } catch (r) {
+          }
+        }
+        return e
+      };
+      if (s(p, x), x.prototype = p.prototype, d.inPlace(x.prototype, ["open", "send"], "-xhr-", c), u.on("send-xhr-start", function (t, e) {
+        r(t, e), o(e)
+      }), u.on("open-xhr-start", r), h) {
+        var b = m && m.resolve();
+        if (!w && !m) {
+          var E = 1, R = document.createTextNode(E);
+          new h(a).observe(R, {characterData: !0})
+        }
+      } else f.on("fn-end", function (t) {
+        t[0] && t[0].type === v || a()
+      })
+    }, {}], 11: [function (t, e, n) {
+      function r(t) {
+        if (!c(t)) return null;
+        var e = window.NREUM;
+        if (!e.loader_config) return null;
+        var n = (e.loader_config.accountID || "").toString() || null,
+                r = (e.loader_config.agentID || "").toString() || null,
+                f = (e.loader_config.trustKey || "").toString() || null;
+        if (!n || !r) return null;
+        var h = p.generateSpanId(), m = p.generateTraceId(), w = Date.now(),
+                v = {spanId: h, traceId: m, timestamp: w};
+        return (t.sameOrigin || s(t) && l()) && (v.traceContextParentHeader = i(h, m), v.traceContextStateHeader = o(h, w, n, r, f)), (t.sameOrigin && !u() || !t.sameOrigin && s(t) && d()) && (v.newrelicHeader = a(h, m, w, n, r, f)), v
+      }
+
+      function i(t, e) {
+        return "00-" + e + "-" + t + "-01"
+      }
+
+      function o(t, e, n, r, i) {
+        var o = 0, a = "", c = 1, s = "", f = "";
+        return i + "@nr=" + o + "-" + c + "-" + n + "-" + r + "-" + t + "-" + a + "-" + s + "-" + f + "-" + e
+      }
+
+      function a(t, e, n, r, i, o) {
+        var a = "btoa" in window && "function" == typeof window.btoa;
+        if (!a) return null;
+        var c = {v: [0, 1], d: {ty: "Browser", ac: r, ap: i, id: t, tr: e, ti: n}};
+        return o && r !== o && (c.d.tk = o), btoa(JSON.stringify(c))
+      }
+
+      function c(t) {
+        return f() && s(t)
+      }
+
+      function s(t) {
+        var e = !1, n = {};
+        if ("init" in NREUM && "distributed_tracing" in NREUM.init && (n = NREUM.init.distributed_tracing), t.sameOrigin) e = !0; else if (n.allowed_origins instanceof Array) for (var r = 0; r < n.allowed_origins.length; r++) {
+          var i = h(n.allowed_origins[r]);
+          if (t.hostname === i.hostname && t.protocol === i.protocol && t.port === i.port) {
+            e = !0;
+            break
+          }
+        }
+        return e
+      }
+
+      function f() {
+        return "init" in NREUM && "distributed_tracing" in NREUM.init && !!NREUM.init.distributed_tracing.enabled
+      }
+
+      function u() {
+        return "init" in NREUM && "distributed_tracing" in NREUM.init && !!NREUM.init.distributed_tracing.exclude_newrelic_header
+      }
+
+      function d() {
+        return "init" in NREUM && "distributed_tracing" in NREUM.init && NREUM.init.distributed_tracing.cors_use_newrelic_header !== !1
+      }
+
+      function l() {
+        return "init" in NREUM && "distributed_tracing" in NREUM.init && !!NREUM.init.distributed_tracing.cors_use_tracecontext_headers
+      }
+
+      var p = t(20), h = t(13);
+      e.exports = {generateTracePayload: r, shouldGenerateTrace: c}
+    }, {}], 12: [function (t, e, n) {
+      function r(t) {
+        var e = this.params, n = this.metrics;
+        if (!this.ended) {
+          this.ended = !0;
+          for (var r = 0; r < l; r++) t.removeEventListener(d[r], this.listener, !1);
+          e.aborted || (n.duration = a.now() - this.startTime, this.loadCaptureCalled || 4 !== t.readyState ? null == e.status && (e.status = 0) : o(this, t), n.cbTime = this.cbTime, u.emit("xhr-done", [t], t), c("xhr", [e, n, this.startTime]))
+        }
+      }
+
+      function i(t, e) {
+        var n = s(e), r = t.params;
+        r.host = n.hostname + ":" + n.port, r.pathname = n.pathname, t.parsedOrigin = s(e), t.sameOrigin = t.parsedOrigin.sameOrigin
+      }
+
+      function o(t, e) {
+        t.params.status = e.status;
+        var n = w(e, t.lastSize);
+        if (n && (t.metrics.rxSize = n), t.sameOrigin) {
+          var r = e.getResponseHeader("X-NewRelic-App-Data");
+          r && (t.params.cat = r.split(", ").pop())
+        }
+        t.loadCaptureCalled = !0
+      }
+
+      var a = t("loader");
+      if (a.xhrWrappable) {
+        var c = t("handle"), s = t(13), f = t(11).generateTracePayload, u = t("ee"),
+                d = ["load", "error", "abort", "timeout"], l = d.length, p = t("id"), h = t(17), m = t(16),
+                w = t(14), v = window.XMLHttpRequest;
+        a.features.xhr = !0, t(10), t(6), u.on("new-xhr", function (t) {
+          var e = this;
+          e.totalCbs = 0, e.called = 0, e.cbTime = 0, e.end = r, e.ended = !1, e.xhrGuids = {}, e.lastSize = null, e.loadCaptureCalled = !1, t.addEventListener("load", function (n) {
+            o(e, t)
+          }, !1), h && (h > 34 || h < 10) || window.opera || t.addEventListener("progress", function (t) {
+            e.lastSize = t.loaded
+          }, !1)
+        }), u.on("open-xhr-start", function (t) {
+          this.params = {method: t[0]}, i(this, t[1]), this.metrics = {}
+        }), u.on("open-xhr-end", function (t, e) {
+          "loader_config" in NREUM && "xpid" in NREUM.loader_config && this.sameOrigin && e.setRequestHeader("X-NewRelic-ID", NREUM.loader_config.xpid);
+          var n = f(this.parsedOrigin);
+          if (n) {
+            var r = !1;
+            n.newrelicHeader && (e.setRequestHeader("newrelic", n.newrelicHeader), r = !0), n.traceContextParentHeader && (e.setRequestHeader("traceparent", n.traceContextParentHeader), n.traceContextStateHeader && e.setRequestHeader("tracestate", n.traceContextStateHeader), r = !0), r && (this.dt = n)
+          }
+        }), u.on("send-xhr-start", function (t, e) {
+          var n = this.metrics, r = t[0], i = this;
+          if (n && r) {
+            var o = m(r);
+            o && (n.txSize = o)
+          }
+          this.startTime = a.now(), this.listener = function (t) {
+            try {
+              "abort" !== t.type || i.loadCaptureCalled || (i.params.aborted = !0), ("load" !== t.type || i.called === i.totalCbs && (i.onloadCalled || "function" != typeof e.onload)) && i.end(e)
+            } catch (n) {
+              try {
+                u.emit("internal-error", [n])
+              } catch (r) {
+              }
+            }
+          };
+          for (var c = 0; c < l; c++) e.addEventListener(d[c], this.listener, !1)
+        }), u.on("xhr-cb-time", function (t, e, n) {
+          this.cbTime += t, e ? this.onloadCalled = !0 : this.called += 1, this.called !== this.totalCbs || !this.onloadCalled && "function" == typeof n.onload || this.end(n)
+        }), u.on("xhr-load-added", function (t, e) {
+          var n = "" + p(t) + !!e;
+          this.xhrGuids && !this.xhrGuids[n] && (this.xhrGuids[n] = !0, this.totalCbs += 1)
+        }), u.on("xhr-load-removed", function (t, e) {
+          var n = "" + p(t) + !!e;
+          this.xhrGuids && this.xhrGuids[n] && (delete this.xhrGuids[n], this.totalCbs -= 1)
+        }), u.on("addEventListener-end", function (t, e) {
+          e instanceof v && "load" === t[0] && u.emit("xhr-load-added", [t[1], t[2]], e)
+        }), u.on("removeEventListener-end", function (t, e) {
+          e instanceof v && "load" === t[0] && u.emit("xhr-load-removed", [t[1], t[2]], e)
+        }), u.on("fn-start", function (t, e, n) {
+          e instanceof v && ("onload" === n && (this.onload = !0), ("load" === (t[0] && t[0].type) || this.onload) && (this.xhrCbStart = a.now()))
+        }), u.on("fn-end", function (t, e) {
+          this.xhrCbStart && u.emit("xhr-cb-time", [a.now() - this.xhrCbStart, this.onload, e], e)
+        }), u.on("fetch-before-start", function (t) {
+          function e(t, e) {
+            var n = !1;
+            return e.newrelicHeader && (t.set("newrelic", e.newrelicHeader), n = !0), e.traceContextParentHeader && (t.set("traceparent", e.traceContextParentHeader), e.traceContextStateHeader && t.set("tracestate", e.traceContextStateHeader), n = !0), n
+          }
+
+          var n, r = t[1] || {};
+          "string" == typeof t[0] ? n = t[0] : t[0] && t[0].url && (n = t[0].url), n && (this.parsedOrigin = s(n), this.sameOrigin = this.parsedOrigin.sameOrigin);
+          var i = f(this.parsedOrigin);
+          if (i && (i.newrelicHeader || i.traceContextParentHeader)) if ("string" == typeof t[0]) {
+            var o = {};
+            for (var a in r) o[a] = r[a];
+            o.headers = new Headers(r.headers || {}), e(o.headers, i) && (this.dt = i), t.length > 1 ? t[1] = o : t.push(o)
+          } else t[0] && t[0].headers && e(t[0].headers, i) && (this.dt = i)
+        })
+      }
+    }, {}], 13: [function (t, e, n) {
+      var r = {};
+      e.exports = function (t) {
+        if (t in r) return r[t];
+        var e = document.createElement("a"), n = window.location, i = {};
+        e.href = t, i.port = e.port;
+        var o = e.href.split("://");
+        !i.port && o[1] && (i.port = o[1].split("/")[0].split("@").pop().split(":")[1]), i.port && "0" !== i.port || (i.port = "https" === o[0] ? "443" : "80"), i.hostname = e.hostname || n.hostname, i.pathname = e.pathname, i.protocol = o[0], "/" !== i.pathname.charAt(0) && (i.pathname = "/" + i.pathname);
+        var a = !e.protocol || ":" === e.protocol || e.protocol === n.protocol,
+                c = e.hostname === document.domain && e.port === n.port;
+        return i.sameOrigin = a && (!e.hostname || c), "/" === i.pathname && (r[t] = i), i
+      }
+    }, {}], 14: [function (t, e, n) {
+      function r(t, e) {
+        var n = t.responseType;
+        return "json" === n && null !== e ? e : "arraybuffer" === n || "blob" === n || "json" === n ? i(t.response) : "text" === n || "" === n || void 0 === n ? i(t.responseText) : void 0
+      }
+
+      var i = t(16);
+      e.exports = r
+    }, {}], 15: [function (t, e, n) {
+      function r() {
+      }
+
+      function i(t, e, n) {
+        return function () {
+          return o(t, [f.now()].concat(c(arguments)), e ? null : this, n), e ? void 0 : this
+        }
+      }
+
+      var o = t("handle"), a = t(23), c = t(24), s = t("ee").get("tracer"), f = t("loader"), u = NREUM;
+      "undefined" == typeof window.newrelic && (newrelic = u);
+      var d = ["setPageViewName", "setCustomAttribute", "setErrorHandler", "finished", "addToTrace", "inlineHit", "addRelease"],
+              l = "api-", p = l + "ixn-";
+      a(d, function (t, e) {
+        u[e] = i(l + e, !0, "api")
+      }), u.addPageAction = i(l + "addPageAction", !0), u.setCurrentRouteName = i(l + "routeName", !0), e.exports = newrelic, u.interaction = function () {
+        return (new r).get()
+      };
+      var h = r.prototype = {
+        createTracer: function (t, e) {
+          var n = {}, r = this, i = "function" == typeof e;
+          return o(p + "tracer", [f.now(), t, n], r), function () {
+            if (s.emit((i ? "" : "no-") + "fn-start", [f.now(), r, i], n), i) try {
+              return e.apply(this, arguments)
+            } catch (t) {
+              throw s.emit("fn-err", [arguments, this, t], n), t
+            } finally {
+              s.emit("fn-end", [f.now()], n)
+            }
+          }
+        }
+      };
+      a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","), function (t, e) {
+        h[e] = i(p + e)
+      }), newrelic.noticeError = function (t, e) {
+        "string" == typeof t && (t = new Error(t)), o("err", [t, f.now(), !1, e])
+      }
+    }, {}], 16: [function (t, e, n) {
+      e.exports = function (t) {
+        if ("string" == typeof t && t.length) return t.length;
+        if ("object" == typeof t) {
+          if ("undefined" != typeof ArrayBuffer && t instanceof ArrayBuffer && t.byteLength) return t.byteLength;
+          if ("undefined" != typeof Blob && t instanceof Blob && t.size) return t.size;
+          if (!("undefined" != typeof FormData && t instanceof FormData)) try {
+            return JSON.stringify(t).length
+          } catch (e) {
+            return
+          }
+        }
+      }
+    }, {}], 17: [function (t, e, n) {
+      var r = 0, i = navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);
+      i && (r = +i[1]), e.exports = r
+    }, {}], 18: [function (t, e, n) {
+      function r() {
+        return c.exists && performance.now ? Math.round(performance.now()) : (o = Math.max((new Date).getTime(), o)) - a
+      }
+
+      function i() {
+        return o
+      }
+
+      var o = (new Date).getTime(), a = o, c = t(25);
+      e.exports = r, e.exports.offset = a, e.exports.getLastTimestamp = i
+    }, {}], 19: [function (t, e, n) {
+      function r(t, e) {
+        var n = t.getEntries();
+        n.forEach(function (t) {
+          "first-paint" === t.name ? d("timing", ["fp", Math.floor(t.startTime)]) : "first-contentful-paint" === t.name && d("timing", ["fcp", Math.floor(t.startTime)])
+        })
+      }
+
+      function i(t, e) {
+        var n = t.getEntries();
+        n.length > 0 && d("lcp", [n[n.length - 1]])
+      }
+
+      function o(t) {
+        t.getEntries().forEach(function (t) {
+          t.hadRecentInput || d("cls", [t])
+        })
+      }
+
+      function a(t) {
+        if (t instanceof h && !w) {
+          var e = Math.round(t.timeStamp), n = {type: t.type};
+          e <= l.now() ? n.fid = l.now() - e : e > l.offset && e <= Date.now() ? (e -= l.offset, n.fid = l.now() - e) : e = l.now(), w = !0, d("timing", ["fi", e, n])
+        }
+      }
+
+      function c(t) {
+        d("pageHide", [l.now(), t])
+      }
+
+      if (!("init" in NREUM && "page_view_timing" in NREUM.init && "enabled" in NREUM.init.page_view_timing && NREUM.init.page_view_timing.enabled === !1)) {
+        var s, f, u, d = t("handle"), l = t("loader"), p = t(22), h = NREUM.o.EV;
+        if ("PerformanceObserver" in window && "function" == typeof window.PerformanceObserver) {
+          s = new PerformanceObserver(r);
+          try {
+            s.observe({entryTypes: ["paint"]})
+          } catch (m) {
+          }
+          f = new PerformanceObserver(i);
+          try {
+            f.observe({entryTypes: ["largest-contentful-paint"]})
+          } catch (m) {
+          }
+          u = new PerformanceObserver(o);
+          try {
+            u.observe({type: "layout-shift", buffered: !0})
+          } catch (m) {
+          }
+        }
+        if ("addEventListener" in document) {
+          var w = !1, v = ["click", "keydown", "mousedown", "pointerdown", "touchstart"];
+          v.forEach(function (t) {
+            document.addEventListener(t, a, !1)
+          })
+        }
+        p(c)
+      }
+    }, {}], 20: [function (t, e, n) {
+      function r() {
+        function t() {
+          return e ? 15 & e[n++] : 16 * Math.random() | 0
+        }
+
+        var e = null, n = 0, r = window.crypto || window.msCrypto;
+        r && r.getRandomValues && (e = r.getRandomValues(new Uint8Array(31)));
+        for (var i, o = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx", a = "", c = 0; c < o.length; c++) i = o[c], "x" === i ? a += t().toString(16) : "y" === i ? (i = 3 & t() | 8, a += i.toString(16)) : a += i;
+        return a
+      }
+
+      function i() {
+        return a(16)
+      }
+
+      function o() {
+        return a(32)
+      }
+
+      function a(t) {
+        function e() {
+          return n ? 15 & n[r++] : 16 * Math.random() | 0
+        }
+
+        var n = null, r = 0, i = window.crypto || window.msCrypto;
+        i && i.getRandomValues && Uint8Array && (n = i.getRandomValues(new Uint8Array(31)));
+        for (var o = [], a = 0; a < t; a++) o.push(e().toString(16));
+        return o.join("")
+      }
+
+      e.exports = {generateUuid: r, generateSpanId: i, generateTraceId: o}
+    }, {}], 21: [function (t, e, n) {
+      function r(t, e) {
+        if (!i) return !1;
+        if (t !== i) return !1;
+        if (!e) return !0;
+        if (!o) return !1;
+        for (var n = o.split("."), r = e.split("."), a = 0; a < r.length; a++) if (r[a] !== n[a]) return !1;
+        return !0
+      }
+
+      var i = null, o = null, a = /Version\/(\S+)\s+Safari/;
+      if (navigator.userAgent) {
+        var c = navigator.userAgent, s = c.match(a);
+        s && c.indexOf("Chrome") === -1 && c.indexOf("Chromium") === -1 && (i = "Safari", o = s[1])
+      }
+      e.exports = {agent: i, version: o, match: r}
+    }, {}], 22: [function (t, e, n) {
+      function r(t) {
+        function e() {
+          t(a && document[a] ? document[a] : document[i] ? "hidden" : "visible")
+        }
+
+        "addEventListener" in document && o && document.addEventListener(o, e, !1)
+      }
+
+      e.exports = r;
+      var i, o, a;
+      "undefined" != typeof document.hidden ? (i = "hidden", o = "visibilitychange", a = "visibilityState") : "undefined" != typeof document.msHidden ? (i = "msHidden", o = "msvisibilitychange") : "undefined" != typeof document.webkitHidden && (i = "webkitHidden", o = "webkitvisibilitychange", a = "webkitVisibilityState")
+    }, {}], 23: [function (t, e, n) {
+      function r(t, e) {
+        var n = [], r = "", o = 0;
+        for (r in t) i.call(t, r) && (n[o] = e(r, t[r]), o += 1);
+        return n
+      }
+
+      var i = Object.prototype.hasOwnProperty;
+      e.exports = r
+    }, {}], 24: [function (t, e, n) {
+      function r(t, e, n) {
+        e || (e = 0), "undefined" == typeof n && (n = t ? t.length : 0);
+        for (var r = -1, i = n - e || 0, o = Array(i < 0 ? 0 : i); ++r < i;) o[r] = t[e + r];
+        return o
+      }
+
+      e.exports = r
+    }, {}], 25: [function (t, e, n) {
+      e.exports = {exists: "undefined" != typeof window.performance && window.performance.timing && "undefined" != typeof window.performance.timing.navigationStart}
+    }, {}], ee: [function (t, e, n) {
+      function r() {
+      }
+
+      function i(t) {
+        function e(t) {
+          return t && t instanceof r ? t : t ? s(t, c, o) : o()
+        }
+
+        function n(n, r, i, o) {
+          if (!l.aborted || o) {
+            t && t(n, r, i);
+            for (var a = e(i), c = m(n), s = c.length, f = 0; f < s; f++) c[f].apply(a, r);
+            var d = u[y[n]];
+            return d && d.push([x, n, r, a]), a
+          }
+        }
+
+        function p(t, e) {
+          g[t] = m(t).concat(e)
+        }
+
+        function h(t, e) {
+          var n = g[t];
+          if (n) for (var r = 0; r < n.length; r++) n[r] === e && n.splice(r, 1)
+        }
+
+        function m(t) {
+          return g[t] || []
+        }
+
+        function w(t) {
+          return d[t] = d[t] || i(n)
+        }
+
+        function v(t, e) {
+          f(t, function (t, n) {
+            e = e || "feature", y[n] = e, e in u || (u[e] = [])
+          })
+        }
+
+        var g = {}, y = {}, x = {
+          on: p,
+          addEventListener: p,
+          removeEventListener: h,
+          emit: n,
+          get: w,
+          listeners: m,
+          context: e,
+          buffer: v,
+          abort: a,
+          aborted: !1
+        };
+        return x
+      }
+
+      function o() {
+        return new r
+      }
+
+      function a() {
+        (u.api || u.feature) && (l.aborted = !0, u = l.backlog = {})
+      }
+
+      var c = "nr@context", s = t("gos"), f = t(23), u = {}, d = {}, l = e.exports = i();
+      l.backlog = u
+    }, {}], gos: [function (t, e, n) {
+      function r(t, e, n) {
+        if (i.call(t, e)) return t[e];
+        var r = n();
+        if (Object.defineProperty && Object.keys) try {
+          return Object.defineProperty(t, e, {value: r, writable: !0, enumerable: !1}), r
+        } catch (o) {
+        }
+        return t[e] = r, r
+      }
+
+      var i = Object.prototype.hasOwnProperty;
+      e.exports = r
+    }, {}], handle: [function (t, e, n) {
+      function r(t, e, n, r) {
+        i.buffer([t], r), i.emit(t, e, n)
+      }
+
+      var i = t("ee").get("handle");
+      e.exports = r, r.ee = i
+    }, {}], id: [function (t, e, n) {
+      function r(t) {
+        var e = typeof t;
+        return !t || "object" !== e && "function" !== e ? -1 : t === window ? 0 : a(t, o, function () {
+          return i++
+        })
+      }
+
+      var i = 1, o = "nr@id", a = t("gos");
+      e.exports = r
+    }, {}], loader: [function (t, e, n) {
+      function r() {
+        if (!b++) {
+          var t = x.info = NREUM.info, e = l.getElementsByTagName("script")[0];
+          if (setTimeout(f.abort, 3e4), !(t && t.licenseKey && t.applicationID && e)) return f.abort();
+          s(g, function (e, n) {
+            t[e] || (t[e] = n)
+          });
+          var n = a();
+          c("mark", ["onload", n + x.offset], null, "api"), c("timing", ["load", n]);
+          var r = l.createElement("script");
+          r.src = "https://" + t.agent, e.parentNode.insertBefore(r, e)
+        }
+      }
+
+      function i() {
+        "complete" === l.readyState && o()
+      }
+
+      function o() {
+        c("mark", ["domContent", a() + x.offset], null, "api")
+      }
+
+      var a = t(18), c = t("handle"), s = t(23), f = t("ee"), u = t(21), d = window, l = d.document,
+              p = "addEventListener", h = "attachEvent", m = d.XMLHttpRequest, w = m && m.prototype;
+      NREUM.o = {
+        ST: setTimeout,
+        SI: d.setImmediate,
+        CT: clearTimeout,
+        XHR: m,
+        REQ: d.Request,
+        EV: d.Event,
+        PR: d.Promise,
+        MO: d.MutationObserver
+      };
+      var v = "" + location, g = {
+        beacon: "bam.nr-data.net",
+        errorBeacon: "bam.nr-data.net",
+        agent: "js-agent.newrelic.com/nr-1184.min.js"
+      }, y = m && w && w[p] && !/CriOS/.test(navigator.userAgent), x = e.exports = {
+        offset: a.getLastTimestamp(),
+        now: a,
+        origin: v,
+        features: {},
+        xhrWrappable: y,
+        userAgent: u
+      };
+      t(15), t(19), l[p] ? (l[p]("DOMContentLoaded", o, !1), d[p]("load", r, !1)) : (l[h]("onreadystatechange", i), d[h]("onload", r)), c("mark", ["firstbyte", a.getLastTimestamp()], null, "api");
+      var b = 0
+    }, {}], "wrap-function": [function (t, e, n) {
+      function r(t) {
+        return !(t && t instanceof Function && t.apply && !t[a])
+      }
+
+      var i = t("ee"), o = t(24), a = "nr@original", c = Object.prototype.hasOwnProperty, s = !1;
+      e.exports = function (t, e) {
+        function n(t, e, n, i) {
+          function nrWrapper() {
+            var r, a, c, s;
+            try {
+              a = this, r = o(arguments), c = "function" == typeof n ? n(r, a) : n || {}
+            } catch (f) {
+              l([f, "", [r, a, i], c])
+            }
+            u(e + "start", [r, a, i], c);
+            try {
+              return s = t.apply(a, r)
+            } catch (d) {
+              throw u(e + "err", [r, a, d], c), d
+            } finally {
+              u(e + "end", [r, a, s], c)
+            }
+          }
+
+          return r(t) ? t : (e || (e = ""), nrWrapper[a] = t, d(t, nrWrapper), nrWrapper)
+        }
+
+        function f(t, e, i, o) {
+          i || (i = "");
+          var a, c, s, f = "-" === i.charAt(0);
+          for (s = 0; s < e.length; s++) c = e[s], a = t[c], r(a) || (t[c] = n(a, f ? c + i : i, o, c))
+        }
+
+        function u(n, r, i) {
+          if (!s || e) {
+            var o = s;
+            s = !0;
+            try {
+              t.emit(n, r, i, e)
+            } catch (a) {
+              l([a, n, r, i])
+            }
+            s = o
+          }
+        }
+
+        function d(t, e) {
+          if (Object.defineProperty && Object.keys) try {
+            var n = Object.keys(t);
+            return n.forEach(function (n) {
+              Object.defineProperty(e, n, {
+                get: function () {
+                  return t[n]
+                }, set: function (e) {
+                  return t[n] = e, e
+                }
+              })
+            }), e
+          } catch (r) {
+            l([r])
+          }
+          for (var i in t) c.call(t, i) && (e[i] = t[i]);
+          return e
+        }
+
+        function l(e) {
+          try {
+            t.emit("internal-error", e)
+          } catch (n) {
+          }
+        }
+
+        return t || (t = i), n.inPlace = f, n.flag = a, n
+      }
+    }, {}]
+  }, {}, ["loader", 2, 12, 4, 3]);</script>
+  <meta name="smartbanner:hide-ttl" content="3600000"/>
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "url": "https://www.quicken.com/",
+    "name": "Quicken, Inc.",
+    "description": "For over three decades, Quicken has been providing the best money management software on the market. Get Quicken and take control of your finances today.",
+    "image": "https://www.quicken.com/sites/all/themes/custom/quicken_nessie/logo.svg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "(650) 250-1900",
+      "contactType": "customer service",
+      "areaServed": "US",
+      "availableLanguage": "en"
+    },
+    "sameAs": [
+      "https://www.facebook.com/Quicken/",
+      "https://twitter.com/quicken",
+      "https://www.youtube.com/user/Quicken",
+      "https://www.linkedin.com/company/quicken-inc./",
+      "https://en.wikipedia.org/wiki/Quicken"
+    ],
+    "brand": "Quicken",
+    "category": "budget, software, money management, personal finance"
+  }</script>
+  <meta name="smartbanner:hide-path" content="/"/>
+  <meta name="smartbanner:close-label" content="Close"/>
+  <meta name="smartbanner:enabled-platforms" content="android,ios"/>
+  <meta name="smartbanner:button-url-google"
+        content="https://play.google.com/store/apps/details?id=com.quicken.acme&amp;hl=en_US"/>
+  <meta name="smartbanner:button-url-apple"
+        content="https://apps.apple.com/us/app/simplifi-money-management/id1449777194"/>
+  <meta name="smartbanner:button" content="VIEW"/>
+  <meta name="smartbanner:icon-google" content="https://www.simplifimoney.com/assets/images/simplifiBug.svg"/>
+  <meta name="smartbanner:icon-apple" content="https://www.simplifimoney.com/assets/images/simplifiBug.svg"/>
+  <meta name="smartbanner:price-suffix-google" content=" - In Google Play"/>
+  <meta name="smartbanner:price-suffix-apple" content=" - On the App Store"/>
+  <meta name="smartbanner:price" content="FREE"/>
+  <meta name="smartbanner:author" content="Quicken Inc."/>
+  <meta name="smartbanner:title" content="Simplifi: Money Management"/>
+  <link rel="shortcut icon" href="https://www.quicken.com/sites/all/themes/custom/quicken_nessie/favicon.ico"
+        type="image/vnd.microsoft.icon"/>
+  <meta name="description"
+        content="Set, track &amp; reach your financial goals with Quicken money management software. Manage spending, budgets, investments, retirement &amp; more. Get Quicken and take control of your finances today."/>
+  <link rel="canonical" href="https://www.quicken.com/"/>
+  <link rel="shortlink" href="https://www.quicken.com/node/24690"/>
+  <meta property="og:site_name" content="Quicken"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url"
+        content="https://www.quicken.com/content/quicken-personal-finance-money-management-software"/>
+  <meta property="og:title" content="Quicken Personal Finance &amp; Money Management Software"/>
+  <meta property="og:description"
+        content="For over three decades, Quicken has been providing the best money management software on the market. Get Quicken and take control of your finances today."/>
+  <meta property="og:updated_time" content="2020-12-02T09:59:35-05:00"/>
+  <meta property="og:image" content="https://www.quicken.com/sites/default/files/quicken-og-2020.png"/>
+  <meta property="article:published_time" content="2018-10-08T22:05:18-04:00"/>
+  <meta property="article:modified_time" content="2020-12-02T09:59:35-05:00"/>
+  <title>Personal Finance & Money Management Software | Quicken</title>
+  <meta name="google-site-verification" content="aimRY5uwcPvD322yDUrebr8sAExlV02Q2nXwebbHoKI"/>
+  <meta name="msvalidate.01" content="239FF3A92EF8861DD243D288C94D5D04"/>
+  <meta name="msapplication-config" content="none"/>
   <!-- Prevents non href="tel:" numbers from appearing as phone numbers in iOS -->
-  <meta name = "format-detection" content = "telephone=no">
+  <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script type="text/javascript">
     // Newrelic
-    window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:22,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:9,2:8,3:6,4:10,5:3,6:23,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:9,2:8,3:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],6:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:23,2:24,ee:"QJf3ax",gos:"7eSDFh"}],7:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:24,2:23,ee:"QJf3ax"}],8:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:24,2:23,ee:"QJf3ax"}],9:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:24,2:23,ee:"QJf3ax"}],10:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:6,2:24,ee:"QJf3ax"}],11:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:12,3:10,4:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],12:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],13:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:22,2:23,handle:"D5DuLP"}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=(t(2),window),f=c.document,u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:22,2:13,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],22:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],23:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],24:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:23,ee:"QJf3ax"}]},{},["G9z0Bl",4,11,5]);
-    ;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"9f7e91019b",applicationID:"5171401",sa:1,agent:"js-agent.newrelic.com/nr-632.min.js"}
+    window.NREUM || (NREUM = {}), __nr_require = function (t, e, n) {
+      function r(n) {
+        if (!e[n]) {
+          var o = e[n] = {exports: {}};
+          t[n][0].call(o.exports, function (e) {
+            var o = t[n][1][e];
+            return r(o ? o : e)
+          }, o, o.exports)
+        }
+        return e[n].exports
+      }
+
+      if ("function" == typeof __nr_require) return __nr_require;
+      for (var o = 0; o < n.length; o++) r(n[o]);
+      return r
+    }({
+      QJf3ax: [function (t, e) {
+        function n(t) {
+          function e(e, n, a) {
+            t && t(e, n, a), a || (a = {});
+            for (var c = s(e), f = c.length, u = i(a, o, r), d = 0; f > d; d++) c[d].apply(u, n);
+            return u
+          }
+
+          function a(t, e) {
+            f[t] = s(t).concat(e)
+          }
+
+          function s(t) {
+            return f[t] || []
+          }
+
+          function c() {
+            return n(e)
+          }
+
+          var f = {};
+          return {on: a, emit: e, create: c, listeners: s, _events: f}
+        }
+
+        function r() {
+          return {}
+        }
+
+        var o = "nr@context", i = t("gos");
+        e.exports = n()
+      }, {gos: "7eSDFh"}],
+      ee: [function (t, e) {
+        e.exports = t("QJf3ax")
+      }, {}],
+      3: [function (t) {
+        function e(t) {
+          try {
+            i.console && console.log(t)
+          } catch (e) {
+          }
+        }
+
+        var n, r = t("ee"), o = t(1), i = {};
+        try {
+          n = localStorage.getItem("__nr_flags").split(","), console && "function" == typeof console.log && (i.console = !0, -1 !== n.indexOf("dev") && (i.dev = !0), -1 !== n.indexOf("nr_dev") && (i.nrDev = !0))
+        } catch (a) {
+        }
+        i.nrDev && r.on("internal-error", function (t) {
+          e(t.stack)
+        }), i.dev && r.on("fn-err", function (t, n, r) {
+          e(r.stack)
+        }), i.dev && (e("NR AGENT IN DEVELOPMENT MODE"), e("flags: " + o(i, function (t) {
+          return t
+        }).join(", ")))
+      }, {1: 22, ee: "QJf3ax"}],
+      4: [function (t) {
+        function e(t, e, n, i, s) {
+          try {
+            c ? c -= 1 : r("err", [s || new UncaughtException(t, e, n)])
+          } catch (f) {
+            try {
+              r("ierr", [f, (new Date).getTime(), !0])
+            } catch (u) {
+            }
+          }
+          return "function" == typeof a ? a.apply(this, o(arguments)) : !1
+        }
+
+        function UncaughtException(t, e, n) {
+          this.message = t || "Uncaught error with no additional information", this.sourceURL = e, this.line = n
+        }
+
+        function n(t) {
+          r("err", [t, (new Date).getTime()])
+        }
+
+        var r = t("handle"), o = t(6), i = t("ee"), a = window.onerror, s = !1, c = 0;
+        t("loader").features.err = !0, t(5), window.onerror = e;
+        try {
+          throw new Error
+        } catch (f) {
+          "stack" in f && (t(1), t(2), "addEventListener" in window && t(3), window.XMLHttpRequest && XMLHttpRequest.prototype && XMLHttpRequest.prototype.addEventListener && window.XMLHttpRequest && XMLHttpRequest.prototype && XMLHttpRequest.prototype.addEventListener && !/CriOS/.test(navigator.userAgent) && t(4), s = !0)
+        }
+        i.on("fn-start", function () {
+          s && (c += 1)
+        }), i.on("fn-err", function (t, e, r) {
+          s && (this.thrown = !0, n(r))
+        }), i.on("fn-end", function () {
+          s && !this.thrown && c > 0 && (c -= 1)
+        }), i.on("internal-error", function (t) {
+          r("ierr", [t, (new Date).getTime(), !0])
+        })
+      }, {1: 9, 2: 8, 3: 6, 4: 10, 5: 3, 6: 23, ee: "QJf3ax", handle: "D5DuLP", loader: "G9z0Bl"}],
+      5: [function (t) {
+        function e() {
+        }
+
+        if (window.performance && window.performance.timing && window.performance.getEntriesByType) {
+          var n = t("ee"), r = t("handle"), o = t(1), i = t(2);
+          t("loader").features.stn = !0, t(3), n.on("fn-start", function (t) {
+            var e = t[0];
+            e instanceof Event && (this.bstStart = Date.now())
+          }), n.on("fn-end", function (t, e) {
+            var n = t[0];
+            n instanceof Event && r("bst", [n, e, this.bstStart, Date.now()])
+          }), o.on("fn-start", function (t, e, n) {
+            this.bstStart = Date.now(), this.bstType = n
+          }), o.on("fn-end", function (t, e) {
+            r("bstTimer", [e, this.bstStart, Date.now(), this.bstType])
+          }), i.on("fn-start", function () {
+            this.bstStart = Date.now()
+          }), i.on("fn-end", function (t, e) {
+            r("bstTimer", [e, this.bstStart, Date.now(), "requestAnimationFrame"])
+          }), n.on("pushState-start", function () {
+            this.time = Date.now(), this.startPath = location.pathname + location.hash
+          }), n.on("pushState-end", function () {
+            r("bstHist", [location.pathname + location.hash, this.startPath, this.time])
+          }), "addEventListener" in window.performance && (window.performance.addEventListener("webkitresourcetimingbufferfull", function () {
+            r("bstResource", [window.performance.getEntriesByType("resource")]), window.performance.webkitClearResourceTimings()
+          }, !1), window.performance.addEventListener("resourcetimingbufferfull", function () {
+            r("bstResource", [window.performance.getEntriesByType("resource")]), window.performance.clearResourceTimings()
+          }, !1)), document.addEventListener("scroll", e, !1), document.addEventListener("keypress", e, !1), document.addEventListener("click", e, !1)
+        }
+      }, {1: 9, 2: 8, 3: 7, ee: "QJf3ax", handle: "D5DuLP", loader: "G9z0Bl"}],
+      6: [function (t, e) {
+        function n(t) {
+          i.inPlace(t, ["addEventListener", "removeEventListener"], "-", r)
+        }
+
+        function r(t) {
+          return t[1]
+        }
+
+        var o = (t(1), t("ee").create()), i = t(2)(o), a = t("gos");
+        if (e.exports = o, n(window), "getPrototypeOf" in Object) {
+          for (var s = document; s && !s.hasOwnProperty("addEventListener");) s = Object.getPrototypeOf(s);
+          s && n(s);
+          for (var c = XMLHttpRequest.prototype; c && !c.hasOwnProperty("addEventListener");) c = Object.getPrototypeOf(c);
+          c && n(c)
+        } else XMLHttpRequest.prototype.hasOwnProperty("addEventListener") && n(XMLHttpRequest.prototype);
+        o.on("addEventListener-start", function (t) {
+          if (t[1]) {
+            var e = t[1];
+            "function" == typeof e ? this.wrapped = t[1] = a(e, "nr@wrapped", function () {
+              return i(e, "fn-", null, e.name || "anonymous")
+            }) : "function" == typeof e.handleEvent && i.inPlace(e, ["handleEvent"], "fn-")
+          }
+        }), o.on("removeEventListener-start", function (t) {
+          var e = this.wrapped;
+          e && (t[1] = e)
+        })
+      }, {1: 23, 2: 24, ee: "QJf3ax", gos: "7eSDFh"}],
+      7: [function (t, e) {
+        var n = (t(2), t("ee").create()), r = t(1)(n);
+        e.exports = n, r.inPlace(window.history, ["pushState"], "-")
+      }, {1: 24, 2: 23, ee: "QJf3ax"}],
+      8: [function (t, e) {
+        var n = (t(2), t("ee").create()), r = t(1)(n);
+        e.exports = n, r.inPlace(window, ["requestAnimationFrame", "mozRequestAnimationFrame", "webkitRequestAnimationFrame", "msRequestAnimationFrame"], "raf-"), n.on("raf-start", function (t) {
+          t[0] = r(t[0], "fn-")
+        })
+      }, {1: 24, 2: 23, ee: "QJf3ax"}],
+      9: [function (t, e) {
+        function n(t, e, n) {
+          t[0] = o(t[0], "fn-", null, n)
+        }
+
+        var r = (t(2), t("ee").create()), o = t(1)(r);
+        e.exports = r, o.inPlace(window, ["setTimeout", "setInterval", "setImmediate"], "setTimer-"), r.on("setTimer-start", n)
+      }, {1: 24, 2: 23, ee: "QJf3ax"}],
+      10: [function (t, e) {
+        function n() {
+          f.inPlace(this, p, "fn-")
+        }
+
+        function r(t, e) {
+          f.inPlace(e, ["onreadystatechange"], "fn-")
+        }
+
+        function o(t, e) {
+          return e
+        }
+
+        function i(t, e) {
+          for (var n in t) e[n] = t[n];
+          return e
+        }
+
+        var a = t("ee").create(), s = t(1), c = t(2), f = c(a), u = c(s), d = window.XMLHttpRequest,
+                p = ["onload", "onerror", "onabort", "onloadstart", "onloadend", "onprogress", "ontimeout"];
+        e.exports = a, window.XMLHttpRequest = function (t) {
+          var e = new d(t);
+          try {
+            a.emit("new-xhr", [], e), u.inPlace(e, ["addEventListener", "removeEventListener"], "-", o), e.addEventListener("readystatechange", n, !1)
+          } catch (r) {
+            try {
+              a.emit("internal-error", [r])
+            } catch (i) {
+            }
+          }
+          return e
+        }, i(d, XMLHttpRequest), XMLHttpRequest.prototype = d.prototype, f.inPlace(XMLHttpRequest.prototype, ["open", "send"], "-xhr-", o), a.on("send-xhr-start", r), a.on("open-xhr-start", r)
+      }, {1: 6, 2: 24, ee: "QJf3ax"}],
+      11: [function (t) {
+        function e(t) {
+          var e = this.params, r = this.metrics;
+          if (!this.ended) {
+            this.ended = !0;
+            for (var i = 0; c > i; i++) t.removeEventListener(s[i], this.listener, !1);
+            if (!e.aborted) {
+              if (r.duration = (new Date).getTime() - this.startTime, 4 === t.readyState) {
+                e.status = t.status;
+                var a = t.responseType,
+                        f = "arraybuffer" === a || "blob" === a || "json" === a ? t.response : t.responseText,
+                        u = n(f);
+                if (u && (r.rxSize = u), this.sameOrigin) {
+                  var d = t.getResponseHeader("X-NewRelic-App-Data");
+                  d && (e.cat = d.split(", ").pop())
+                }
+              } else e.status = 0;
+              r.cbTime = this.cbTime, o("xhr", [e, r, this.startTime])
+            }
+          }
+        }
+
+        function n(t) {
+          if ("string" == typeof t && t.length) return t.length;
+          if ("object" != typeof t) return void 0;
+          if ("undefined" != typeof ArrayBuffer && t instanceof ArrayBuffer && t.byteLength) return t.byteLength;
+          if ("undefined" != typeof Blob && t instanceof Blob && t.size) return t.size;
+          if ("undefined" != typeof FormData && t instanceof FormData) return void 0;
+          try {
+            return JSON.stringify(t).length
+          } catch (e) {
+            return void 0
+          }
+        }
+
+        function r(t, e) {
+          var n = i(e), r = t.params;
+          r.host = n.hostname + ":" + n.port, r.pathname = n.pathname, t.sameOrigin = n.sameOrigin
+        }
+
+        if (window.XMLHttpRequest && XMLHttpRequest.prototype && XMLHttpRequest.prototype.addEventListener && !/CriOS/.test(navigator.userAgent)) {
+          t("loader").features.xhr = !0;
+          var o = t("handle"), i = t(2), a = t("ee"), s = ["load", "error", "abort", "timeout"], c = s.length,
+                  f = t(1);
+          t(4), t(3), a.on("new-xhr", function () {
+            this.totalCbs = 0, this.called = 0, this.cbTime = 0, this.end = e, this.ended = !1, this.xhrGuids = {}
+          }), a.on("open-xhr-start", function (t) {
+            this.params = {method: t[0]}, r(this, t[1]), this.metrics = {}
+          }), a.on("open-xhr-end", function (t, e) {
+            "loader_config" in NREUM && "xpid" in NREUM.loader_config && this.sameOrigin && e.setRequestHeader("X-NewRelic-ID", NREUM.loader_config.xpid)
+          }), a.on("send-xhr-start", function (t, e) {
+            var r = this.metrics, o = t[0], i = this;
+            if (r && o) {
+              var f = n(o);
+              f && (r.txSize = f)
+            }
+            this.startTime = (new Date).getTime(), this.listener = function (t) {
+              try {
+                "abort" === t.type && (i.params.aborted = !0), ("load" !== t.type || i.called === i.totalCbs && (i.onloadCalled || "function" != typeof e.onload)) && i.end(e)
+              } catch (n) {
+                try {
+                  a.emit("internal-error", [n])
+                } catch (r) {
+                }
+              }
+            };
+            for (var u = 0; c > u; u++) e.addEventListener(s[u], this.listener, !1)
+          }), a.on("xhr-cb-time", function (t, e, n) {
+            this.cbTime += t, e ? this.onloadCalled = !0 : this.called += 1, this.called !== this.totalCbs || !this.onloadCalled && "function" == typeof n.onload || this.end(n)
+          }), a.on("xhr-load-added", function (t, e) {
+            var n = "" + f(t) + !!e;
+            this.xhrGuids && !this.xhrGuids[n] && (this.xhrGuids[n] = !0, this.totalCbs += 1)
+          }), a.on("xhr-load-removed", function (t, e) {
+            var n = "" + f(t) + !!e;
+            this.xhrGuids && this.xhrGuids[n] && (delete this.xhrGuids[n], this.totalCbs -= 1)
+          }), a.on("addEventListener-end", function (t, e) {
+            e instanceof XMLHttpRequest && "load" === t[0] && a.emit("xhr-load-added", [t[1], t[2]], e)
+          }), a.on("removeEventListener-end", function (t, e) {
+            e instanceof XMLHttpRequest && "load" === t[0] && a.emit("xhr-load-removed", [t[1], t[2]], e)
+          }), a.on("fn-start", function (t, e, n) {
+            e instanceof XMLHttpRequest && ("onload" === n && (this.onload = !0), ("load" === (t[0] && t[0].type) || this.onload) && (this.xhrCbStart = (new Date).getTime()))
+          }), a.on("fn-end", function (t, e) {
+            this.xhrCbStart && a.emit("xhr-cb-time", [(new Date).getTime() - this.xhrCbStart, this.onload, e], e)
+          })
+        }
+      }, {1: "XL7HBI", 2: 12, 3: 10, 4: 6, ee: "QJf3ax", handle: "D5DuLP", loader: "G9z0Bl"}],
+      12: [function (t, e) {
+        e.exports = function (t) {
+          var e = document.createElement("a"), n = window.location, r = {};
+          e.href = t, r.port = e.port;
+          var o = e.href.split("://");
+          return !r.port && o[1] && (r.port = o[1].split("/")[0].split("@").pop().split(":")[1]), r.port && "0" !== r.port || (r.port = "https" === o[0] ? "443" : "80"), r.hostname = e.hostname || n.hostname, r.pathname = e.pathname, r.protocol = o[0], "/" !== r.pathname.charAt(0) && (r.pathname = "/" + r.pathname), r.sameOrigin = !e.hostname || e.hostname === document.domain && e.port === n.port && e.protocol === n.protocol, r
+        }
+      }, {}],
+      13: [function (t, e) {
+        function n(t) {
+          return function () {
+            r(t, [(new Date).getTime()].concat(i(arguments)))
+          }
+        }
+
+        var r = t("handle"), o = t(1), i = t(2);
+        "undefined" == typeof window.newrelic && (newrelic = window.NREUM);
+        var a = ["setPageViewName", "addPageAction", "setCustomAttribute", "finished", "addToTrace", "inlineHit", "noticeError"];
+        o(a, function (t, e) {
+          window.NREUM[e] = n("api-" + e)
+        }), e.exports = window.NREUM
+      }, {1: 22, 2: 23, handle: "D5DuLP"}],
+      "7eSDFh": [function (t, e) {
+        function n(t, e, n) {
+          if (r.call(t, e)) return t[e];
+          var o = n();
+          if (Object.defineProperty && Object.keys) try {
+            return Object.defineProperty(t, e, {value: o, writable: !0, enumerable: !1}), o
+          } catch (i) {
+          }
+          return t[e] = o, o
+        }
+
+        var r = Object.prototype.hasOwnProperty;
+        e.exports = n
+      }, {}],
+      gos: [function (t, e) {
+        e.exports = t("7eSDFh")
+      }, {}],
+      handle: [function (t, e) {
+        e.exports = t("D5DuLP")
+      }, {}],
+      D5DuLP: [function (t, e) {
+        function n(t, e, n) {
+          return r.listeners(t).length ? r.emit(t, e, n) : (o[t] || (o[t] = []), void o[t].push(e))
+        }
+
+        var r = t("ee").create(), o = {};
+        e.exports = n, n.ee = r, r.q = o
+      }, {ee: "QJf3ax"}],
+      id: [function (t, e) {
+        e.exports = t("XL7HBI")
+      }, {}],
+      XL7HBI: [function (t, e) {
+        function n(t) {
+          var e = typeof t;
+          return !t || "object" !== e && "function" !== e ? -1 : t === window ? 0 : i(t, o, function () {
+            return r++
+          })
+        }
+
+        var r = 1, o = "nr@id", i = t("gos");
+        e.exports = n
+      }, {gos: "7eSDFh"}],
+      G9z0Bl: [function (t, e) {
+        function n() {
+          var t = p.info = NREUM.info, e = f.getElementsByTagName("script")[0];
+          if (t && t.licenseKey && t.applicationID && e) {
+            s(d, function (e, n) {
+              e in t || (t[e] = n)
+            });
+            var n = "https" === u.split(":")[0] || t.sslForHttp;
+            p.proto = n ? "https://" : "http://", a("mark", ["onload", i()]);
+            var r = f.createElement("script");
+            r.src = p.proto + t.agent, e.parentNode.insertBefore(r, e)
+          }
+        }
+
+        function r() {
+          "complete" === f.readyState && o()
+        }
+
+        function o() {
+          a("mark", ["domContent", i()])
+        }
+
+        function i() {
+          return (new Date).getTime()
+        }
+
+        var a = t("handle"), s = t(1), c = (t(2), window), f = c.document, u = ("" + location).split("?")[0],
+                d = {
+                  beacon: "bam.nr-data.net",
+                  errorBeacon: "bam.nr-data.net",
+                  agent: "js-agent.newrelic.com/nr-632.min.js"
+                }, p = e.exports = {offset: i(), origin: u, features: {}};
+        f.addEventListener ? (f.addEventListener("DOMContentLoaded", o, !1), c.addEventListener("load", n, !1)) : (f.attachEvent("onreadystatechange", r), c.attachEvent("onload", n)), a("mark", ["firstbyte", i()])
+      }, {1: 22, 2: 13, handle: "D5DuLP"}],
+      loader: [function (t, e) {
+        e.exports = t("G9z0Bl")
+      }, {}],
+      22: [function (t, e) {
+        function n(t, e) {
+          var n = [], o = "", i = 0;
+          for (o in t) r.call(t, o) && (n[i] = e(o, t[o]), i += 1);
+          return n
+        }
+
+        var r = Object.prototype.hasOwnProperty;
+        e.exports = n
+      }, {}],
+      23: [function (t, e) {
+        function n(t, e, n) {
+          e || (e = 0), "undefined" == typeof n && (n = t ? t.length : 0);
+          for (var r = -1, o = n - e || 0, i = Array(0 > o ? 0 : o); ++r < o;) i[r] = t[e + r];
+          return i
+        }
+
+        e.exports = n
+      }, {}],
+      24: [function (t, e) {
+        function n(t) {
+          return !(t && "function" == typeof t && t.apply && !t[i])
+        }
+
+        var r = t("ee"), o = t(1), i = "nr@wrapper", a = Object.prototype.hasOwnProperty;
+        e.exports = function (t) {
+          function e(t, e, r, a) {
+            function nrWrapper() {
+              var n, i, s, f;
+              try {
+                i = this, n = o(arguments), s = r && r(n, i) || {}
+              } catch (d) {
+                u([d, "", [n, i, a], s])
+              }
+              c(e + "start", [n, i, a], s);
+              try {
+                return f = t.apply(i, n)
+              } catch (p) {
+                throw c(e + "err", [n, i, p], s), p
+              } finally {
+                c(e + "end", [n, i, f], s)
+              }
+            }
+
+            return n(t) ? t : (e || (e = ""), nrWrapper[i] = !0, f(t, nrWrapper), nrWrapper)
+          }
+
+          function s(t, r, o, i) {
+            o || (o = "");
+            var a, s, c, f = "-" === o.charAt(0);
+            for (c = 0; c < r.length; c++) s = r[c], a = t[s], n(a) || (t[s] = e(a, f ? s + o : o, i, s))
+          }
+
+          function c(e, n, r) {
+            try {
+              t.emit(e, n, r)
+            } catch (o) {
+              u([o, e, n, r])
+            }
+          }
+
+          function f(t, e) {
+            if (Object.defineProperty && Object.keys) try {
+              var n = Object.keys(t);
+              return n.forEach(function (n) {
+                Object.defineProperty(e, n, {
+                  get: function () {
+                    return t[n]
+                  }, set: function (e) {
+                    return t[n] = e, e
+                  }
+                })
+              }), e
+            } catch (r) {
+              u([r])
+            }
+            for (var o in t) a.call(t, o) && (e[o] = t[o]);
+            return e
+          }
+
+          function u(e) {
+            try {
+              t.emit("internal-error", e)
+            } catch (n) {
+            }
+          }
+
+          return t || (t = r), e.inPlace = s, e.flag = i, e
+        }
+      }, {1: 23, ee: "QJf3ax"}]
+    }, {}, ["G9z0Bl", 4, 11, 5]);
+    ;NREUM.info = {
+      beacon: "bam.nr-data.net",
+      errorBeacon: "bam.nr-data.net",
+      licenseKey: "9f7e91019b",
+      applicationID: "5171401",
+      sa: 1,
+      agent: "js-agent.newrelic.com/nr-632.min.js"
+    }
   </script>
-  <link type="text/css" rel="stylesheet" href="https://www.quicken.com/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://www.quicken.com/sites/default/files/css/css_9JMEMW4dHrpYirFijd2cYdf6ZgzTMHLcdlzwC6Y2qHc.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://www.quicken.com/sites/default/files/css/css_pJrjlTCQYxONS4cH7zbz6b5jUVNs6jJyg9rubORVZBw.css" media="screen" />
-<link type="text/css" rel="stylesheet" href="https://www.quicken.com/sites/default/files/css/css_VZL9ZCiDJqTvc1yoS1yahkZGIGEsO9cKKkN1-nf0bIE.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://www.quicken.com/sites/default/files/css/css_q53zHZI_zSqty0vwZDJ830z2iG73u0v7d_U28uYSDbI.css" media="all" />
-  <link type="text/css" rel="stylesheet" href="https://www.quicken.com/sites/default/files/css/css_EV8iUIGDhy1hpkEa9KJv4pEgjkvak7tBrOQp6X_nTWE.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Source+Sans+Pro:300,600" media="all" />
-<link type="text/css" rel="stylesheet" href="https://www.quicken.com/sites/default/files/css/css_glmji8G7fNnOVLFn7DPr-U9YE-szZGUe5BiLWsCG8tQ.css" media="all" />
-  <link type="text/css" rel="stylesheet" href="css/style.css" />
-
+  <link type="text/css" rel="stylesheet"
+        href="https://www.quicken.com/sites/default/files/css/css_Vts0XjaQXkIwBk9HNAoJwrvmmE9lw6S9oxqJuhh0OB0.css"
+        media="all"/>
+  <link type="text/css" rel="stylesheet"
+        href="https://www.quicken.com/sites/default/files/css/css_pJrjlTCQYxONS4cH7zbz6b5jUVNs6jJyg9rubORVZBw.css"
+        media="screen"/>
+  <link type="text/css" rel="stylesheet"
+        href="https://www.quicken.com/sites/default/files/css/css_-YxRSnND32tU0oakYWewrPRDVccpwGyqftm2Dg6wGTU.css"
+        media="all"/>
+  <link type="text/css" rel="stylesheet"
+        href="https://www.quicken.com/sites/default/files/css/css_rOCJtYSaoqEYaK45T1kQFz-lSjh9pX-xigkYYWHYPkE.css"
+        media="all"/>
+  <link type="text/css" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Source+Sans+Pro:300,400,600"
+        media="all"/>
+  <link type="text/css" rel="stylesheet"
+        href="https://www.quicken.com/sites/default/files/css/css_bHui80b8NzyEIpGH33eJb0p4UTTJMH17Yl7zn7TeySk.css"
+        media="all"/>
+  <link type="text/css" rel="stylesheet" href="css/style.css"/>
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->    <!--[if lt IE 9]>
+  <script src="/sites/all/themes/custom/quicken_nessie/js/dist/html5shiv.js"></script>
+  <script src="/sites/all/themes/custom/quicken_nessie/js/dist/respond.js"></script>    <![endif]-->
 </head>
-<body class="html not-front not-logged-in no-sidebars page-activate quicken-burst-promo-is-active evergreen-10percent" >
-  <div id="skip-link">
-    <a href="#main-content" class="element-invisible">Skip to main content</a>
-  </div>
-
-  <div class="container">
-  </div>
-
-
-<main class="container-fluid">
-  <div class="clearfix row">
-          <div class="container"></div>      <div class="region region-content">
-    <div id="block-system-main" class="block block-system">
-
-    
-  <div class="content">
-    <div class="page page-sticky-navbar">
-      <nav class="navbar navbar-expand-navbar navbar-light">
-        <div class="navbar-container container-fluid">
-          <div class="navbar-left-container">
-            <a class="navbar-brand" href="index.html">
-              <span class="sr-only">Quicken</span>
-            </a>
-            <button class="navbar-toggle collapsed" data-dropdown="nav-drop" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggle--main-bar"></span>
-            </button>
-          </div>
-
-          <ul class="header-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="compare.html">Prices</a></li>
-            <li><a href="about-us.html">About us</a></li>
-          </ul>
-        </div>
-<div class="header-section">
-  <h2 class="header-title">Welcome to Quicken</h2>
-  <img width="345" src="/sites/all/themes/custom/quicken_2014/images/activate-laptop.png"/>
-  <h2>Before activation, which of the following best describes you?</h2>
-
-  <div class="button-section">
-    <button class="activation-btn btn-activate--new" data-toggle-modal="#btn-activate--new">
-      <i class="icon-btn-add"></i>I'm new to Quicken    </button>
-    <button class="activation-btn btn-activation--renewing" data-toggle-modal="#btn-activate--renewing">
-      <i class="icon-btn-edit"></i>I'm renewing/changing my Quicken subscription    </button>
-    <button class="activation-btn btn-activation--another" data-toggle-modal="#btn-activate--another">
-      <i class="icon-btn-download"></i>I'm installing on another computer    </button>
-  </div>
+<body class="html front not-logged-in no-sidebars page-node page-node- page-node-24690 node-type-flexible quicken-burst-promo-is-active evergreen-10percent">
+<div style="display:none">
+  <svg>
+    <symbol id="plus" width="9" height="9" viewBox="0 0 9 9">
+      <path d="M8.918 6.014H5.876V8.984H3.104V6.014H0.044V3.386H3.104V0.416H5.876V3.386H8.918V6.014Z"></path>
+    </symbol>
+    <symbol id="cross" width="25" height="25" viewBox="0 0 25 25">
+      <path d="M3.8147e-06 2.94595L2.94595 0L12.5 9.55402L22.0541 0L25 2.94595L15.446 12.5L25 22.0541L22.0541 25L12.5
+      15.446L2.94601 25L6.86646e-05 22.0541L9.55402 12.5L3.8147e-06 2.94595Z"></path>
+    </symbol>
+    <symbol id="paperclip" width="25" height="25" viewBox="0 0 25 25">
+      <g opacity="0.5">
+        <path d="M14.6144 4.96219L14.6144 4.96219C15.7855 3.79106 17.6923 3.79106 18.8634 4.96219L19.217 4.60864L18.8634
+        4.96219C20.0345 6.13333 20.0345 8.04009 18.8634 9.21122L10.3453 17.7293L10.3453 17.7293C10.2022 17.8725 9.96996
+        17.8725 9.82673 17.7293C9.68352 17.5861 9.68352 17.3539 9.82673 17.2107L18.3448 8.69257C19.2306 7.80677 19.2306
+         6.36659 18.3448 5.48079C17.9165 5.05247 17.3446 4.81559 16.7389 4.81559C16.1333 4.81559 15.5613 5.05244 15.133
+         5.48079C15.133 5.4808 15.133 5.48081 15.133 5.48082L3.55258 17.0612C2.02079 18.593 2.02079 21.0844 3.55258
+         22.6161L3.55259 22.6162C4.29384 23.3573 5.28182 23.7666 6.33003 23.7666C7.37822 23.7666 8.36627 23.3573
+         9.10748 22.6161L20.9597 10.7639C22.0139 9.70974 22.5954 8.30573 22.5954 6.81494C22.5954 5.32414 22.0139
+         3.92013 20.9597 2.86598C18.7819 0.688148 15.2395 0.688214 13.0618 2.86598L4.27189 11.6558L4.27186
+         11.6558C4.12872 11.799 3.89653 11.799 3.75329 11.6558C3.61008 11.5126 3.61008 11.2804 3.75329 11.1372L12.5432
+         2.34733C15.0063 -0.115777 19.0152 -0.115777 21.4783 2.34733L21.8319 1.99378L21.4783 2.34734C22.6724 3.54132
+         23.3289 5.12635 23.3289 6.81494C23.3289 8.50351 22.6724 10.0885 21.4783 11.2825L9.62607 23.1347L9.62606
+         23.1347C8.74502 24.0158 7.57608 24.5 6.33003 24.5C5.08399 24.5 3.91503 24.0158 3.03398 23.1347C1.21686
+         21.3176 1.21686 18.3598 3.03398 16.5426L14.6144 4.96219Z" stroke="#474747"></path>
+      </g>
+    </symbol>
+    <symbol id="vk" width="30" height="18" viewBox="0 0 30 18">
+      <path d="M26.5996 7.5978C27.0262 7.04631 27.3649 6.60381 27.615 6.26996C29.4164 3.87497 30.1972 2.34504 29.9579
+      1.67802L29.864 1.5218C29.8016 1.42797 29.6399 1.3418 29.3798 1.26381C29.1194 1.18587 28.7862 1.17341 28.3803
+      1.22486L23.8819 1.25659C23.7778 1.24622 23.6736 1.24865 23.5694 1.26381C23.4653 1.27964 23.3977 1.29553 23.3663
+      1.31069C23.3349 1.32659 23.309 1.33932 23.2883 1.34969L23.2259 1.39658C23.1739 1.42763 23.1167 1.48246 23.0542
+      1.5608C22.9917 1.63908 22.9393 1.72981 22.8979 1.83429C22.4086 3.09417 21.8515 4.2658 21.2267 5.34878C20.8413
+      5.99444 20.4871 6.55456 20.1647 7.02771C19.8419 7.50194 19.5711 7.85067 19.3524 8.07412C19.1338 8.29796 18.9358
+      8.47796 18.7589 8.61288C18.5816 8.74875 18.4464 8.80567 18.353 8.78499C18.2591 8.7643 18.1705 8.74362 18.0874
+      8.72221C17.9415 8.62877 17.8242 8.50146 17.736 8.33972C17.6474 8.17872 17.5877 7.9755 17.5562 7.73063C17.5252
+      7.48611 17.5066 7.27506 17.5018 7.09776C17.4962 6.92086 17.499 6.67115 17.5097 6.34796C17.5201 6.0251 17.5252
+      5.80683 17.5252 5.69198C17.5252 5.2967 17.5331 4.867 17.5488 4.40347C17.5643 3.94029 17.5774 3.57296 17.5877
+      3.30218C17.5981 3.03178 17.6032 2.74516 17.6032 2.44304C17.6032 2.1416 17.5849 1.90428 17.5482 1.73223C17.5117
+      1.5608 17.4569 1.39421 17.3845 1.23247C17.3114 1.07141 17.2048 0.946187 17.064 0.857935C16.9234 0.769288 16.7491
+      0.699294 16.5409 0.646828C15.9887 0.521606 15.2858 0.454712 14.4322 0.443723C12.4953 0.423717 11.2509 0.548544
+      10.6991 0.818937C10.4804 0.933789 10.2824 1.08967 10.1055 1.28764C9.91791 1.51701 9.89204 1.64218 10.0276
+      1.66218C10.6525 1.75601 11.0947 1.98019 11.3551 2.33405L11.4489 2.52132C11.5217 2.65719 11.5945 2.89659 11.6676
+      3.24007C11.7404 3.58362 11.7873 3.96368 11.8083 4.38031C11.8604 5.14043 11.8604 5.79094 11.8083 6.3328C11.7562
+      6.8746 11.7069 7.29608 11.66 7.59752C11.6131 7.89964 11.5427 8.14417 11.4493 8.33144C11.3554 8.51938 11.293
+      8.6339 11.2616 8.6756C11.2303 8.71697 11.2044 8.74317 11.1837 8.7536C11.0482 8.80533 10.9078 8.83154 10.7619
+      8.83154C10.616 8.83154 10.4391 8.75839 10.2308 8.61248C10.0224 8.46731 9.80621 8.26657 9.58271 8.01134C9.35853
+      7.7565 9.10639 7.39955 8.82496 6.94115C8.54386 6.48349 8.25205 5.94164 7.95027 5.31705L7.70056 4.86384C7.54434
+      4.57276 7.33081 4.14818 7.06008 3.59117C6.78935 3.03415 6.54961 2.49545 6.34166 1.97433C6.2582 1.75601 6.13331
+      1.58943 5.96678 1.47457L5.88885 1.42769C5.83677 1.38627 5.75331 1.3418 5.6388 1.2952C5.52394 1.24831 5.40464
+      1.21449 5.27942 1.19347L0.99963 1.22453C0.562313 1.22453 0.265715 1.32388 0.109498 1.5218L0.0470567 1.61529C0.0154977
+      1.6677 0 1.75117 0 1.86534C0 1.98019 0.0313899 2.12058 0.0938315 2.28682C0.718755 3.75539 1.39823 5.17154 2.13215
+      6.53523C2.86646 7.89964 3.50417 8.99846 4.04563 9.83139C4.58709 10.665 5.13893 11.4506 5.70146 12.1901C6.264 12.9295
+       6.63612 13.403 6.8182 13.611C7.00028 13.8197 7.14343 13.976 7.24763 14.0797L7.63806 14.455C7.88777 14.7047 8.25509
+       15.004 8.73935 15.3531C9.22356 15.7021 9.75955 16.0456 10.3483 16.3837C10.9364 16.7224 11.6213 16.9979 12.4021
+       17.2117C13.183 17.4256 13.9431 17.5114 14.6825 17.4693H16.4788C16.8434 17.4383 17.1192 17.3242 17.3065 17.1258L17.3689
+       17.0479C17.4103 16.9858 17.4496 16.8892 17.4861 16.7592C17.5224 16.6291 17.5411 16.4857 17.5411 16.3298C17.5303
+       15.8821 17.5645 15.4779 17.6425 15.1192C17.7204 14.7598 17.809 14.4894 17.9081 14.3067C18.007 14.1249 18.1187
+       13.9711 18.2439 13.8459C18.3688 13.7206 18.4571 13.6458 18.5095 13.6196C18.5616 13.5941 18.6034 13.5758 18.6344
+       13.5648C18.8841 13.4816 19.1783 13.5623 19.517 13.8069C19.8553 14.0521 20.173 14.3535 20.4699 14.7129C20.7665
+       15.0723 21.1231 15.4754 21.5398 15.9235C21.9561 16.3711 22.3206 16.7043 22.6331 16.9229L22.9456 17.1109C23.1538
+       17.2354 23.4242 17.3499 23.7578 17.4545C24.0909 17.5583 24.3827 17.5845 24.6324 17.5324L28.6311 17.4696C29.0267
+       17.4696 29.334 17.4048 29.5527 17.2744C29.7713 17.1451 29.9014 17.0009 29.9431 16.845C29.9845 16.6888 29.9873
+       16.5126 29.9511 16.3142C29.9146 16.1166 29.878 15.9786 29.8418 15.9007C29.8053 15.8228 29.7714 15.7572 29.74
+       15.7055C29.2193 14.7684 28.2249 13.6175 26.7566 12.2534L26.7253 12.2224L26.7098 12.2065L26.6943 12.1913H26.6786C26.0119
+       11.556 25.5904 11.129 25.4135 10.91C25.0907 10.4941 25.0176 10.0723 25.1949 9.64536C25.319 9.3216 25.7874 8.63942 26.5996 7.5978Z"></path>
+    </symbol>
+    <symbol id="facebook" width="25" height="25" viewBox="0 0 25 25">
+      <g>
+        <path d="M16.6635 4.15104H18.9458V0.176042C18.5521 0.121875 17.1979 0 15.6208 0C12.3302 0 10.076 2.06979
+        10.076 5.87396V9.375H6.44476V13.8187H10.076V25H14.5281V13.8198H18.0125L18.5656 9.37604H14.5271V6.31458C14.5281
+        5.03021 14.8739 4.15104 16.6635 4.15104Z"></path>
+      </g>
+    </symbol>
+    <symbol id="telegram" width="25" height="25" viewBox="0 0 25 25">
+      <g>
+        <path d="M9.80938 15.8136L9.39584 21.6303C9.9875 21.6303 10.2438 21.3761 10.551 21.0709L13.325 18.4199L19.0729
+        22.6293C20.1271 23.2168 20.8698 22.9074 21.1542 21.6595L24.9271 3.98031L24.9281 3.97926C25.2625 2.42093 24.3646
+        1.81156 23.3375 2.19385L1.16042 10.6845C-0.353123 11.272 -0.330206 12.1157 0.903127 12.498L6.57292 14.2616L19.7427
+        6.02093C20.3625 5.61051 20.926 5.8376 20.4625 6.24801L9.80938 15.8136Z"></path>
+      </g>
+    </symbol>
+    <symbol id="instagram" width="25" height="25" viewBox="0 0 25 25">
+      <g>
+        <path d="M24.9755 7.35007C24.9169 6.02172 24.7021 5.1085 24.3944 4.31717C24.0769 3.4772 23.5886 2.72518 22.9487
+        2.10002C22.3236 1.46513 21.5666 0.971793 20.7363 0.659308C19.9404 0.351593 19.032 0.136784 17.7036 0.0782166C16.3654
+        0.0146894 15.9405 0 12.5463 0C9.1521 0 8.72725 0.0146894 7.39394 0.0732565C6.0656 0.131824 5.15237 0.346824 4.36124
+        0.654348C3.52108 0.971793 2.76906 1.46017 2.1439 2.10002C1.50901 2.72518 1.01587 3.48216 0.703192 4.3124C0.395477
+        5.1085 0.180668 6.01676 0.122101 7.34511C0.0585737 8.68338 0.0438843 9.10822 0.0438843 12.5024C0.0438843 15.8967
+        0.0585737 16.3215 0.117141 17.6548C0.175708 18.9832 0.390708 19.8964 0.698423 20.6877C1.01587 21.5277 1.50901
+        22.2797 2.1439 22.9049C2.76906 23.5398 3.52604 24.0331 4.35628 24.3456C5.15237 24.6533 6.06064 24.8681 7.38917
+        24.9267C8.72229 24.9854 9.14733 24.9999 12.5415 24.9999C15.9358 24.9999 16.3606 24.9854 17.6939 24.9267C19.0223
+        24.8681 19.9355 24.6533 20.7266 24.3456C22.4067 23.696 23.7351 22.3677 24.3847 20.6877C24.6922 19.8916 24.9072
+        18.9832 24.9658 17.6548C25.0243 16.3215 25.039 15.8967 25.039 12.5024C25.039 9.10822 25.034 8.68338 24.9755
+        7.35007ZM22.7242 17.5571C22.6704 18.7781 22.4653 19.4374 22.2944 19.8769C21.8743 20.966 21.0099 21.8304 19.9208
+        22.2505C19.4813 22.4214 18.8172 22.6265 17.601 22.6801C16.2824 22.7389 15.8869 22.7534 12.5513 22.7534C9.21562
+        22.7534 8.81519 22.7389 7.50135 22.6801C6.28041 22.6265 5.6211 22.4214 5.18156 22.2505C4.63958 22.0502 4.14624
+        21.7328 3.74581 21.3176C3.33069 20.9123 3.01325 20.4239 2.81294 19.8819C2.64201 19.4424 2.43693 18.7781 2.38332
+        17.5621C2.32456 16.2435 2.31006 15.8478 2.31006 12.5122C2.31006 9.17652 2.32456 8.77609 2.38332 7.46243C2.43693
+        6.24149 2.64201 5.58218 2.81294 5.14264C3.01325 4.60047 3.33069 4.10732 3.75077 3.7067C4.15597 3.29158 4.64435
+        2.97414 5.18652 2.77402C5.62606 2.60309 6.29033 2.39801 7.50631 2.34421C8.82492 2.28564 9.22058 2.27095 12.556
+        2.27095C15.8966 2.27095 16.2921 2.28564 17.606 2.34421C18.8269 2.39801 19.4862 2.60309 19.9257 2.77402C20.4677
+        2.97414 20.9611 3.29158 21.3615 3.7067C21.7766 4.11209 22.0941 4.60047 22.2944 5.14264C22.4653 5.58218 22.6704
+        6.24626 22.7242 7.46243C22.7827 8.78105 22.7974 9.17652 22.7974 12.5122C22.7974 15.8478 22.7827 16.2385 22.7242
+        17.5571Z"></path>
+        <path d="M12.5464 6.08032C9.00086 6.08032 6.12421 8.95678 6.12421 12.5025C6.12421 16.0482 9.00086 18.9246
+        12.5464 18.9246C16.092 18.9246 18.9685 16.0482 18.9685 12.5025C18.9685 8.95678 16.092 6.08032 12.5464
+        6.08032ZM12.5464 16.6684C10.2462 16.6684 8.38047 14.8028 8.38047 12.5025C8.38047 10.2021 10.2462 8.33658 12.5464
+        8.33658C14.8467 8.33658 16.7122 10.2021 16.7122 12.5025C16.7122 14.8028 14.8467 16.6684 12.5464 16.6684Z"></path>
+        <path d="M20.7219 5.82643C20.7219 6.65438 20.0506 7.32571 19.2224 7.32571C18.3945 7.32571 17.7231 6.65438
+        17.7231 5.82643C17.7231 4.99829 18.3945 4.32715 19.2224 4.32715C20.0506 4.32715 20.7219 4.99829 20.7219 5.82643Z"></path>
+      </g>
+    </symbol>
+    <symbol id="quotes" width="34" height="25" viewBox="0 0 34 25">
+      <path d="M18.7 14.98C18.6067 11.8533 19.7267 8.86666 22.06 6.02C24.44 3.12666 27.24 1.26 30.46 0.42C31.3 0.186664 31.8833 0.373329 32.21 0.979997L33.4 2.73C33.82 3.43 33.7033 3.99 33.05 4.41C30.9033 5.85667 29.5733 7.02333 29.06 7.91C28.7333 8.51667 28.57 9.1 28.57 9.66C28.57 10.36 28.8267 10.99 29.34 11.55C29.9 12.0633 30.5067 12.4833 31.16 12.81C31.8133 13.1367 32.3967 13.7433 32.91 14.63C33.47 15.47 33.75 16.5433 33.75 17.85C33.75 19.7633 33.0967 21.3267 31.79 22.54C30.53 23.7067 28.8733 24.29 26.82 24.29C24.2067 24.29 22.2233 23.4733 20.87 21.84C19.5167 20.2067 18.7933 17.92 18.7 14.98ZM0.5 14.98C0.406667 11.8533 1.52667 8.86666 3.86 6.02C6.24 3.12666 9.04 1.26 12.26 0.42C13.1 0.186664 13.6833 0.373329 14.01 0.979997L15.2 2.73C15.62 3.43 15.5033 3.99 14.85 4.41C12.7033 5.85667 11.3733 7.02333 10.86 7.91C10.5333 8.51667 10.37 9.1 10.37 9.66C10.37 10.36 10.6267 10.99 11.14 11.55C11.7 12.0633 12.3067 12.4833 12.96 12.81C13.6133 13.1367 14.1967 13.7433 14.71 14.63C15.27 15.47 15.55 16.5433 15.55 17.85C15.55 19.7633 14.8967 21.3267 13.59 22.54C12.33 23.7067 10.6733 24.29 8.62 24.29C6.00667 24.29 4.02333 23.4733 2.67 21.84C1.31667 20.2067 0.593333 17.92 0.5 14.98Z"
+            fill="#FF961B"></path>
+    </symbol>
+    <symbol id="arrow" width="15" height="20" viewBox="0 0 15 20">
+      <path d="M8.16322 0.71395C7.7727 0.323426 7.13953 0.323426 6.74901 0.71395L0.385047 7.07791C-0.0054774 7.46844 -0.00547735 8.1016 0.385047 8.49213C0.775571 8.88265 1.40874 8.88265 1.79926 8.49212L7.45611 2.83527L13.113 8.49212C13.5035 8.88265 14.1367 8.88265 14.5272 8.49212C14.9177 8.1016 14.9177 7.46843 14.5272 7.07791L8.16322 0.71395ZM8.45612 19.6667L8.45611 1.42106L6.45611 1.42106L6.45612 19.6667L8.45612 19.6667Z"
+            fill="#FF8A00"></path>
+    </symbol>
+  </svg>
 </div>
 
-<div id="btn-activate--new" class="modal">
-  <div class="help-dialog-content">
-    <div class="modal-close"></div>
-    <div class="help-text">
-      <h2>New Quicken member</h2>
-      <ol>
-        <li>Download Quicken on this computer.</li>
-        <li>Save the file to your desktop. <strong>Do not change the filename.</strong></li>
-        <li>Double-click the file icon to start the installation once download completed.</li>
-        <li>When prompted, follow the on-screen instructions to get your Quicken setup.</li>
-      </ol>
-      <p class="disclaimer">By clicking the download button, you agree to our <a href="/terms-of-use">Terms</a> & <a href="/privacy">Privacy Policy.</a></p>
-      <div class="btn-links">
-        <a class="btn" href="/"><i class="icon-btn-win"></i>Download for Windows</a>
-        <a class="btn" href="/"><i class="icon-btn-apple"></i>Download for Mac</a>
+<div class="page page-sticky-navbar">
+  <nav class="navbar navbar-expand-navbar navbar-light">
+    <div class="navbar-container container-fluid">
+      <div class="navbar-left-container">
+        <a class="navbar-brand" href="index.html">
+          <span class="sr-only">Quicken</span>
+        </a>
       </div>
+
+      <ul class="header-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="compare.html">Prices</a></li>
+        <li><a href="about-us.html">About us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="region region-header">
+    <div id="tabs">
+
+      <h1 class="activate-title">Welcome to Quicken</h1>
+      <img src="img/activate-laptop.png" alt="" class="activate-img">
+      <h2 class="activate-title">Thank you for download, further registration will occur after the installation is complete</h2>
     </div>
   </div>
-</div>
 
-<div id="btn-activate--renewing" class="modal">
-  <div class="help-dialog-content">
-    <div class="modal-close"></div>
-    <div class="help-text">
-      <h2>Renew/change membership</h2>
-      <ol>
-        <li>Launch Quicken on your Windows or Mac computer.</li>
-        <li>
-          Select <strong>‘Help’</strong> and from the menu select <strong>‘Enter
-            Activation Code’</strong> … to continue.
-          <ul>
-            <li>
-              If you don’t see the 'Enter Activation Code…' option, then -
-              <ul>
-                <li>
-                  Download and install the latest version -<br>
-                  <a href="/">Download for Windows</a> |
-                  <a href="/">Download for Mac</a>
-                </li>
-                <li>
-                  Install, sign in and when prompted, follow the on-screen
-                  instructions to get your Quicken setup.
-                </li>
-              </ul>
+
+  <footer id="footer" class="footer-main">
+    <div class="footer-menu-container container">
+      <div class="row">
+        <div class="footer-bottom">
+
+          <ul class="social">
+            <li class="social__item">
+              <a class="social-link" href="#">
+                <svg>
+                  <use xlink:href="#instagram"></use>
+                </svg>
+                Мы в Телеграм
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social-link" href="#">
+                <svg>
+                  <use xlink:href="#facebook"></use>
+                </svg>
+                Мы в Фейсбуке
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social-link" href="#">
+                <svg>
+                  <use xlink:href="#telegram"></use>
+                </svg>
+                Мы в Инстаграме
+              </a>
+            </li>
+            <li class="social__item social--vk">
+              <a class="social-link" href="#">
+                <svg>
+                  <use xlink:href="#vk"></use>
+                </svg>
+                Мы в Вконтакте
+              </a>
             </li>
           </ul>
-        </li>
-        <li>Enter your <strong>16-digit one-time-use activation code</strong>
-          seen on your activation card.
-        </li>
-      </ol>
-    </div>
-  </div>
-</div>
 
-<div id="btn-activate--another" class="modal">
-  <div class="help-dialog-content">
-    <div class="modal-close"></div>
-    <div class="help-text">
-      <h2>Installing on another computer</h2>
-      <ol>
-        <li>Download Quicken on this computer.</li>
-        <li>Save the file to your desktop. <strong>Do not change the filename.</strong></li>
-        <li>Double-click the file icon to start the installation once download completed.</li>
-        <li>When prompted, follow the on-screen instructions to get your Quicken setup.</li>
-        <li>Once Quicken is installed, use the same Quicken ID and password you used to sign in to your first computer.</li>
-      </ol>
-      <p class="disclaimer">By clicking the download button, you agree to our <a href="/terms-of-use">Terms</a> & <a href="/privacy">Privacy Policy.</a></p>
-      <div class="btn-links">
-        <a class="btn" href="/"><i class="icon-btn-win"></i>Download for Windows</a>
-        <a class="btn" href="/"><i class="icon-btn-apple"></i>Download for Mac</a>
+
+          <p class="novpromo-footer">† Limited time offer of 10% off the list price applies only to the
+            purchase of Quicken Deluxe, Premier, Home, Business &amp; Rental Property for the first year
+            only when you order directly from Quicken by September 30, 2021, 11:59 PM PST. Offer good for
+            new memberships only. Offer listed above cannot be combined with any other offers. Terms,
+            conditions, pricing, features, offers and service options subject to change without notice.</p>
+
+          <small class="copyright">
+            © 2020 Quicken Inc. All rights reserved. Quicken is a registered trademark of Intuit Inc., used
+            under license.
+          </small>
+          <small>
+            iPhone, iPod, iPad Touch are trademarks of Apple Inc., registered in the U.S. and other
+            countries. Android is a trademark of Google Inc.
+          </small>
+          <small>
+            Dropbox, PayPal, Yelp, and other parties’ marks are trademarks of their respective companies.
+          </small>
+          <small>
+            Terms, conditions, features, availability, pricing, fees, service and support options subject
+            change without notice.
+          </small>
+          <small>
+            Corporate Headquarters: 3760 Haven Avenue, Menlo Park, CA 94025
+          </small>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-  </div>
-</main>
 
- <!-- <script type="text/javascript" src="https://www.quicken.com/sites/default/files/js/js_-mK80O1nXCytSIfEvxDCeC8dVArIFHksNtCKLaJKW-s.js"></script>
-<script type="text/javascript" src="https://www.quicken.com/sites/default/files/js/js_YH3GXaQIcTDjJSx3oPjobkCK9JYZRcqFhMBh8EBvgsI.js"></script>
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"4c035afe33","applicationID":"158560502","transactionName":"NQEEMEBTWBVUWkFZWAxLJwdGW1kIGkhAWVQJAQg7U1FCD0NYQVlYDDsHB0ZbQAdBXGpTVg4IBAVRWQ==","queueTime":0,"applicationTime":199,"atts":"GUYHRghJSxs=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script>
--->
+    </div>
+  </footer>
+
+</div>
 </body>
 </html>

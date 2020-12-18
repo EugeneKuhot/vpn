@@ -1,82 +1,1484 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#" dir="ltr" 
-  xmlns:og="http://ogp.me/ns#"
-  xmlns:article="http://ogp.me/ns/article#"
-  xmlns:book="http://ogp.me/ns/book#"
-  xmlns:profile="http://ogp.me/ns/profile#"
-  xmlns:video="http://ogp.me/ns/video#"
-  xmlns:product="http://ogp.me/ns/product#"
-  xmlns:content="http://purl.org/rss/1.0/modules/content/"
-  xmlns:dc="http://purl.org/dc/terms/"
-  xmlns:foaf="http://xmlns.com/foaf/0.1/"
-  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:sioc="http://rdfs.org/sioc/ns#"
-  xmlns:sioct="http://rdfs.org/sioc/types#"
-  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-  xmlns:schema="http://schema.org/">
+<html prefix="og: http://ogp.me/ns#" dir="ltr"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:article="http://ogp.me/ns/article#"
+      xmlns:book="http://ogp.me/ns/book#"
+      xmlns:profile="http://ogp.me/ns/profile#"
+      xmlns:video="http://ogp.me/ns/video#"
+      xmlns:product="http://ogp.me/ns/product#"
+      xmlns:content="http://purl.org/rss/1.0/modules/content/"
+      xmlns:dc="http://purl.org/dc/terms/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:sioc="http://rdfs.org/sioc/ns#"
+      xmlns:sioct="http://rdfs.org/sioc/types#"
+      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+      xmlns:schema="http://schema.org/">
 
 <head profile="http://www.w3.org/1999/xhtml/vocab">
-  <script>
-    var QuickenGlobal = {};
-    QuickenGlobal.start_page_time = Date.now();
-  </script>
-  <script type="text/javascript" src="/sites/all/modules/custom/quicken_global/js/quicken_redirect.js"></script>
-<script type="text/javascript" src="https://www.googleoptimize.com/optimize.js?id=GTM-WN2PN6L"></script>
-<script type="text/javascript" src="https://cdn.optimizely.com/js/5465611416.js"></script>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQUCUVFVARABUVlXAQECVlY=",licenseKey:"4c035afe33",applicationID:"158560502"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var i,o=t("ee"),a=t(23),c={};try{i=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,i.indexOf("dev")!==-1&&(c.dev=!0),i.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&o.on("internal-error",function(t){r(t.stack)}),c.dev&&o.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{p?p-=1:i(c||new UncaughtException(t,e,n),!0)}catch(f){try{o("ierr",[f,s.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function i(t,e){var n=e?null:s.now();o("err",[t,n])}var o=t("handle"),a=t(24),c=t("ee"),s=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(9),t(8),"addEventListener"in window&&t(5),s.xhrWrappable&&t(10),d=!0)}c.on("fn-start",function(t,e,n){d&&(p+=1)}),c.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,i(n))}),c.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),c.on("internal-error",function(t){o("ierr",[t,s.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var i=t("ee"),o=t("handle"),a=t(9),c=t(8),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",g="pushState",y=t("loader");y.features.stn=!0,t(7),"addEventListener"in window&&t(5);var x=NREUM.o.EV;i.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),i.on(w,function(t,e){var n=t[0];n instanceof x&&o("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(w,function(t,e){o(v,[e,this.bstStart,y.now(),this.bstType])}),c.on(m,function(){this.bstStart=y.now()}),c.on(w,function(t,e){o(v,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),i.on(g+p,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),i.on(g+h,function(t){o("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){o(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){o(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&i(e)}function i(t){c.inPlace(t,[u,d],"-",o)}function o(t,e){return t[1]}var a=t("ee").get("events"),c=t("wrap-function")(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(i(window),i(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=o(arguments),e={};i.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var c=r.apply(this,t);return i.emit(n+"start",[t,a],c),c.then(function(t){return i.emit(n+"end",[null,t],c),t},function(t){throw i.emit(n+"end",[t],c),t})})}var i=t("ee").get("fetch"),o=t(24),a=t(23);e.exports=i;var c=window,s="fetch-",f=s+"body-",u=["arrayBuffer","blob","json","text","formData"],d=c.Request,l=c.Response,p=c.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(c,"fetch",s),i.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),i.emit(s+"done",[null,e],n)}else i.emit(s+"done",[t],n)}))},{}],7:[function(t,e,n){var r=t("ee").get("history"),i=t("wrap-function")(r);e.exports=r;var o=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;o&&o.pushState&&o.replaceState&&(a=o),i.inPlace(a,["pushState","replaceState"],"-")},{}],8:[function(t,e,n){var r=t("ee").get("raf"),i=t("wrap-function")(r),o="equestAnimationFrame";e.exports=r,i.inPlace(window,["r"+o,"mozR"+o,"webkitR"+o,"msR"+o],"raf-"),r.on("raf-start",function(t){t[0]=i(t[0],"fn-")})},{}],9:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function i(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var o=t("ee").get("timer"),a=t("wrap-function")(o),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=o,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),o.on(s+u,r),o.on(c+u,i)},{}],10:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function i(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",c)}function o(t){y.push(t),h&&(b?b.then(a):w?w(a):(E=-E,R.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(v,i,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),o(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!w&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],11:[function(t,e,n){function r(t){if(!c(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),w=Date.now(),v={spanId:h,traceId:m,timestamp:w};return(t.sameOrigin||s(t)&&l())&&(v.traceContextParentHeader=i(h,m),v.traceContextStateHeader=o(h,w,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&s(t)&&d())&&(v.newrelicHeader=a(h,m,w,n,r,f)),v}function i(t,e){return"00-"+e+"-"+t+"-01"}function o(t,e,n,r,i){var o=0,a="",c=1,s="",f="";return i+"@nr="+o+"-"+c+"-"+n+"-"+r+"-"+t+"-"+a+"-"+s+"-"+f+"-"+e}function a(t,e,n,r,i,o){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var c={v:[0,1],d:{ty:"Browser",ac:r,ap:i,id:t,tr:e,ti:n}};return o&&r!==o&&(c.d.tk=o),btoa(JSON.stringify(c))}function c(t){return f()&&s(t)}function s(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var i=h(n.allowed_origins[r]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(20),h=t(13);e.exports={generateTracePayload:r,shouldGenerateTrace:c}},{}],12:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):o(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime]))}}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=s(e),t.sameOrigin=t.parsedOrigin.sameOrigin}function o(t,e){t.params.status=e.status;var n=w(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(13),f=t(11).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(17),m=t(16),w=t(14),v=window.XMLHttpRequest;a.features.xhr=!0,t(10),t(6),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,t.addEventListener("load",function(n){o(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],i=this;if(n&&r){var o=m(r);o&&(n.txSize=o)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||i.loadCaptureCalled||(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<l;c++)e.addEventListener(d[c],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof v&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof v&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof v&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url&&(n=t[0].url),n&&(this.parsedOrigin=s(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=f(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if("string"==typeof t[0]){var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),e(o.headers,i)&&(this.dt=i),t.length>1?t[1]=o:t.push(o)}else t[0]&&t[0].headers&&e(t[0].headers,i)&&(this.dt=i)})}},{}],13:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,i={};e.href=t,i.port=e.port;var o=e.href.split("://");!i.port&&o[1]&&(i.port=o[1].split("/")[0].split("@").pop().split(":")[1]),i.port&&"0"!==i.port||(i.port="https"===o[0]?"443":"80"),i.hostname=e.hostname||n.hostname,i.pathname=e.pathname,i.protocol=o[0],"/"!==i.pathname.charAt(0)&&(i.pathname="/"+i.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,c=e.hostname===document.domain&&e.port===n.port;return i.sameOrigin=a&&(!e.hostname||c),"/"===i.pathname&&(r[t]=i),i}},{}],14:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?i(t.response):"text"===n||""===n||void 0===n?i(t.responseText):void 0}var i=t(16);e.exports=r},{}],15:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(23),c=t(24),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,e){u[e]=i(l+e,!0,"api")}),u.addPageAction=i(l+"addPageAction",!0),u.setCurrentRouteName=i(l+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(p+"tracer",[f.now(),t,n],r),function(){if(s.emit((i?"":"no-")+"fn-start",[f.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=i(p+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,f.now(),!1,e])}},{}],16:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],17:[function(t,e,n){var r=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(r=+i[1]),e.exports=r},{}],18:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(25);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],19:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof h&&!w){var e=Math.round(t.timeStamp),n={type:t.type};e<=l.now()?n.fid=l.now()-e:e>l.offset&&e<=Date.now()?(e-=l.offset,n.fid=l.now()-e):e=l.now(),w=!0,d("timing",["fi",e,n])}}function c(t){d("pageHide",[l.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var s,f,u,d=t("handle"),l=t("loader"),p=t(22),h=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(m){}f=new PerformanceObserver(i);try{f.observe({entryTypes:["largest-contentful-paint"]})}catch(m){}u=new PerformanceObserver(o);try{u.observe({type:"layout-shift",buffered:!0})}catch(m){}}if("addEventListener"in document){var w=!1,v=["click","keydown","mousedown","pointerdown","touchstart"];v.forEach(function(t){document.addEventListener(t,a,!1)})}p(c)}},{}],20:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var i,o="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<o.length;c++)i=o[c],"x"===i?a+=t().toString(16):"y"===i?(i=3&t()|8,a+=i.toString(16)):a+=i;return a}function i(){return a(16)}function o(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,i=window.crypto||window.msCrypto;i&&i.getRandomValues&&Uint8Array&&(n=i.getRandomValues(new Uint8Array(31)));for(var o=[],a=0;a<t;a++)o.push(e().toString(16));return o.join("")}e.exports={generateUuid:r,generateSpanId:i,generateTraceId:o}},{}],21:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,s=c.match(a);s&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=s[1])}e.exports={agent:i,version:o,match:r}},{}],22:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],23:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],24:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],25:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?s(t,c,o):o()}function n(n,r,i,o){if(!l.aborted||o){t&&t(n,r,i);for(var a=e(i),c=m(n),s=c.length,f=0;f<s;f++)c[f].apply(a,r);var d=u[y[n]];return d&&d.push([x,n,r,a]),a}}function p(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function w(t){return d[t]=d[t]||i(n)}function v(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var g={},y={},x={on:p,addEventListener:p,removeEventListener:h,emit:n,get:w,listeners:m,context:e,buffer:v,abort:a,aborted:!1};return x}function o(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(23),u={},d={},l=e.exports=i();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=x.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(g,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+x.offset],null,"api"),c("timing",["load",n]);var r=l.createElement("script");r.src="https://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+x.offset],null,"api")}var a=t(18),c=t("handle"),s=t(23),f=t("ee"),u=t(21),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},y=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),x=e.exports={offset:a.getLastTimestamp(),now:a,origin:v,features:{},xhrWrappable:y,userAgent:u};t(15),t(19),l[p]?(l[p]("DOMContentLoaded",o,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",i),d[h]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var b=0},{}],"wrap-function":[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var i=t("ee"),o=t(24),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,i){function nrWrapper(){var r,a,c,s;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,i],c])}u(e+"start",[r,a,i],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,i,o){i||(i="");var a,c,s,f="-"===i.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+i:i,o,c))}function u(n,r,i){if(!s||e){var o=s;s=!0;try{t.emit(n,r,i,e)}catch(a){l([a,n,r,i])}s=o}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var i in t)c.call(t,i)&&(e[i]=t[i]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=i),n.inPlace=f,n.flag=a,n}},{}]},{},["loader",2,12,4,3]);</script>
-<meta name="smartbanner:hide-ttl" content="3600000" />
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","url":"https://www.quicken.com/","name":"Quicken, Inc.","description":"For over three decades, Quicken has been providing the best money management software on the market. Get Quicken and take control of your finances today.","image":"https://www.quicken.com/sites/all/themes/custom/quicken_nessie/logo.svg","contactPoint":{"@type":"ContactPoint","telephone":"(650) 250-1900","contactType":"customer service","areaServed":"US","availableLanguage":"en"},"sameAs":["https://www.facebook.com/Quicken/","https://twitter.com/quicken","https://www.youtube.com/user/Quicken","https://www.linkedin.com/company/quicken-inc./","https://en.wikipedia.org/wiki/Quicken"],"brand":"Quicken","category":"budget, software, money management, personal finance"}</script>
-<meta name="smartbanner:hide-path" content="/" />
-<meta name="smartbanner:close-label" content="Close" />
-<meta name="smartbanner:enabled-platforms" content="android,ios" />
-<meta name="smartbanner:button-url-google" content="https://play.google.com/store/apps/details?id=com.quicken.acme&amp;hl=en_US" />
-<meta name="smartbanner:button-url-apple" content="https://apps.apple.com/us/app/simplifi-money-management/id1449777194" />
-<meta name="smartbanner:button" content="VIEW" />
-<meta name="smartbanner:icon-google" content="https://www.simplifimoney.com/assets/images/simplifiBug.svg" />
-<meta name="smartbanner:icon-apple" content="https://www.simplifimoney.com/assets/images/simplifiBug.svg" />
-<meta name="smartbanner:price-suffix-google" content=" - In Google Play" />
-<meta name="smartbanner:price-suffix-apple" content=" - On the App Store" />
-<meta name="smartbanner:price" content="FREE" />
-<meta name="smartbanner:author" content="Quicken Inc." />
-<meta name="smartbanner:title" content="Simplifi: Money Management" />
-<link rel="shortcut icon" href="https://www.quicken.com/sites/all/themes/custom/quicken_nessie/favicon.ico" type="image/vnd.microsoft.icon" />
-<meta name="description" content="Set, track &amp; reach your financial goals with Quicken money management software. Manage spending, budgets, investments, retirement &amp; more. Get Quicken and take control of your finances today." />
-<link rel="canonical" href="https://www.quicken.com/" />
-<link rel="shortlink" href="https://www.quicken.com/node/24690" />
-<meta property="og:site_name" content="Quicken" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.quicken.com/content/quicken-personal-finance-money-management-software" />
-<meta property="og:title" content="Quicken Personal Finance &amp; Money Management Software" />
-<meta property="og:description" content="For over three decades, Quicken has been providing the best money management software on the market. Get Quicken and take control of your finances today." />
-<meta property="og:updated_time" content="2020-12-02T09:59:35-05:00" />
-<meta property="og:image" content="https://www.quicken.com/sites/default/files/quicken-og-2020.png" />
-<meta property="article:published_time" content="2018-10-08T22:05:18-04:00" />
-<meta property="article:modified_time" content="2020-12-02T09:59:35-05:00" />
-  <title>Personal Finance & Money Management Software | Quicken</title>
-  <meta name="google-site-verification" content="aimRY5uwcPvD322yDUrebr8sAExlV02Q2nXwebbHoKI" />
-  <meta name="msvalidate.01" content="239FF3A92EF8861DD243D288C94D5D04" />
-  <meta name="msapplication-config" content="none" />
-  <!-- Prevents non href="tel:" numbers from appearing as phone numbers in iOS -->
-  <meta name = "format-detection" content = "telephone=no">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script type="text/javascript">
-    // Newrelic
-    window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:22,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:9,2:8,3:6,4:10,5:3,6:23,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:9,2:8,3:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],6:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:23,2:24,ee:"QJf3ax",gos:"7eSDFh"}],7:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:24,2:23,ee:"QJf3ax"}],8:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:24,2:23,ee:"QJf3ax"}],9:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:24,2:23,ee:"QJf3ax"}],10:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:6,2:24,ee:"QJf3ax"}],11:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:12,3:10,4:6,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],12:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],13:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:22,2:23,handle:"D5DuLP"}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=(t(2),window),f=c.document,u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:22,2:13,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],22:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],23:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],24:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:23,ee:"QJf3ax"}]},{},["G9z0Bl",4,11,5]);
-    ;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"9f7e91019b",applicationID:"5171401",sa:1,agent:"js-agent.newrelic.com/nr-632.min.js"}
-  </script>
-  <link type="text/css" rel="stylesheet" href="https://www.quicken.com/sites/default/files/css/css_Vts0XjaQXkIwBk9HNAoJwrvmmE9lw6S9oxqJuhh0OB0.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://www.quicken.com/sites/default/files/css/css_pJrjlTCQYxONS4cH7zbz6b5jUVNs6jJyg9rubORVZBw.css" media="screen" />
-<link type="text/css" rel="stylesheet" href="https://www.quicken.com/sites/default/files/css/css_-YxRSnND32tU0oakYWewrPRDVccpwGyqftm2Dg6wGTU.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://www.quicken.com/sites/default/files/css/css_rOCJtYSaoqEYaK45T1kQFz-lSjh9pX-xigkYYWHYPkE.css" media="all" />
-<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Source+Sans+Pro:300,400,600" media="all" />
-<link type="text/css" rel="stylesheet" href="https://www.quicken.com/sites/default/files/css/css_bHui80b8NzyEIpGH33eJb0p4UTTJMH17Yl7zn7TeySk.css" media="all" />
-    <link type="text/css" rel="stylesheet" href="css/style.css" />
-  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->    <!--[if lt IE 9]>
-  <script src="/sites/all/themes/custom/quicken_nessie/js/dist/html5shiv.js"></script>
-  <script src="/sites/all/themes/custom/quicken_nessie/js/dist/respond.js"></script>    <![endif]-->
+    <script>
+        var QuickenGlobal = {};
+        QuickenGlobal.start_page_time = Date.now();
+    </script>
+    <script type="text/javascript" src="/sites/all/modules/custom/quicken_global/js/quicken_redirect.js"></script>
+    <script type="text/javascript" src="https://www.googleoptimize.com/optimize.js?id=GTM-WN2PN6L"></script>
+    <script type="text/javascript" src="https://cdn.optimizely.com/js/5465611416.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript">(window.NREUM || (NREUM = {})).loader_config = {
+        xpid: "VQUCUVFVARABUVlXAQECVlY=",
+        licenseKey: "4c035afe33",
+        applicationID: "158560502"
+    };
+    window.NREUM || (NREUM = {}), __nr_require = function (t, e, n) {
+        function r(n) {
+            if (!e[n]) {
+                var i = e[n] = {exports: {}};
+                t[n][0].call(i.exports, function (e) {
+                    var i = t[n][1][e];
+                    return r(i || e)
+                }, i, i.exports)
+            }
+            return e[n].exports
+        }
+
+        if ("function" == typeof __nr_require) return __nr_require;
+        for (var i = 0; i < n.length; i++) r(n[i]);
+        return r
+    }({
+        1: [function (t, e, n) {
+            function r(t) {
+                try {
+                    c.console && console.log(t)
+                } catch (e) {
+                }
+            }
+
+            var i, o = t("ee"), a = t(23), c = {};
+            try {
+                i = localStorage.getItem("__nr_flags").split(","), console && "function" == typeof console.log && (c.console = !0, i.indexOf("dev") !== -1 && (c.dev = !0), i.indexOf("nr_dev") !== -1 && (c.nrDev = !0))
+            } catch (s) {
+            }
+            c.nrDev && o.on("internal-error", function (t) {
+                r(t.stack)
+            }), c.dev && o.on("fn-err", function (t, e, n) {
+                r(n.stack)
+            }), c.dev && (r("NR AGENT IN DEVELOPMENT MODE"), r("flags: " + a(c, function (t, e) {
+                return t
+            }).join(", ")))
+        }, {}], 2: [function (t, e, n) {
+            function r(t, e, n, r, c) {
+                try {
+                    p ? p -= 1 : i(c || new UncaughtException(t, e, n), !0)
+                } catch (f) {
+                    try {
+                        o("ierr", [f, s.now(), !0])
+                    } catch (d) {
+                    }
+                }
+                return "function" == typeof u && u.apply(this, a(arguments))
+            }
+
+            function UncaughtException(t, e, n) {
+                this.message = t || "Uncaught error with no additional information", this.sourceURL = e, this.line = n
+            }
+
+            function i(t, e) {
+                var n = e ? null : s.now();
+                o("err", [t, n])
+            }
+
+            var o = t("handle"), a = t(24), c = t("ee"), s = t("loader"), f = t("gos"), u = window.onerror, d = !1,
+                l = "nr@seenError", p = 0;
+            s.features.err = !0, t(1), window.onerror = r;
+            try {
+                throw new Error
+            } catch (h) {
+                "stack" in h && (t(9), t(8), "addEventListener" in window && t(5), s.xhrWrappable && t(10), d = !0)
+            }
+            c.on("fn-start", function (t, e, n) {
+                d && (p += 1)
+            }), c.on("fn-err", function (t, e, n) {
+                d && !n[l] && (f(n, l, function () {
+                    return !0
+                }), this.thrown = !0, i(n))
+            }), c.on("fn-end", function () {
+                d && !this.thrown && p > 0 && (p -= 1)
+            }), c.on("internal-error", function (t) {
+                o("ierr", [t, s.now(), !0])
+            })
+        }, {}], 3: [function (t, e, n) {
+            t("loader").features.ins = !0
+        }, {}], 4: [function (t, e, n) {
+            function r(t) {
+            }
+
+            if (window.performance && window.performance.timing && window.performance.getEntriesByType) {
+                var i = t("ee"), o = t("handle"), a = t(9), c = t(8), s = "learResourceTimings", f = "addEventListener",
+                    u = "resourcetimingbufferfull", d = "bstResource", l = "resource", p = "-start", h = "-end",
+                    m = "fn" + p, w = "fn" + h, v = "bstTimer", g = "pushState", y = t("loader");
+                y.features.stn = !0, t(7), "addEventListener" in window && t(5);
+                var x = NREUM.o.EV;
+                i.on(m, function (t, e) {
+                    var n = t[0];
+                    n instanceof x && (this.bstStart = y.now())
+                }), i.on(w, function (t, e) {
+                    var n = t[0];
+                    n instanceof x && o("bst", [n, e, this.bstStart, y.now()])
+                }), a.on(m, function (t, e, n) {
+                    this.bstStart = y.now(), this.bstType = n
+                }), a.on(w, function (t, e) {
+                    o(v, [e, this.bstStart, y.now(), this.bstType])
+                }), c.on(m, function () {
+                    this.bstStart = y.now()
+                }), c.on(w, function (t, e) {
+                    o(v, [e, this.bstStart, y.now(), "requestAnimationFrame"])
+                }), i.on(g + p, function (t) {
+                    this.time = y.now(), this.startPath = location.pathname + location.hash
+                }), i.on(g + h, function (t) {
+                    o("bstHist", [location.pathname + location.hash, this.startPath, this.time])
+                }), f in window.performance && (window.performance["c" + s] ? window.performance[f](u, function (t) {
+                    o(d, [window.performance.getEntriesByType(l)]), window.performance["c" + s]()
+                }, !1) : window.performance[f]("webkit" + u, function (t) {
+                    o(d, [window.performance.getEntriesByType(l)]), window.performance["webkitC" + s]()
+                }, !1)), document[f]("scroll", r, {passive: !0}), document[f]("keypress", r, !1), document[f]("click", r, !1)
+            }
+        }, {}], 5: [function (t, e, n) {
+            function r(t) {
+                for (var e = t; e && !e.hasOwnProperty(u);) e = Object.getPrototypeOf(e);
+                e && i(e)
+            }
+
+            function i(t) {
+                c.inPlace(t, [u, d], "-", o)
+            }
+
+            function o(t, e) {
+                return t[1]
+            }
+
+            var a = t("ee").get("events"), c = t("wrap-function")(a, !0), s = t("gos"), f = XMLHttpRequest,
+                u = "addEventListener", d = "removeEventListener";
+            e.exports = a, "getPrototypeOf" in Object ? (r(document), r(window), r(f.prototype)) : f.prototype.hasOwnProperty(u) && (i(window), i(f.prototype)), a.on(u + "-start", function (t, e) {
+                var n = t[1], r = s(n, "nr@wrapped", function () {
+                    function t() {
+                        if ("function" == typeof n.handleEvent) return n.handleEvent.apply(n, arguments)
+                    }
+
+                    var e = {object: t, "function": n}[typeof n];
+                    return e ? c(e, "fn-", null, e.name || "anonymous") : n
+                });
+                this.wrapped = t[1] = r
+            }), a.on(d + "-start", function (t) {
+                t[1] = this.wrapped || t[1]
+            })
+        }, {}], 6: [function (t, e, n) {
+            function r(t, e, n) {
+                var r = t[e];
+                "function" == typeof r && (t[e] = function () {
+                    var t = o(arguments), e = {};
+                    i.emit(n + "before-start", [t], e);
+                    var a;
+                    e[m] && e[m].dt && (a = e[m].dt);
+                    var c = r.apply(this, t);
+                    return i.emit(n + "start", [t, a], c), c.then(function (t) {
+                        return i.emit(n + "end", [null, t], c), t
+                    }, function (t) {
+                        throw i.emit(n + "end", [t], c), t
+                    })
+                })
+            }
+
+            var i = t("ee").get("fetch"), o = t(24), a = t(23);
+            e.exports = i;
+            var c = window, s = "fetch-", f = s + "body-", u = ["arrayBuffer", "blob", "json", "text", "formData"],
+                d = c.Request, l = c.Response, p = c.fetch, h = "prototype", m = "nr@context";
+            d && l && p && (a(u, function (t, e) {
+                r(d[h], e, f), r(l[h], e, f)
+            }), r(c, "fetch", s), i.on(s + "end", function (t, e) {
+                var n = this;
+                if (e) {
+                    var r = e.headers.get("content-length");
+                    null !== r && (n.rxSize = r), i.emit(s + "done", [null, e], n)
+                } else i.emit(s + "done", [t], n)
+            }))
+        }, {}], 7: [function (t, e, n) {
+            var r = t("ee").get("history"), i = t("wrap-function")(r);
+            e.exports = r;
+            var o = window.history && window.history.constructor && window.history.constructor.prototype,
+                a = window.history;
+            o && o.pushState && o.replaceState && (a = o), i.inPlace(a, ["pushState", "replaceState"], "-")
+        }, {}], 8: [function (t, e, n) {
+            var r = t("ee").get("raf"), i = t("wrap-function")(r), o = "equestAnimationFrame";
+            e.exports = r, i.inPlace(window, ["r" + o, "mozR" + o, "webkitR" + o, "msR" + o], "raf-"), r.on("raf-start", function (t) {
+                t[0] = i(t[0], "fn-")
+            })
+        }, {}], 9: [function (t, e, n) {
+            function r(t, e, n) {
+                t[0] = a(t[0], "fn-", null, n)
+            }
+
+            function i(t, e, n) {
+                this.method = n, this.timerDuration = isNaN(t[1]) ? 0 : +t[1], t[0] = a(t[0], "fn-", this, n)
+            }
+
+            var o = t("ee").get("timer"), a = t("wrap-function")(o), c = "setTimeout", s = "setInterval",
+                f = "clearTimeout", u = "-start", d = "-";
+            e.exports = o, a.inPlace(window, [c, "setImmediate"], c + d), a.inPlace(window, [s], s + d), a.inPlace(window, [f, "clearImmediate"], f + d), o.on(s + u, r), o.on(c + u, i)
+        }, {}], 10: [function (t, e, n) {
+            function r(t, e) {
+                d.inPlace(e, ["onreadystatechange"], "fn-", c)
+            }
+
+            function i() {
+                var t = this, e = u.context(t);
+                t.readyState > 3 && !e.resolved && (e.resolved = !0, u.emit("xhr-resolved", [], t)), d.inPlace(t, g, "fn-", c)
+            }
+
+            function o(t) {
+                y.push(t), h && (b ? b.then(a) : w ? w(a) : (E = -E, R.data = E))
+            }
+
+            function a() {
+                for (var t = 0; t < y.length; t++) r([], y[t]);
+                y.length && (y = [])
+            }
+
+            function c(t, e) {
+                return e
+            }
+
+            function s(t, e) {
+                for (var n in t) e[n] = t[n];
+                return e
+            }
+
+            t(5);
+            var f = t("ee"), u = f.get("xhr"), d = t("wrap-function")(u), l = NREUM.o, p = l.XHR, h = l.MO, m = l.PR,
+                w = l.SI, v = "readystatechange",
+                g = ["onload", "onerror", "onabort", "onloadstart", "onloadend", "onprogress", "ontimeout"], y = [];
+            e.exports = u;
+            var x = window.XMLHttpRequest = function (t) {
+                var e = new p(t);
+                try {
+                    u.emit("new-xhr", [e], e), e.addEventListener(v, i, !1)
+                } catch (n) {
+                    try {
+                        u.emit("internal-error", [n])
+                    } catch (r) {
+                    }
+                }
+                return e
+            };
+            if (s(p, x), x.prototype = p.prototype, d.inPlace(x.prototype, ["open", "send"], "-xhr-", c), u.on("send-xhr-start", function (t, e) {
+                r(t, e), o(e)
+            }), u.on("open-xhr-start", r), h) {
+                var b = m && m.resolve();
+                if (!w && !m) {
+                    var E = 1, R = document.createTextNode(E);
+                    new h(a).observe(R, {characterData: !0})
+                }
+            } else f.on("fn-end", function (t) {
+                t[0] && t[0].type === v || a()
+            })
+        }, {}], 11: [function (t, e, n) {
+            function r(t) {
+                if (!c(t)) return null;
+                var e = window.NREUM;
+                if (!e.loader_config) return null;
+                var n = (e.loader_config.accountID || "").toString() || null,
+                    r = (e.loader_config.agentID || "").toString() || null,
+                    f = (e.loader_config.trustKey || "").toString() || null;
+                if (!n || !r) return null;
+                var h = p.generateSpanId(), m = p.generateTraceId(), w = Date.now(),
+                    v = {spanId: h, traceId: m, timestamp: w};
+                return (t.sameOrigin || s(t) && l()) && (v.traceContextParentHeader = i(h, m), v.traceContextStateHeader = o(h, w, n, r, f)), (t.sameOrigin && !u() || !t.sameOrigin && s(t) && d()) && (v.newrelicHeader = a(h, m, w, n, r, f)), v
+            }
+
+            function i(t, e) {
+                return "00-" + e + "-" + t + "-01"
+            }
+
+            function o(t, e, n, r, i) {
+                var o = 0, a = "", c = 1, s = "", f = "";
+                return i + "@nr=" + o + "-" + c + "-" + n + "-" + r + "-" + t + "-" + a + "-" + s + "-" + f + "-" + e
+            }
+
+            function a(t, e, n, r, i, o) {
+                var a = "btoa" in window && "function" == typeof window.btoa;
+                if (!a) return null;
+                var c = {v: [0, 1], d: {ty: "Browser", ac: r, ap: i, id: t, tr: e, ti: n}};
+                return o && r !== o && (c.d.tk = o), btoa(JSON.stringify(c))
+            }
+
+            function c(t) {
+                return f() && s(t)
+            }
+
+            function s(t) {
+                var e = !1, n = {};
+                if ("init" in NREUM && "distributed_tracing" in NREUM.init && (n = NREUM.init.distributed_tracing), t.sameOrigin) e = !0; else if (n.allowed_origins instanceof Array) for (var r = 0; r < n.allowed_origins.length; r++) {
+                    var i = h(n.allowed_origins[r]);
+                    if (t.hostname === i.hostname && t.protocol === i.protocol && t.port === i.port) {
+                        e = !0;
+                        break
+                    }
+                }
+                return e
+            }
+
+            function f() {
+                return "init" in NREUM && "distributed_tracing" in NREUM.init && !!NREUM.init.distributed_tracing.enabled
+            }
+
+            function u() {
+                return "init" in NREUM && "distributed_tracing" in NREUM.init && !!NREUM.init.distributed_tracing.exclude_newrelic_header
+            }
+
+            function d() {
+                return "init" in NREUM && "distributed_tracing" in NREUM.init && NREUM.init.distributed_tracing.cors_use_newrelic_header !== !1
+            }
+
+            function l() {
+                return "init" in NREUM && "distributed_tracing" in NREUM.init && !!NREUM.init.distributed_tracing.cors_use_tracecontext_headers
+            }
+
+            var p = t(20), h = t(13);
+            e.exports = {generateTracePayload: r, shouldGenerateTrace: c}
+        }, {}], 12: [function (t, e, n) {
+            function r(t) {
+                var e = this.params, n = this.metrics;
+                if (!this.ended) {
+                    this.ended = !0;
+                    for (var r = 0; r < l; r++) t.removeEventListener(d[r], this.listener, !1);
+                    e.aborted || (n.duration = a.now() - this.startTime, this.loadCaptureCalled || 4 !== t.readyState ? null == e.status && (e.status = 0) : o(this, t), n.cbTime = this.cbTime, u.emit("xhr-done", [t], t), c("xhr", [e, n, this.startTime]))
+                }
+            }
+
+            function i(t, e) {
+                var n = s(e), r = t.params;
+                r.host = n.hostname + ":" + n.port, r.pathname = n.pathname, t.parsedOrigin = s(e), t.sameOrigin = t.parsedOrigin.sameOrigin
+            }
+
+            function o(t, e) {
+                t.params.status = e.status;
+                var n = w(e, t.lastSize);
+                if (n && (t.metrics.rxSize = n), t.sameOrigin) {
+                    var r = e.getResponseHeader("X-NewRelic-App-Data");
+                    r && (t.params.cat = r.split(", ").pop())
+                }
+                t.loadCaptureCalled = !0
+            }
+
+            var a = t("loader");
+            if (a.xhrWrappable) {
+                var c = t("handle"), s = t(13), f = t(11).generateTracePayload, u = t("ee"),
+                    d = ["load", "error", "abort", "timeout"], l = d.length, p = t("id"), h = t(17), m = t(16),
+                    w = t(14), v = window.XMLHttpRequest;
+                a.features.xhr = !0, t(10), t(6), u.on("new-xhr", function (t) {
+                    var e = this;
+                    e.totalCbs = 0, e.called = 0, e.cbTime = 0, e.end = r, e.ended = !1, e.xhrGuids = {}, e.lastSize = null, e.loadCaptureCalled = !1, t.addEventListener("load", function (n) {
+                        o(e, t)
+                    }, !1), h && (h > 34 || h < 10) || window.opera || t.addEventListener("progress", function (t) {
+                        e.lastSize = t.loaded
+                    }, !1)
+                }), u.on("open-xhr-start", function (t) {
+                    this.params = {method: t[0]}, i(this, t[1]), this.metrics = {}
+                }), u.on("open-xhr-end", function (t, e) {
+                    "loader_config" in NREUM && "xpid" in NREUM.loader_config && this.sameOrigin && e.setRequestHeader("X-NewRelic-ID", NREUM.loader_config.xpid);
+                    var n = f(this.parsedOrigin);
+                    if (n) {
+                        var r = !1;
+                        n.newrelicHeader && (e.setRequestHeader("newrelic", n.newrelicHeader), r = !0), n.traceContextParentHeader && (e.setRequestHeader("traceparent", n.traceContextParentHeader), n.traceContextStateHeader && e.setRequestHeader("tracestate", n.traceContextStateHeader), r = !0), r && (this.dt = n)
+                    }
+                }), u.on("send-xhr-start", function (t, e) {
+                    var n = this.metrics, r = t[0], i = this;
+                    if (n && r) {
+                        var o = m(r);
+                        o && (n.txSize = o)
+                    }
+                    this.startTime = a.now(), this.listener = function (t) {
+                        try {
+                            "abort" !== t.type || i.loadCaptureCalled || (i.params.aborted = !0), ("load" !== t.type || i.called === i.totalCbs && (i.onloadCalled || "function" != typeof e.onload)) && i.end(e)
+                        } catch (n) {
+                            try {
+                                u.emit("internal-error", [n])
+                            } catch (r) {
+                            }
+                        }
+                    };
+                    for (var c = 0; c < l; c++) e.addEventListener(d[c], this.listener, !1)
+                }), u.on("xhr-cb-time", function (t, e, n) {
+                    this.cbTime += t, e ? this.onloadCalled = !0 : this.called += 1, this.called !== this.totalCbs || !this.onloadCalled && "function" == typeof n.onload || this.end(n)
+                }), u.on("xhr-load-added", function (t, e) {
+                    var n = "" + p(t) + !!e;
+                    this.xhrGuids && !this.xhrGuids[n] && (this.xhrGuids[n] = !0, this.totalCbs += 1)
+                }), u.on("xhr-load-removed", function (t, e) {
+                    var n = "" + p(t) + !!e;
+                    this.xhrGuids && this.xhrGuids[n] && (delete this.xhrGuids[n], this.totalCbs -= 1)
+                }), u.on("addEventListener-end", function (t, e) {
+                    e instanceof v && "load" === t[0] && u.emit("xhr-load-added", [t[1], t[2]], e)
+                }), u.on("removeEventListener-end", function (t, e) {
+                    e instanceof v && "load" === t[0] && u.emit("xhr-load-removed", [t[1], t[2]], e)
+                }), u.on("fn-start", function (t, e, n) {
+                    e instanceof v && ("onload" === n && (this.onload = !0), ("load" === (t[0] && t[0].type) || this.onload) && (this.xhrCbStart = a.now()))
+                }), u.on("fn-end", function (t, e) {
+                    this.xhrCbStart && u.emit("xhr-cb-time", [a.now() - this.xhrCbStart, this.onload, e], e)
+                }), u.on("fetch-before-start", function (t) {
+                    function e(t, e) {
+                        var n = !1;
+                        return e.newrelicHeader && (t.set("newrelic", e.newrelicHeader), n = !0), e.traceContextParentHeader && (t.set("traceparent", e.traceContextParentHeader), e.traceContextStateHeader && t.set("tracestate", e.traceContextStateHeader), n = !0), n
+                    }
+
+                    var n, r = t[1] || {};
+                    "string" == typeof t[0] ? n = t[0] : t[0] && t[0].url && (n = t[0].url), n && (this.parsedOrigin = s(n), this.sameOrigin = this.parsedOrigin.sameOrigin);
+                    var i = f(this.parsedOrigin);
+                    if (i && (i.newrelicHeader || i.traceContextParentHeader)) if ("string" == typeof t[0]) {
+                        var o = {};
+                        for (var a in r) o[a] = r[a];
+                        o.headers = new Headers(r.headers || {}), e(o.headers, i) && (this.dt = i), t.length > 1 ? t[1] = o : t.push(o)
+                    } else t[0] && t[0].headers && e(t[0].headers, i) && (this.dt = i)
+                })
+            }
+        }, {}], 13: [function (t, e, n) {
+            var r = {};
+            e.exports = function (t) {
+                if (t in r) return r[t];
+                var e = document.createElement("a"), n = window.location, i = {};
+                e.href = t, i.port = e.port;
+                var o = e.href.split("://");
+                !i.port && o[1] && (i.port = o[1].split("/")[0].split("@").pop().split(":")[1]), i.port && "0" !== i.port || (i.port = "https" === o[0] ? "443" : "80"), i.hostname = e.hostname || n.hostname, i.pathname = e.pathname, i.protocol = o[0], "/" !== i.pathname.charAt(0) && (i.pathname = "/" + i.pathname);
+                var a = !e.protocol || ":" === e.protocol || e.protocol === n.protocol,
+                    c = e.hostname === document.domain && e.port === n.port;
+                return i.sameOrigin = a && (!e.hostname || c), "/" === i.pathname && (r[t] = i), i
+            }
+        }, {}], 14: [function (t, e, n) {
+            function r(t, e) {
+                var n = t.responseType;
+                return "json" === n && null !== e ? e : "arraybuffer" === n || "blob" === n || "json" === n ? i(t.response) : "text" === n || "" === n || void 0 === n ? i(t.responseText) : void 0
+            }
+
+            var i = t(16);
+            e.exports = r
+        }, {}], 15: [function (t, e, n) {
+            function r() {
+            }
+
+            function i(t, e, n) {
+                return function () {
+                    return o(t, [f.now()].concat(c(arguments)), e ? null : this, n), e ? void 0 : this
+                }
+            }
+
+            var o = t("handle"), a = t(23), c = t(24), s = t("ee").get("tracer"), f = t("loader"), u = NREUM;
+            "undefined" == typeof window.newrelic && (newrelic = u);
+            var d = ["setPageViewName", "setCustomAttribute", "setErrorHandler", "finished", "addToTrace", "inlineHit", "addRelease"],
+                l = "api-", p = l + "ixn-";
+            a(d, function (t, e) {
+                u[e] = i(l + e, !0, "api")
+            }), u.addPageAction = i(l + "addPageAction", !0), u.setCurrentRouteName = i(l + "routeName", !0), e.exports = newrelic, u.interaction = function () {
+                return (new r).get()
+            };
+            var h = r.prototype = {
+                createTracer: function (t, e) {
+                    var n = {}, r = this, i = "function" == typeof e;
+                    return o(p + "tracer", [f.now(), t, n], r), function () {
+                        if (s.emit((i ? "" : "no-") + "fn-start", [f.now(), r, i], n), i) try {
+                            return e.apply(this, arguments)
+                        } catch (t) {
+                            throw s.emit("fn-err", [arguments, this, t], n), t
+                        } finally {
+                            s.emit("fn-end", [f.now()], n)
+                        }
+                    }
+                }
+            };
+            a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","), function (t, e) {
+                h[e] = i(p + e)
+            }), newrelic.noticeError = function (t, e) {
+                "string" == typeof t && (t = new Error(t)), o("err", [t, f.now(), !1, e])
+            }
+        }, {}], 16: [function (t, e, n) {
+            e.exports = function (t) {
+                if ("string" == typeof t && t.length) return t.length;
+                if ("object" == typeof t) {
+                    if ("undefined" != typeof ArrayBuffer && t instanceof ArrayBuffer && t.byteLength) return t.byteLength;
+                    if ("undefined" != typeof Blob && t instanceof Blob && t.size) return t.size;
+                    if (!("undefined" != typeof FormData && t instanceof FormData)) try {
+                        return JSON.stringify(t).length
+                    } catch (e) {
+                        return
+                    }
+                }
+            }
+        }, {}], 17: [function (t, e, n) {
+            var r = 0, i = navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);
+            i && (r = +i[1]), e.exports = r
+        }, {}], 18: [function (t, e, n) {
+            function r() {
+                return c.exists && performance.now ? Math.round(performance.now()) : (o = Math.max((new Date).getTime(), o)) - a
+            }
+
+            function i() {
+                return o
+            }
+
+            var o = (new Date).getTime(), a = o, c = t(25);
+            e.exports = r, e.exports.offset = a, e.exports.getLastTimestamp = i
+        }, {}], 19: [function (t, e, n) {
+            function r(t, e) {
+                var n = t.getEntries();
+                n.forEach(function (t) {
+                    "first-paint" === t.name ? d("timing", ["fp", Math.floor(t.startTime)]) : "first-contentful-paint" === t.name && d("timing", ["fcp", Math.floor(t.startTime)])
+                })
+            }
+
+            function i(t, e) {
+                var n = t.getEntries();
+                n.length > 0 && d("lcp", [n[n.length - 1]])
+            }
+
+            function o(t) {
+                t.getEntries().forEach(function (t) {
+                    t.hadRecentInput || d("cls", [t])
+                })
+            }
+
+            function a(t) {
+                if (t instanceof h && !w) {
+                    var e = Math.round(t.timeStamp), n = {type: t.type};
+                    e <= l.now() ? n.fid = l.now() - e : e > l.offset && e <= Date.now() ? (e -= l.offset, n.fid = l.now() - e) : e = l.now(), w = !0, d("timing", ["fi", e, n])
+                }
+            }
+
+            function c(t) {
+                d("pageHide", [l.now(), t])
+            }
+
+            if (!("init" in NREUM && "page_view_timing" in NREUM.init && "enabled" in NREUM.init.page_view_timing && NREUM.init.page_view_timing.enabled === !1)) {
+                var s, f, u, d = t("handle"), l = t("loader"), p = t(22), h = NREUM.o.EV;
+                if ("PerformanceObserver" in window && "function" == typeof window.PerformanceObserver) {
+                    s = new PerformanceObserver(r);
+                    try {
+                        s.observe({entryTypes: ["paint"]})
+                    } catch (m) {
+                    }
+                    f = new PerformanceObserver(i);
+                    try {
+                        f.observe({entryTypes: ["largest-contentful-paint"]})
+                    } catch (m) {
+                    }
+                    u = new PerformanceObserver(o);
+                    try {
+                        u.observe({type: "layout-shift", buffered: !0})
+                    } catch (m) {
+                    }
+                }
+                if ("addEventListener" in document) {
+                    var w = !1, v = ["click", "keydown", "mousedown", "pointerdown", "touchstart"];
+                    v.forEach(function (t) {
+                        document.addEventListener(t, a, !1)
+                    })
+                }
+                p(c)
+            }
+        }, {}], 20: [function (t, e, n) {
+            function r() {
+                function t() {
+                    return e ? 15 & e[n++] : 16 * Math.random() | 0
+                }
+
+                var e = null, n = 0, r = window.crypto || window.msCrypto;
+                r && r.getRandomValues && (e = r.getRandomValues(new Uint8Array(31)));
+                for (var i, o = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx", a = "", c = 0; c < o.length; c++) i = o[c], "x" === i ? a += t().toString(16) : "y" === i ? (i = 3 & t() | 8, a += i.toString(16)) : a += i;
+                return a
+            }
+
+            function i() {
+                return a(16)
+            }
+
+            function o() {
+                return a(32)
+            }
+
+            function a(t) {
+                function e() {
+                    return n ? 15 & n[r++] : 16 * Math.random() | 0
+                }
+
+                var n = null, r = 0, i = window.crypto || window.msCrypto;
+                i && i.getRandomValues && Uint8Array && (n = i.getRandomValues(new Uint8Array(31)));
+                for (var o = [], a = 0; a < t; a++) o.push(e().toString(16));
+                return o.join("")
+            }
+
+            e.exports = {generateUuid: r, generateSpanId: i, generateTraceId: o}
+        }, {}], 21: [function (t, e, n) {
+            function r(t, e) {
+                if (!i) return !1;
+                if (t !== i) return !1;
+                if (!e) return !0;
+                if (!o) return !1;
+                for (var n = o.split("."), r = e.split("."), a = 0; a < r.length; a++) if (r[a] !== n[a]) return !1;
+                return !0
+            }
+
+            var i = null, o = null, a = /Version\/(\S+)\s+Safari/;
+            if (navigator.userAgent) {
+                var c = navigator.userAgent, s = c.match(a);
+                s && c.indexOf("Chrome") === -1 && c.indexOf("Chromium") === -1 && (i = "Safari", o = s[1])
+            }
+            e.exports = {agent: i, version: o, match: r}
+        }, {}], 22: [function (t, e, n) {
+            function r(t) {
+                function e() {
+                    t(a && document[a] ? document[a] : document[i] ? "hidden" : "visible")
+                }
+
+                "addEventListener" in document && o && document.addEventListener(o, e, !1)
+            }
+
+            e.exports = r;
+            var i, o, a;
+            "undefined" != typeof document.hidden ? (i = "hidden", o = "visibilitychange", a = "visibilityState") : "undefined" != typeof document.msHidden ? (i = "msHidden", o = "msvisibilitychange") : "undefined" != typeof document.webkitHidden && (i = "webkitHidden", o = "webkitvisibilitychange", a = "webkitVisibilityState")
+        }, {}], 23: [function (t, e, n) {
+            function r(t, e) {
+                var n = [], r = "", o = 0;
+                for (r in t) i.call(t, r) && (n[o] = e(r, t[r]), o += 1);
+                return n
+            }
+
+            var i = Object.prototype.hasOwnProperty;
+            e.exports = r
+        }, {}], 24: [function (t, e, n) {
+            function r(t, e, n) {
+                e || (e = 0), "undefined" == typeof n && (n = t ? t.length : 0);
+                for (var r = -1, i = n - e || 0, o = Array(i < 0 ? 0 : i); ++r < i;) o[r] = t[e + r];
+                return o
+            }
+
+            e.exports = r
+        }, {}], 25: [function (t, e, n) {
+            e.exports = {exists: "undefined" != typeof window.performance && window.performance.timing && "undefined" != typeof window.performance.timing.navigationStart}
+        }, {}], ee: [function (t, e, n) {
+            function r() {
+            }
+
+            function i(t) {
+                function e(t) {
+                    return t && t instanceof r ? t : t ? s(t, c, o) : o()
+                }
+
+                function n(n, r, i, o) {
+                    if (!l.aborted || o) {
+                        t && t(n, r, i);
+                        for (var a = e(i), c = m(n), s = c.length, f = 0; f < s; f++) c[f].apply(a, r);
+                        var d = u[y[n]];
+                        return d && d.push([x, n, r, a]), a
+                    }
+                }
+
+                function p(t, e) {
+                    g[t] = m(t).concat(e)
+                }
+
+                function h(t, e) {
+                    var n = g[t];
+                    if (n) for (var r = 0; r < n.length; r++) n[r] === e && n.splice(r, 1)
+                }
+
+                function m(t) {
+                    return g[t] || []
+                }
+
+                function w(t) {
+                    return d[t] = d[t] || i(n)
+                }
+
+                function v(t, e) {
+                    f(t, function (t, n) {
+                        e = e || "feature", y[n] = e, e in u || (u[e] = [])
+                    })
+                }
+
+                var g = {}, y = {}, x = {
+                    on: p,
+                    addEventListener: p,
+                    removeEventListener: h,
+                    emit: n,
+                    get: w,
+                    listeners: m,
+                    context: e,
+                    buffer: v,
+                    abort: a,
+                    aborted: !1
+                };
+                return x
+            }
+
+            function o() {
+                return new r
+            }
+
+            function a() {
+                (u.api || u.feature) && (l.aborted = !0, u = l.backlog = {})
+            }
+
+            var c = "nr@context", s = t("gos"), f = t(23), u = {}, d = {}, l = e.exports = i();
+            l.backlog = u
+        }, {}], gos: [function (t, e, n) {
+            function r(t, e, n) {
+                if (i.call(t, e)) return t[e];
+                var r = n();
+                if (Object.defineProperty && Object.keys) try {
+                    return Object.defineProperty(t, e, {value: r, writable: !0, enumerable: !1}), r
+                } catch (o) {
+                }
+                return t[e] = r, r
+            }
+
+            var i = Object.prototype.hasOwnProperty;
+            e.exports = r
+        }, {}], handle: [function (t, e, n) {
+            function r(t, e, n, r) {
+                i.buffer([t], r), i.emit(t, e, n)
+            }
+
+            var i = t("ee").get("handle");
+            e.exports = r, r.ee = i
+        }, {}], id: [function (t, e, n) {
+            function r(t) {
+                var e = typeof t;
+                return !t || "object" !== e && "function" !== e ? -1 : t === window ? 0 : a(t, o, function () {
+                    return i++
+                })
+            }
+
+            var i = 1, o = "nr@id", a = t("gos");
+            e.exports = r
+        }, {}], loader: [function (t, e, n) {
+            function r() {
+                if (!b++) {
+                    var t = x.info = NREUM.info, e = l.getElementsByTagName("script")[0];
+                    if (setTimeout(f.abort, 3e4), !(t && t.licenseKey && t.applicationID && e)) return f.abort();
+                    s(g, function (e, n) {
+                        t[e] || (t[e] = n)
+                    });
+                    var n = a();
+                    c("mark", ["onload", n + x.offset], null, "api"), c("timing", ["load", n]);
+                    var r = l.createElement("script");
+                    r.src = "https://" + t.agent, e.parentNode.insertBefore(r, e)
+                }
+            }
+
+            function i() {
+                "complete" === l.readyState && o()
+            }
+
+            function o() {
+                c("mark", ["domContent", a() + x.offset], null, "api")
+            }
+
+            var a = t(18), c = t("handle"), s = t(23), f = t("ee"), u = t(21), d = window, l = d.document,
+                p = "addEventListener", h = "attachEvent", m = d.XMLHttpRequest, w = m && m.prototype;
+            NREUM.o = {
+                ST: setTimeout,
+                SI: d.setImmediate,
+                CT: clearTimeout,
+                XHR: m,
+                REQ: d.Request,
+                EV: d.Event,
+                PR: d.Promise,
+                MO: d.MutationObserver
+            };
+            var v = "" + location, g = {
+                beacon: "bam.nr-data.net",
+                errorBeacon: "bam.nr-data.net",
+                agent: "js-agent.newrelic.com/nr-1184.min.js"
+            }, y = m && w && w[p] && !/CriOS/.test(navigator.userAgent), x = e.exports = {
+                offset: a.getLastTimestamp(),
+                now: a,
+                origin: v,
+                features: {},
+                xhrWrappable: y,
+                userAgent: u
+            };
+            t(15), t(19), l[p] ? (l[p]("DOMContentLoaded", o, !1), d[p]("load", r, !1)) : (l[h]("onreadystatechange", i), d[h]("onload", r)), c("mark", ["firstbyte", a.getLastTimestamp()], null, "api");
+            var b = 0
+        }, {}], "wrap-function": [function (t, e, n) {
+            function r(t) {
+                return !(t && t instanceof Function && t.apply && !t[a])
+            }
+
+            var i = t("ee"), o = t(24), a = "nr@original", c = Object.prototype.hasOwnProperty, s = !1;
+            e.exports = function (t, e) {
+                function n(t, e, n, i) {
+                    function nrWrapper() {
+                        var r, a, c, s;
+                        try {
+                            a = this, r = o(arguments), c = "function" == typeof n ? n(r, a) : n || {}
+                        } catch (f) {
+                            l([f, "", [r, a, i], c])
+                        }
+                        u(e + "start", [r, a, i], c);
+                        try {
+                            return s = t.apply(a, r)
+                        } catch (d) {
+                            throw u(e + "err", [r, a, d], c), d
+                        } finally {
+                            u(e + "end", [r, a, s], c)
+                        }
+                    }
+
+                    return r(t) ? t : (e || (e = ""), nrWrapper[a] = t, d(t, nrWrapper), nrWrapper)
+                }
+
+                function f(t, e, i, o) {
+                    i || (i = "");
+                    var a, c, s, f = "-" === i.charAt(0);
+                    for (s = 0; s < e.length; s++) c = e[s], a = t[c], r(a) || (t[c] = n(a, f ? c + i : i, o, c))
+                }
+
+                function u(n, r, i) {
+                    if (!s || e) {
+                        var o = s;
+                        s = !0;
+                        try {
+                            t.emit(n, r, i, e)
+                        } catch (a) {
+                            l([a, n, r, i])
+                        }
+                        s = o
+                    }
+                }
+
+                function d(t, e) {
+                    if (Object.defineProperty && Object.keys) try {
+                        var n = Object.keys(t);
+                        return n.forEach(function (n) {
+                            Object.defineProperty(e, n, {
+                                get: function () {
+                                    return t[n]
+                                }, set: function (e) {
+                                    return t[n] = e, e
+                                }
+                            })
+                        }), e
+                    } catch (r) {
+                        l([r])
+                    }
+                    for (var i in t) c.call(t, i) && (e[i] = t[i]);
+                    return e
+                }
+
+                function l(e) {
+                    try {
+                        t.emit("internal-error", e)
+                    } catch (n) {
+                    }
+                }
+
+                return t || (t = i), n.inPlace = f, n.flag = a, n
+            }
+        }, {}]
+    }, {}, ["loader", 2, 12, 4, 3]);</script>
+    <meta name="smartbanner:hide-ttl" content="3600000"/>
+    <script type="application/ld+json">{
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://www.quicken.com/",
+        "name": "Quicken, Inc.",
+        "description": "For over three decades, Quicken has been providing the best money management software on the market. Get Quicken and take control of your finances today.",
+        "image": "https://www.quicken.com/sites/all/themes/custom/quicken_nessie/logo.svg",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "(650) 250-1900",
+            "contactType": "customer service",
+            "areaServed": "US",
+            "availableLanguage": "en"
+        },
+        "sameAs": [
+            "https://www.facebook.com/Quicken/",
+            "https://twitter.com/quicken",
+            "https://www.youtube.com/user/Quicken",
+            "https://www.linkedin.com/company/quicken-inc./",
+            "https://en.wikipedia.org/wiki/Quicken"
+        ],
+        "brand": "Quicken",
+        "category": "budget, software, money management, personal finance"
+    }</script>
+    <meta name="smartbanner:hide-path" content="/"/>
+    <meta name="smartbanner:close-label" content="Close"/>
+    <meta name="smartbanner:enabled-platforms" content="android,ios"/>
+    <meta name="smartbanner:button-url-google"
+          content="https://play.google.com/store/apps/details?id=com.quicken.acme&amp;hl=en_US"/>
+    <meta name="smartbanner:button-url-apple"
+          content="https://apps.apple.com/us/app/simplifi-money-management/id1449777194"/>
+    <meta name="smartbanner:button" content="VIEW"/>
+    <meta name="smartbanner:icon-google" content="https://www.simplifimoney.com/assets/images/simplifiBug.svg"/>
+    <meta name="smartbanner:icon-apple" content="https://www.simplifimoney.com/assets/images/simplifiBug.svg"/>
+    <meta name="smartbanner:price-suffix-google" content=" - In Google Play"/>
+    <meta name="smartbanner:price-suffix-apple" content=" - On the App Store"/>
+    <meta name="smartbanner:price" content="FREE"/>
+    <meta name="smartbanner:author" content="Quicken Inc."/>
+    <meta name="smartbanner:title" content="Simplifi: Money Management"/>
+    <link rel="shortcut icon" href="https://www.quicken.com/sites/all/themes/custom/quicken_nessie/favicon.ico"
+          type="image/vnd.microsoft.icon"/>
+    <meta name="description"
+          content="Set, track &amp; reach your financial goals with Quicken money management software. Manage spending, budgets, investments, retirement &amp; more. Get Quicken and take control of your finances today."/>
+    <link rel="canonical" href="https://www.quicken.com/"/>
+    <link rel="shortlink" href="https://www.quicken.com/node/24690"/>
+    <meta property="og:site_name" content="Quicken"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:url"
+          content="https://www.quicken.com/content/quicken-personal-finance-money-management-software"/>
+    <meta property="og:title" content="Quicken Personal Finance &amp; Money Management Software"/>
+    <meta property="og:description"
+          content="For over three decades, Quicken has been providing the best money management software on the market. Get Quicken and take control of your finances today."/>
+    <meta property="og:updated_time" content="2020-12-02T09:59:35-05:00"/>
+    <meta property="og:image" content="https://www.quicken.com/sites/default/files/quicken-og-2020.png"/>
+    <meta property="article:published_time" content="2018-10-08T22:05:18-04:00"/>
+    <meta property="article:modified_time" content="2020-12-02T09:59:35-05:00"/>
+    <title>Personal Finance & Money Management Software | Quicken</title>
+    <meta name="google-site-verification" content="aimRY5uwcPvD322yDUrebr8sAExlV02Q2nXwebbHoKI"/>
+    <meta name="msvalidate.01" content="239FF3A92EF8861DD243D288C94D5D04"/>
+    <meta name="msapplication-config" content="none"/>
+    <!-- Prevents non href="tel:" numbers from appearing as phone numbers in iOS -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        // Newrelic
+        window.NREUM || (NREUM = {}), __nr_require = function (t, e, n) {
+            function r(n) {
+                if (!e[n]) {
+                    var o = e[n] = {exports: {}};
+                    t[n][0].call(o.exports, function (e) {
+                        var o = t[n][1][e];
+                        return r(o ? o : e)
+                    }, o, o.exports)
+                }
+                return e[n].exports
+            }
+
+            if ("function" == typeof __nr_require) return __nr_require;
+            for (var o = 0; o < n.length; o++) r(n[o]);
+            return r
+        }({
+            QJf3ax: [function (t, e) {
+                function n(t) {
+                    function e(e, n, a) {
+                        t && t(e, n, a), a || (a = {});
+                        for (var c = s(e), f = c.length, u = i(a, o, r), d = 0; f > d; d++) c[d].apply(u, n);
+                        return u
+                    }
+
+                    function a(t, e) {
+                        f[t] = s(t).concat(e)
+                    }
+
+                    function s(t) {
+                        return f[t] || []
+                    }
+
+                    function c() {
+                        return n(e)
+                    }
+
+                    var f = {};
+                    return {on: a, emit: e, create: c, listeners: s, _events: f}
+                }
+
+                function r() {
+                    return {}
+                }
+
+                var o = "nr@context", i = t("gos");
+                e.exports = n()
+            }, {gos: "7eSDFh"}],
+            ee: [function (t, e) {
+                e.exports = t("QJf3ax")
+            }, {}],
+            3: [function (t) {
+                function e(t) {
+                    try {
+                        i.console && console.log(t)
+                    } catch (e) {
+                    }
+                }
+
+                var n, r = t("ee"), o = t(1), i = {};
+                try {
+                    n = localStorage.getItem("__nr_flags").split(","), console && "function" == typeof console.log && (i.console = !0, -1 !== n.indexOf("dev") && (i.dev = !0), -1 !== n.indexOf("nr_dev") && (i.nrDev = !0))
+                } catch (a) {
+                }
+                i.nrDev && r.on("internal-error", function (t) {
+                    e(t.stack)
+                }), i.dev && r.on("fn-err", function (t, n, r) {
+                    e(r.stack)
+                }), i.dev && (e("NR AGENT IN DEVELOPMENT MODE"), e("flags: " + o(i, function (t) {
+                    return t
+                }).join(", ")))
+            }, {1: 22, ee: "QJf3ax"}],
+            4: [function (t) {
+                function e(t, e, n, i, s) {
+                    try {
+                        c ? c -= 1 : r("err", [s || new UncaughtException(t, e, n)])
+                    } catch (f) {
+                        try {
+                            r("ierr", [f, (new Date).getTime(), !0])
+                        } catch (u) {
+                        }
+                    }
+                    return "function" == typeof a ? a.apply(this, o(arguments)) : !1
+                }
+
+                function UncaughtException(t, e, n) {
+                    this.message = t || "Uncaught error with no additional information", this.sourceURL = e, this.line = n
+                }
+
+                function n(t) {
+                    r("err", [t, (new Date).getTime()])
+                }
+
+                var r = t("handle"), o = t(6), i = t("ee"), a = window.onerror, s = !1, c = 0;
+                t("loader").features.err = !0, t(5), window.onerror = e;
+                try {
+                    throw new Error
+                } catch (f) {
+                    "stack" in f && (t(1), t(2), "addEventListener" in window && t(3), window.XMLHttpRequest && XMLHttpRequest.prototype && XMLHttpRequest.prototype.addEventListener && window.XMLHttpRequest && XMLHttpRequest.prototype && XMLHttpRequest.prototype.addEventListener && !/CriOS/.test(navigator.userAgent) && t(4), s = !0)
+                }
+                i.on("fn-start", function () {
+                    s && (c += 1)
+                }), i.on("fn-err", function (t, e, r) {
+                    s && (this.thrown = !0, n(r))
+                }), i.on("fn-end", function () {
+                    s && !this.thrown && c > 0 && (c -= 1)
+                }), i.on("internal-error", function (t) {
+                    r("ierr", [t, (new Date).getTime(), !0])
+                })
+            }, {1: 9, 2: 8, 3: 6, 4: 10, 5: 3, 6: 23, ee: "QJf3ax", handle: "D5DuLP", loader: "G9z0Bl"}],
+            5: [function (t) {
+                function e() {
+                }
+
+                if (window.performance && window.performance.timing && window.performance.getEntriesByType) {
+                    var n = t("ee"), r = t("handle"), o = t(1), i = t(2);
+                    t("loader").features.stn = !0, t(3), n.on("fn-start", function (t) {
+                        var e = t[0];
+                        e instanceof Event && (this.bstStart = Date.now())
+                    }), n.on("fn-end", function (t, e) {
+                        var n = t[0];
+                        n instanceof Event && r("bst", [n, e, this.bstStart, Date.now()])
+                    }), o.on("fn-start", function (t, e, n) {
+                        this.bstStart = Date.now(), this.bstType = n
+                    }), o.on("fn-end", function (t, e) {
+                        r("bstTimer", [e, this.bstStart, Date.now(), this.bstType])
+                    }), i.on("fn-start", function () {
+                        this.bstStart = Date.now()
+                    }), i.on("fn-end", function (t, e) {
+                        r("bstTimer", [e, this.bstStart, Date.now(), "requestAnimationFrame"])
+                    }), n.on("pushState-start", function () {
+                        this.time = Date.now(), this.startPath = location.pathname + location.hash
+                    }), n.on("pushState-end", function () {
+                        r("bstHist", [location.pathname + location.hash, this.startPath, this.time])
+                    }), "addEventListener" in window.performance && (window.performance.addEventListener("webkitresourcetimingbufferfull", function () {
+                        r("bstResource", [window.performance.getEntriesByType("resource")]), window.performance.webkitClearResourceTimings()
+                    }, !1), window.performance.addEventListener("resourcetimingbufferfull", function () {
+                        r("bstResource", [window.performance.getEntriesByType("resource")]), window.performance.clearResourceTimings()
+                    }, !1)), document.addEventListener("scroll", e, !1), document.addEventListener("keypress", e, !1), document.addEventListener("click", e, !1)
+                }
+            }, {1: 9, 2: 8, 3: 7, ee: "QJf3ax", handle: "D5DuLP", loader: "G9z0Bl"}],
+            6: [function (t, e) {
+                function n(t) {
+                    i.inPlace(t, ["addEventListener", "removeEventListener"], "-", r)
+                }
+
+                function r(t) {
+                    return t[1]
+                }
+
+                var o = (t(1), t("ee").create()), i = t(2)(o), a = t("gos");
+                if (e.exports = o, n(window), "getPrototypeOf" in Object) {
+                    for (var s = document; s && !s.hasOwnProperty("addEventListener");) s = Object.getPrototypeOf(s);
+                    s && n(s);
+                    for (var c = XMLHttpRequest.prototype; c && !c.hasOwnProperty("addEventListener");) c = Object.getPrototypeOf(c);
+                    c && n(c)
+                } else XMLHttpRequest.prototype.hasOwnProperty("addEventListener") && n(XMLHttpRequest.prototype);
+                o.on("addEventListener-start", function (t) {
+                    if (t[1]) {
+                        var e = t[1];
+                        "function" == typeof e ? this.wrapped = t[1] = a(e, "nr@wrapped", function () {
+                            return i(e, "fn-", null, e.name || "anonymous")
+                        }) : "function" == typeof e.handleEvent && i.inPlace(e, ["handleEvent"], "fn-")
+                    }
+                }), o.on("removeEventListener-start", function (t) {
+                    var e = this.wrapped;
+                    e && (t[1] = e)
+                })
+            }, {1: 23, 2: 24, ee: "QJf3ax", gos: "7eSDFh"}],
+            7: [function (t, e) {
+                var n = (t(2), t("ee").create()), r = t(1)(n);
+                e.exports = n, r.inPlace(window.history, ["pushState"], "-")
+            }, {1: 24, 2: 23, ee: "QJf3ax"}],
+            8: [function (t, e) {
+                var n = (t(2), t("ee").create()), r = t(1)(n);
+                e.exports = n, r.inPlace(window, ["requestAnimationFrame", "mozRequestAnimationFrame", "webkitRequestAnimationFrame", "msRequestAnimationFrame"], "raf-"), n.on("raf-start", function (t) {
+                    t[0] = r(t[0], "fn-")
+                })
+            }, {1: 24, 2: 23, ee: "QJf3ax"}],
+            9: [function (t, e) {
+                function n(t, e, n) {
+                    t[0] = o(t[0], "fn-", null, n)
+                }
+
+                var r = (t(2), t("ee").create()), o = t(1)(r);
+                e.exports = r, o.inPlace(window, ["setTimeout", "setInterval", "setImmediate"], "setTimer-"), r.on("setTimer-start", n)
+            }, {1: 24, 2: 23, ee: "QJf3ax"}],
+            10: [function (t, e) {
+                function n() {
+                    f.inPlace(this, p, "fn-")
+                }
+
+                function r(t, e) {
+                    f.inPlace(e, ["onreadystatechange"], "fn-")
+                }
+
+                function o(t, e) {
+                    return e
+                }
+
+                function i(t, e) {
+                    for (var n in t) e[n] = t[n];
+                    return e
+                }
+
+                var a = t("ee").create(), s = t(1), c = t(2), f = c(a), u = c(s), d = window.XMLHttpRequest,
+                    p = ["onload", "onerror", "onabort", "onloadstart", "onloadend", "onprogress", "ontimeout"];
+                e.exports = a, window.XMLHttpRequest = function (t) {
+                    var e = new d(t);
+                    try {
+                        a.emit("new-xhr", [], e), u.inPlace(e, ["addEventListener", "removeEventListener"], "-", o), e.addEventListener("readystatechange", n, !1)
+                    } catch (r) {
+                        try {
+                            a.emit("internal-error", [r])
+                        } catch (i) {
+                        }
+                    }
+                    return e
+                }, i(d, XMLHttpRequest), XMLHttpRequest.prototype = d.prototype, f.inPlace(XMLHttpRequest.prototype, ["open", "send"], "-xhr-", o), a.on("send-xhr-start", r), a.on("open-xhr-start", r)
+            }, {1: 6, 2: 24, ee: "QJf3ax"}],
+            11: [function (t) {
+                function e(t) {
+                    var e = this.params, r = this.metrics;
+                    if (!this.ended) {
+                        this.ended = !0;
+                        for (var i = 0; c > i; i++) t.removeEventListener(s[i], this.listener, !1);
+                        if (!e.aborted) {
+                            if (r.duration = (new Date).getTime() - this.startTime, 4 === t.readyState) {
+                                e.status = t.status;
+                                var a = t.responseType,
+                                    f = "arraybuffer" === a || "blob" === a || "json" === a ? t.response : t.responseText,
+                                    u = n(f);
+                                if (u && (r.rxSize = u), this.sameOrigin) {
+                                    var d = t.getResponseHeader("X-NewRelic-App-Data");
+                                    d && (e.cat = d.split(", ").pop())
+                                }
+                            } else e.status = 0;
+                            r.cbTime = this.cbTime, o("xhr", [e, r, this.startTime])
+                        }
+                    }
+                }
+
+                function n(t) {
+                    if ("string" == typeof t && t.length) return t.length;
+                    if ("object" != typeof t) return void 0;
+                    if ("undefined" != typeof ArrayBuffer && t instanceof ArrayBuffer && t.byteLength) return t.byteLength;
+                    if ("undefined" != typeof Blob && t instanceof Blob && t.size) return t.size;
+                    if ("undefined" != typeof FormData && t instanceof FormData) return void 0;
+                    try {
+                        return JSON.stringify(t).length
+                    } catch (e) {
+                        return void 0
+                    }
+                }
+
+                function r(t, e) {
+                    var n = i(e), r = t.params;
+                    r.host = n.hostname + ":" + n.port, r.pathname = n.pathname, t.sameOrigin = n.sameOrigin
+                }
+
+                if (window.XMLHttpRequest && XMLHttpRequest.prototype && XMLHttpRequest.prototype.addEventListener && !/CriOS/.test(navigator.userAgent)) {
+                    t("loader").features.xhr = !0;
+                    var o = t("handle"), i = t(2), a = t("ee"), s = ["load", "error", "abort", "timeout"], c = s.length,
+                        f = t(1);
+                    t(4), t(3), a.on("new-xhr", function () {
+                        this.totalCbs = 0, this.called = 0, this.cbTime = 0, this.end = e, this.ended = !1, this.xhrGuids = {}
+                    }), a.on("open-xhr-start", function (t) {
+                        this.params = {method: t[0]}, r(this, t[1]), this.metrics = {}
+                    }), a.on("open-xhr-end", function (t, e) {
+                        "loader_config" in NREUM && "xpid" in NREUM.loader_config && this.sameOrigin && e.setRequestHeader("X-NewRelic-ID", NREUM.loader_config.xpid)
+                    }), a.on("send-xhr-start", function (t, e) {
+                        var r = this.metrics, o = t[0], i = this;
+                        if (r && o) {
+                            var f = n(o);
+                            f && (r.txSize = f)
+                        }
+                        this.startTime = (new Date).getTime(), this.listener = function (t) {
+                            try {
+                                "abort" === t.type && (i.params.aborted = !0), ("load" !== t.type || i.called === i.totalCbs && (i.onloadCalled || "function" != typeof e.onload)) && i.end(e)
+                            } catch (n) {
+                                try {
+                                    a.emit("internal-error", [n])
+                                } catch (r) {
+                                }
+                            }
+                        };
+                        for (var u = 0; c > u; u++) e.addEventListener(s[u], this.listener, !1)
+                    }), a.on("xhr-cb-time", function (t, e, n) {
+                        this.cbTime += t, e ? this.onloadCalled = !0 : this.called += 1, this.called !== this.totalCbs || !this.onloadCalled && "function" == typeof n.onload || this.end(n)
+                    }), a.on("xhr-load-added", function (t, e) {
+                        var n = "" + f(t) + !!e;
+                        this.xhrGuids && !this.xhrGuids[n] && (this.xhrGuids[n] = !0, this.totalCbs += 1)
+                    }), a.on("xhr-load-removed", function (t, e) {
+                        var n = "" + f(t) + !!e;
+                        this.xhrGuids && this.xhrGuids[n] && (delete this.xhrGuids[n], this.totalCbs -= 1)
+                    }), a.on("addEventListener-end", function (t, e) {
+                        e instanceof XMLHttpRequest && "load" === t[0] && a.emit("xhr-load-added", [t[1], t[2]], e)
+                    }), a.on("removeEventListener-end", function (t, e) {
+                        e instanceof XMLHttpRequest && "load" === t[0] && a.emit("xhr-load-removed", [t[1], t[2]], e)
+                    }), a.on("fn-start", function (t, e, n) {
+                        e instanceof XMLHttpRequest && ("onload" === n && (this.onload = !0), ("load" === (t[0] && t[0].type) || this.onload) && (this.xhrCbStart = (new Date).getTime()))
+                    }), a.on("fn-end", function (t, e) {
+                        this.xhrCbStart && a.emit("xhr-cb-time", [(new Date).getTime() - this.xhrCbStart, this.onload, e], e)
+                    })
+                }
+            }, {1: "XL7HBI", 2: 12, 3: 10, 4: 6, ee: "QJf3ax", handle: "D5DuLP", loader: "G9z0Bl"}],
+            12: [function (t, e) {
+                e.exports = function (t) {
+                    var e = document.createElement("a"), n = window.location, r = {};
+                    e.href = t, r.port = e.port;
+                    var o = e.href.split("://");
+                    return !r.port && o[1] && (r.port = o[1].split("/")[0].split("@").pop().split(":")[1]), r.port && "0" !== r.port || (r.port = "https" === o[0] ? "443" : "80"), r.hostname = e.hostname || n.hostname, r.pathname = e.pathname, r.protocol = o[0], "/" !== r.pathname.charAt(0) && (r.pathname = "/" + r.pathname), r.sameOrigin = !e.hostname || e.hostname === document.domain && e.port === n.port && e.protocol === n.protocol, r
+                }
+            }, {}],
+            13: [function (t, e) {
+                function n(t) {
+                    return function () {
+                        r(t, [(new Date).getTime()].concat(i(arguments)))
+                    }
+                }
+
+                var r = t("handle"), o = t(1), i = t(2);
+                "undefined" == typeof window.newrelic && (newrelic = window.NREUM);
+                var a = ["setPageViewName", "addPageAction", "setCustomAttribute", "finished", "addToTrace", "inlineHit", "noticeError"];
+                o(a, function (t, e) {
+                    window.NREUM[e] = n("api-" + e)
+                }), e.exports = window.NREUM
+            }, {1: 22, 2: 23, handle: "D5DuLP"}],
+            "7eSDFh": [function (t, e) {
+                function n(t, e, n) {
+                    if (r.call(t, e)) return t[e];
+                    var o = n();
+                    if (Object.defineProperty && Object.keys) try {
+                        return Object.defineProperty(t, e, {value: o, writable: !0, enumerable: !1}), o
+                    } catch (i) {
+                    }
+                    return t[e] = o, o
+                }
+
+                var r = Object.prototype.hasOwnProperty;
+                e.exports = n
+            }, {}],
+            gos: [function (t, e) {
+                e.exports = t("7eSDFh")
+            }, {}],
+            handle: [function (t, e) {
+                e.exports = t("D5DuLP")
+            }, {}],
+            D5DuLP: [function (t, e) {
+                function n(t, e, n) {
+                    return r.listeners(t).length ? r.emit(t, e, n) : (o[t] || (o[t] = []), void o[t].push(e))
+                }
+
+                var r = t("ee").create(), o = {};
+                e.exports = n, n.ee = r, r.q = o
+            }, {ee: "QJf3ax"}],
+            id: [function (t, e) {
+                e.exports = t("XL7HBI")
+            }, {}],
+            XL7HBI: [function (t, e) {
+                function n(t) {
+                    var e = typeof t;
+                    return !t || "object" !== e && "function" !== e ? -1 : t === window ? 0 : i(t, o, function () {
+                        return r++
+                    })
+                }
+
+                var r = 1, o = "nr@id", i = t("gos");
+                e.exports = n
+            }, {gos: "7eSDFh"}],
+            G9z0Bl: [function (t, e) {
+                function n() {
+                    var t = p.info = NREUM.info, e = f.getElementsByTagName("script")[0];
+                    if (t && t.licenseKey && t.applicationID && e) {
+                        s(d, function (e, n) {
+                            e in t || (t[e] = n)
+                        });
+                        var n = "https" === u.split(":")[0] || t.sslForHttp;
+                        p.proto = n ? "https://" : "http://", a("mark", ["onload", i()]);
+                        var r = f.createElement("script");
+                        r.src = p.proto + t.agent, e.parentNode.insertBefore(r, e)
+                    }
+                }
+
+                function r() {
+                    "complete" === f.readyState && o()
+                }
+
+                function o() {
+                    a("mark", ["domContent", i()])
+                }
+
+                function i() {
+                    return (new Date).getTime()
+                }
+
+                var a = t("handle"), s = t(1), c = (t(2), window), f = c.document, u = ("" + location).split("?")[0],
+                    d = {
+                        beacon: "bam.nr-data.net",
+                        errorBeacon: "bam.nr-data.net",
+                        agent: "js-agent.newrelic.com/nr-632.min.js"
+                    }, p = e.exports = {offset: i(), origin: u, features: {}};
+                f.addEventListener ? (f.addEventListener("DOMContentLoaded", o, !1), c.addEventListener("load", n, !1)) : (f.attachEvent("onreadystatechange", r), c.attachEvent("onload", n)), a("mark", ["firstbyte", i()])
+            }, {1: 22, 2: 13, handle: "D5DuLP"}],
+            loader: [function (t, e) {
+                e.exports = t("G9z0Bl")
+            }, {}],
+            22: [function (t, e) {
+                function n(t, e) {
+                    var n = [], o = "", i = 0;
+                    for (o in t) r.call(t, o) && (n[i] = e(o, t[o]), i += 1);
+                    return n
+                }
+
+                var r = Object.prototype.hasOwnProperty;
+                e.exports = n
+            }, {}],
+            23: [function (t, e) {
+                function n(t, e, n) {
+                    e || (e = 0), "undefined" == typeof n && (n = t ? t.length : 0);
+                    for (var r = -1, o = n - e || 0, i = Array(0 > o ? 0 : o); ++r < o;) i[r] = t[e + r];
+                    return i
+                }
+
+                e.exports = n
+            }, {}],
+            24: [function (t, e) {
+                function n(t) {
+                    return !(t && "function" == typeof t && t.apply && !t[i])
+                }
+
+                var r = t("ee"), o = t(1), i = "nr@wrapper", a = Object.prototype.hasOwnProperty;
+                e.exports = function (t) {
+                    function e(t, e, r, a) {
+                        function nrWrapper() {
+                            var n, i, s, f;
+                            try {
+                                i = this, n = o(arguments), s = r && r(n, i) || {}
+                            } catch (d) {
+                                u([d, "", [n, i, a], s])
+                            }
+                            c(e + "start", [n, i, a], s);
+                            try {
+                                return f = t.apply(i, n)
+                            } catch (p) {
+                                throw c(e + "err", [n, i, p], s), p
+                            } finally {
+                                c(e + "end", [n, i, f], s)
+                            }
+                        }
+
+                        return n(t) ? t : (e || (e = ""), nrWrapper[i] = !0, f(t, nrWrapper), nrWrapper)
+                    }
+
+                    function s(t, r, o, i) {
+                        o || (o = "");
+                        var a, s, c, f = "-" === o.charAt(0);
+                        for (c = 0; c < r.length; c++) s = r[c], a = t[s], n(a) || (t[s] = e(a, f ? s + o : o, i, s))
+                    }
+
+                    function c(e, n, r) {
+                        try {
+                            t.emit(e, n, r)
+                        } catch (o) {
+                            u([o, e, n, r])
+                        }
+                    }
+
+                    function f(t, e) {
+                        if (Object.defineProperty && Object.keys) try {
+                            var n = Object.keys(t);
+                            return n.forEach(function (n) {
+                                Object.defineProperty(e, n, {
+                                    get: function () {
+                                        return t[n]
+                                    }, set: function (e) {
+                                        return t[n] = e, e
+                                    }
+                                })
+                            }), e
+                        } catch (r) {
+                            u([r])
+                        }
+                        for (var o in t) a.call(t, o) && (e[o] = t[o]);
+                        return e
+                    }
+
+                    function u(e) {
+                        try {
+                            t.emit("internal-error", e)
+                        } catch (n) {
+                        }
+                    }
+
+                    return t || (t = r), e.inPlace = s, e.flag = i, e
+                }
+            }, {1: 23, ee: "QJf3ax"}]
+        }, {}, ["G9z0Bl", 4, 11, 5]);
+        ;NREUM.info = {
+            beacon: "bam.nr-data.net",
+            errorBeacon: "bam.nr-data.net",
+            licenseKey: "9f7e91019b",
+            applicationID: "5171401",
+            sa: 1,
+            agent: "js-agent.newrelic.com/nr-632.min.js"
+        }
+    </script>
+    <link type="text/css" rel="stylesheet"
+          href="https://www.quicken.com/sites/default/files/css/css_Vts0XjaQXkIwBk9HNAoJwrvmmE9lw6S9oxqJuhh0OB0.css"
+          media="all"/>
+    <link type="text/css" rel="stylesheet"
+          href="https://www.quicken.com/sites/default/files/css/css_pJrjlTCQYxONS4cH7zbz6b5jUVNs6jJyg9rubORVZBw.css"
+          media="screen"/>
+    <link type="text/css" rel="stylesheet"
+          href="https://www.quicken.com/sites/default/files/css/css_-YxRSnND32tU0oakYWewrPRDVccpwGyqftm2Dg6wGTU.css"
+          media="all"/>
+    <link type="text/css" rel="stylesheet"
+          href="https://www.quicken.com/sites/default/files/css/css_rOCJtYSaoqEYaK45T1kQFz-lSjh9pX-xigkYYWHYPkE.css"
+          media="all"/>
+    <link type="text/css" rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Source+Sans+Pro:300,400,600"
+          media="all"/>
+    <link type="text/css" rel="stylesheet"
+          href="https://www.quicken.com/sites/default/files/css/css_bHui80b8NzyEIpGH33eJb0p4UTTJMH17Yl7zn7TeySk.css"
+          media="all"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->    <!--[if lt IE 9]>
+    <script src="/sites/all/themes/custom/quicken_nessie/js/dist/html5shiv.js"></script>
+    <script src="/sites/all/themes/custom/quicken_nessie/js/dist/respond.js"></script>    <![endif]-->
 </head>
-<body class="html front not-logged-in no-sidebars page-node page-node- page-node-24690 node-type-flexible quicken-burst-promo-is-active evergreen-10percent" >
+<body class="html front not-logged-in no-sidebars page-node page-node- page-node-24690 node-type-flexible quicken-burst-promo-is-active evergreen-10percent">
 <div style="display:none">
     <svg>
         <symbol id="plus" width="9" height="9" viewBox="0 0 9 9">
@@ -190,410 +1592,340 @@
             </g>
         </symbol>
         <symbol id="quotes" width="34" height="25" viewBox="0 0 34 25">
-            <path d="M18.7 14.98C18.6067 11.8533 19.7267 8.86666 22.06 6.02C24.44 3.12666 27.24 1.26 30.46 0.42C31.3 0.186664 31.8833 0.373329 32.21 0.979997L33.4 2.73C33.82 3.43 33.7033 3.99 33.05 4.41C30.9033 5.85667 29.5733 7.02333 29.06 7.91C28.7333 8.51667 28.57 9.1 28.57 9.66C28.57 10.36 28.8267 10.99 29.34 11.55C29.9 12.0633 30.5067 12.4833 31.16 12.81C31.8133 13.1367 32.3967 13.7433 32.91 14.63C33.47 15.47 33.75 16.5433 33.75 17.85C33.75 19.7633 33.0967 21.3267 31.79 22.54C30.53 23.7067 28.8733 24.29 26.82 24.29C24.2067 24.29 22.2233 23.4733 20.87 21.84C19.5167 20.2067 18.7933 17.92 18.7 14.98ZM0.5 14.98C0.406667 11.8533 1.52667 8.86666 3.86 6.02C6.24 3.12666 9.04 1.26 12.26 0.42C13.1 0.186664 13.6833 0.373329 14.01 0.979997L15.2 2.73C15.62 3.43 15.5033 3.99 14.85 4.41C12.7033 5.85667 11.3733 7.02333 10.86 7.91C10.5333 8.51667 10.37 9.1 10.37 9.66C10.37 10.36 10.6267 10.99 11.14 11.55C11.7 12.0633 12.3067 12.4833 12.96 12.81C13.6133 13.1367 14.1967 13.7433 14.71 14.63C15.27 15.47 15.55 16.5433 15.55 17.85C15.55 19.7633 14.8967 21.3267 13.59 22.54C12.33 23.7067 10.6733 24.29 8.62 24.29C6.00667 24.29 4.02333 23.4733 2.67 21.84C1.31667 20.2067 0.593333 17.92 0.5 14.98Z" fill="#FF961B"></path>
+            <path d="M18.7 14.98C18.6067 11.8533 19.7267 8.86666 22.06 6.02C24.44 3.12666 27.24 1.26 30.46 0.42C31.3 0.186664 31.8833 0.373329 32.21 0.979997L33.4 2.73C33.82 3.43 33.7033 3.99 33.05 4.41C30.9033 5.85667 29.5733 7.02333 29.06 7.91C28.7333 8.51667 28.57 9.1 28.57 9.66C28.57 10.36 28.8267 10.99 29.34 11.55C29.9 12.0633 30.5067 12.4833 31.16 12.81C31.8133 13.1367 32.3967 13.7433 32.91 14.63C33.47 15.47 33.75 16.5433 33.75 17.85C33.75 19.7633 33.0967 21.3267 31.79 22.54C30.53 23.7067 28.8733 24.29 26.82 24.29C24.2067 24.29 22.2233 23.4733 20.87 21.84C19.5167 20.2067 18.7933 17.92 18.7 14.98ZM0.5 14.98C0.406667 11.8533 1.52667 8.86666 3.86 6.02C6.24 3.12666 9.04 1.26 12.26 0.42C13.1 0.186664 13.6833 0.373329 14.01 0.979997L15.2 2.73C15.62 3.43 15.5033 3.99 14.85 4.41C12.7033 5.85667 11.3733 7.02333 10.86 7.91C10.5333 8.51667 10.37 9.1 10.37 9.66C10.37 10.36 10.6267 10.99 11.14 11.55C11.7 12.0633 12.3067 12.4833 12.96 12.81C13.6133 13.1367 14.1967 13.7433 14.71 14.63C15.27 15.47 15.55 16.5433 15.55 17.85C15.55 19.7633 14.8967 21.3267 13.59 22.54C12.33 23.7067 10.6733 24.29 8.62 24.29C6.00667 24.29 4.02333 23.4733 2.67 21.84C1.31667 20.2067 0.593333 17.92 0.5 14.98Z"
+                  fill="#FF961B"></path>
         </symbol>
         <symbol id="arrow" width="15" height="20" viewBox="0 0 15 20">
-            <path d="M8.16322 0.71395C7.7727 0.323426 7.13953 0.323426 6.74901 0.71395L0.385047 7.07791C-0.0054774 7.46844 -0.00547735 8.1016 0.385047 8.49213C0.775571 8.88265 1.40874 8.88265 1.79926 8.49212L7.45611 2.83527L13.113 8.49212C13.5035 8.88265 14.1367 8.88265 14.5272 8.49212C14.9177 8.1016 14.9177 7.46843 14.5272 7.07791L8.16322 0.71395ZM8.45612 19.6667L8.45611 1.42106L6.45611 1.42106L6.45612 19.6667L8.45612 19.6667Z" fill="#FF8A00"></path>
+            <path d="M8.16322 0.71395C7.7727 0.323426 7.13953 0.323426 6.74901 0.71395L0.385047 7.07791C-0.0054774 7.46844 -0.00547735 8.1016 0.385047 8.49213C0.775571 8.88265 1.40874 8.88265 1.79926 8.49212L7.45611 2.83527L13.113 8.49212C13.5035 8.88265 14.1367 8.88265 14.5272 8.49212C14.9177 8.1016 14.9177 7.46843 14.5272 7.07791L8.16322 0.71395ZM8.45612 19.6667L8.45611 1.42106L6.45611 1.42106L6.45612 19.6667L8.45612 19.6667Z"
+                  fill="#FF8A00"></path>
         </symbol>
     </svg>
 </div>
-  <div id="skip-link">
+<div id="skip-link">
     <a href="#main-content" class="element-invisible">Skip to main content</a>
-  </div>
-  <div class="page page-sticky-navbar">
+</div>
+<div class="page page-sticky-navbar">
     <nav class="navbar navbar-expand-navbar navbar-light">
-  <div class="navbar-container container-fluid">
-    <div class="navbar-left-container">
-      <a class="navbar-brand" href="index.html">
-        <span class="sr-only">Quicken</span>
-      </a>
-          </div>
+        <div class="navbar-container container-fluid">
+            <div class="navbar-left-container">
+                <a class="navbar-brand" href="index.html">
+                    <span class="sr-only">Quicken</span>
+                </a>
+            </div>
 
-      <a href="activate.html" class="sign-in">Sign in</a>
+            <a href="activate.html" class="sign-in">Sign in</a>
 
-      <ul class="header-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="compare.html">Prices</a></li>
-          <li><a href="about-us.html">About us</a></li>
-      </ul>
-      </div>
-</nav>
+            <ul class="header-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="compare.html">Prices</a></li>
+                <li><a href="about-us.html">About us</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<div class="region region-header">
+    <div class="region region-header">
         <div id="tabs">
-          </div>
-  </div>
+        </div>
+    </div>
 
-<main class="region region-main">
-  <div class="container-fluid">
-      <div class="region region-content">
-    <div id="block-block-113" class="block block-block">
+    <main class="region region-main">
+        <div class="container-fluid">
+            <div class="region region-content">
+                <div id="block-block-113" class="block block-block">
 
-    
-  <div class="content">
-    <style type="text/css">
 
-</style>
-  </div>
+                    <div class="content">
+                        <style type="text/css">
+
+                        </style>
+                    </div>
+                </div>
+                <div id="block-system-main" class="block block-system">
+
+
+                    <div class="content">
+                        <div id="node-24690" class="node node-flexible node-promoted"
+                             about="/content/quicken-personal-finance-money-management-software"
+                             typeof="sioc:Item foaf:Document">
+                            <div class="content">
+                                <section class="hero-section hero-coffee">
+                                    <div class="hero-section-inner">
+                                        <div class="hero-section--feature">
+                                            <h1 class="hero-section__title">Quicken</h1>
+                                            <div class="hero-section__body">
+                                                <div class="container">
+                                                    <div class="row gutters">
+                                                        <div class="col-md-7 full-left">
+                                                            <div class="new-year-blue">
+                                                                <img alt="Get a head start"
+                                                                     class="img-new-goals b-lazy b-loaded"
+                                                                     src="https://www.quicken.com/sites/default/files/homepageTitleTakeControlBlue_0.svg">
+                                                                <b class="newyear-second-row">
+                                                                    <span class="sr-only">Take Control</span>
+                                                                </b>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-5"></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-7 full-left">
+                                                            <h3 class="variant-3">Plan for today and tomorrow with one
+                                                                solution to manage all your finances.</h3>
+                                                        </div>
+                                                        <div class="col-md-5"></div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-6 blue-mug-list full-left">
+                                                            <ul class="blue-mug-buttons">
+                                                                <li>
+                                                                    <a class="btn btn-primary btn-primary-alt this-btn-first"
+                                                                       href="compare.html">Quicken for Windows</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-md-6"></div>
+                                                    </div>
+                                                </div>
+                                                <style>
+                                                    @media (max-width: 574px) {
+                                                        .hero-section.hero-coffee {
+                                                            background-position: center 5vw !important;
+                                                        }
+                                                    }
+                                                </style>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="ns-section ns-section--freeform ns-testify-1 pcmac-testimonial-wrapper">
+                                    <div class="row">
+                                        <div class="pcmac-testimonial col-md-12">
+                                            <div class="testimonial--data row">
+                                                <div class="testimonial--attribution col-md-4">
+                                                    <img src="https://www.quicken.com/sites/default/files/pcmag_logo.png"
+                                                         alt="PC Mag logo"
+                                                         class="testimonial--attribution--author-logo"/>
+                                                    <img src="https://www.quicken.com/sites/default/files/pcmag_stars.png"
+                                                         alt="PC Mag rating of Quicken"
+                                                         class="testimonial--attribution--author-rating"/>
+                                                </div>
+                                                <div class="testimonial--body col-md-8">
+                                                    <blockquote>
+                                                        “No other personal financial management application offers the
+                                                        depth and breadth of tools found in Quicken.”
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                            <div class="testimonial--links">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="b-lazy ns-section ns-section--left-right " data-src="">
+                                    <div class="row">
+                                        <div class="ns-column ns-section--image col-xs-12 col-sm-6 order-sm-2">
+                                            <img class="b-lazy" src="img/all-in-one.svg"
+                                                 alt="See your financial life in one place with Quicken"/>
+                                        </div>
+                                        <div class="ns-column col-xs-12 col-sm-6 order-sm-1">
+                                            <div class="ns-column-inner">
+                                                <h2 class="ns-section__heading">See your financial life all in one
+                                                    place</h2>
+                                                <div class="ns-section__body">
+                                                    <p>Get your complete financial picture at a glance. With Quicken,
+                                                        you can view your banking, investment, retirement, and credit
+                                                        card accounts - all in one place.<sup>*</sup></p></div>
+                                                <p class="ns-section__cta"><a class="btn btn-primary btn-lg"
+                                                                              href="compare.html">Learn More</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section
+                                        class="b-lazy ns-section ns-section--left-right ns-section--product-peek background-lightblue"
+                                        data-src="">
+                                    <div class="row">
+                                        <div class="ns-column ns-section--image col-xs-12 col-sm-6 order-sm-1">
+                                            <img class="b-lazy" src="img/qkn-mobile-screenshot.png"
+                                                 alt="Quicken mobile app on iPhone"/>
+                                        </div>
+                                        <div class="ns-column col-xs-12 col-sm-6 order-sm-2">
+                                            <div class="ns-column-inner">
+                                                <h2 class="ns-section__heading">Manage your spending and save</h2>
+                                                <div class="ns-section__body">
+                                                    <p>Stay on top of your spending by tracking what’s left after the
+                                                        bills are paid. Make more informed money decisions by creating
+                                                        custom budgets you’ll stick to.</p></div>
+                                                <p class="ns-section__cta"><a class="btn btn-primary btn-lg"
+                                                                              href="compare.html">Learn More</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="b-lazy ns-section ns-section--left-right " data-src="">
+                                    <div class="row">
+                                        <div class="ns-column ns-section--image col-xs-12 col-sm-6 order-sm-2">
+                                            <img class="b-lazy" src="img/qkn-billpay-screenshot.png"
+                                                 alt="Quicken Bill Pay"/>
+                                        </div>
+                                        <div class="ns-column col-xs-12 col-sm-6 order-sm-1">
+                                            <div class="ns-column-inner">
+                                                <h2 class="ns-section__heading">Easily view and manage
+                                                    your&nbsp;bills</h2>
+                                                <div class="ns-section__body">
+                                                    <p>See what’s coming in and what’s going out. Check what your
+                                                        balances will be after paying bills. And get alerts so you never
+                                                        miss a due date.<sup>*</sup></p></div>
+                                                <p class="ns-section__cta"><a class="btn btn-primary btn-lg"
+                                                                              href="compare.html">Learn More</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section
+                                        class="b-lazy ns-section ns-section--left-right ns-section--bg-img background-gray">
+                                    <div class="row">
+                                        <div class="ns-column ns-section--image col-xs-12 col-sm-6 order-sm-1">
+                                            <img class="b-lazy"
+                                                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                 data-src="https://www.quicken.com/sites/default/files/qkn-laptop-investments.png"
+                                                 alt="Laptop running Quicken"/>
+                                        </div>
+                                        <div class="ns-column col-xs-12 col-sm-6 order-sm-2">
+                                            <div class="ns-column-inner">
+                                                <h2 class="ns-section__heading">Track your investments</h2>
+                                                <div class="ns-section__body">
+                                                    <p>Review your portfolio, monitor performance, and see market
+                                                        comparisons to have more confidence in your buy/sell
+                                                        decisions.<sup>*</sup></p></div>
+                                                <p class="ns-section__cta"><a class="btn btn-primary btn-lg"
+                                                                              href="compare.html">Learn More</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="region prefooter-region">
+        <div class="region region-prefooter">
+            <section class="ns-prefooter">
+                <div id="block-quicken-ns-driver-prefooter-featurettes" class="block block-quicken-ns-driver">
+
+                    <div class="content">
+                        <h2 class="ns-prefooter__title">You are our top priority</h2>
+                        <div class="ns-prefooter-featurette-container">
+                            <div class="ns-prefooter--featurette ns-column col-sm-4">
+                                <div class="ns-prefooter--featurette__image">
+                                    <span><img src="img/featurette-trusted.svg" alt=""/></span>
+                                </div>
+                                <h3 class="ns-prefooter--featurette__title">Trusted for over 30&nbsp;years</h3>
+                                <div class="ns-prefooter--featurette__body">
+                                    <p>Over 17 million members have trusted Quicken to plan and grow their ﬁnances for
+                                        over three decades.</p>
+                                </div>
+                            </div>
+                            <div class="ns-prefooter--featurette ns-column col-sm-4">
+                                <div class="ns-prefooter--featurette__image">
+                                    <span href="#"><img src="img/featurette-guarantee.svg" alt=""/></span>
+                                </div>
+                                <h3 class="ns-prefooter--featurette__title">30-day money-back guarantee</h3>
+                                <div class="ns-prefooter--featurette__body">
+                                    <p>Quicken ﬁnancial products are backed by a 30-day money-back
+                                        guarantee.<sup>*</sup></p>
+                                </div>
+                            </div>
+                            <div class="ns-prefooter--featurette ns-column col-sm-4">
+                                <div class="ns-prefooter--featurette__image">
+                                    <span href="#"><img src="img/featurette-secure.svg" alt=""/></span>
+                                </div>
+                                <h3 class="ns-prefooter--featurette__title">Safe and secure</h3>
+                                <div class="ns-prefooter--featurette__body">
+                                    <p>Quicken protects your data with robust 256-bit encryption.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer id="footer" class="footer-main">
+        <div class="footer-menu-container container">
+            <div class="row">
+                <div class="footer-bottom">
+
+                    <ul class="social">
+                        <li class="social__item">
+                            <a class="social-link" href="#">
+                                <svg>
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                                Мы в Телеграм
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social-link" href="#">
+                                <svg>
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                                Мы в Фейсбуке
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social-link" href="#">
+                                <svg>
+                                    <use xlink:href="#telegram"></use>
+                                </svg>
+                                Мы в Инстаграме
+                            </a>
+                        </li>
+                        <li class="social__item social--vk">
+                            <a class="social-link" href="#">
+                                <svg>
+                                    <use xlink:href="#vk"></use>
+                                </svg>
+                                Мы в Вконтакте
+                            </a>
+                        </li>
+                    </ul>
+
+
+                    <p class="novpromo-footer">† Limited time offer of 10% off the list price applies only to the
+                        purchase of Quicken Deluxe, Premier, Home, Business &amp; Rental Property for the first year
+                        only when you order directly from Quicken by September 30, 2021, 11:59 PM PST. Offer good for
+                        new memberships only. Offer listed above cannot be combined with any other offers. Terms,
+                        conditions, pricing, features, offers and service options subject to change without notice.</p>
+
+                    <small class="copyright">
+                        © 2020 Quicken Inc. All rights reserved. Quicken is a registered trademark of Intuit Inc., used
+                        under license.
+                    </small>
+                    <small>
+                        iPhone, iPod, iPad Touch are trademarks of Apple Inc., registered in the U.S. and other
+                        countries. Android is a trademark of Google Inc.
+                    </small>
+                    <small>
+                        Dropbox, PayPal, Yelp, and other parties’ marks are trademarks of their respective companies.
+                    </small>
+                    <small>
+                        Terms, conditions, features, availability, pricing, fees, service and support options subject
+                        change without notice.
+                    </small>
+                    <small>
+                        Corporate Headquarters: 3760 Haven Avenue, Menlo Park, CA 94025
+                    </small>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
 </div>
-<div id="block-system-main" class="block block-system">
-
-    
-  <div class="content">
-    <div id="node-24690" class="node node-flexible node-promoted" about="/content/quicken-personal-finance-money-management-software" typeof="sioc:Item foaf:Document">
-  <div class="content">
-        <section class="hero-section hero-coffee"  >
-  <div class="hero-section-inner">
-    <div class="hero-section--feature">
-            <h1 class="hero-section__title">Quicken</h1>
-      <div class="hero-section__body">
-        <div class="container">
-  <div class="row gutters">
-    <div class="col-md-7 full-left">
-      <div class="new-year-blue">
-        <img alt="Get a head start" class="img-new-goals b-lazy b-loaded" src="https://www.quicken.com/sites/default/files/homepageTitleTakeControlBlue_0.svg">
-        <b class="newyear-second-row">
-          <span class="sr-only">Take Control</span>
-        </b>
-      </div>
-    </div>
-    <div class="col-md-5"></div>
-  </div>
-  <div class="row">
-    <div class="col-md-7 full-left">
-      <h3 class="variant-3">Plan for today and tomorrow with one solution to manage all your finances.</h3>
-    </div>
-    <div class="col-md-5"></div>
-  </div>
-  <div class="row">
-    <div class="col-md-6 blue-mug-list full-left">
-      <ul class="blue-mug-buttons">
-        <li><a class="btn btn-primary btn-primary-alt this-btn-first" href="compare.html">Quicken for Windows</a></li>
-      </ul>
-    </div>
-    <div class="col-md-6"></div>
-  </div>
-</div>
-<style>
-@media (max-width: 574px) {
-  .hero-section.hero-coffee {
-    background-position: center 5vw !important;
-  }
-}
-</style>              </div>
-    </div>
-  </div>
-</section>
-  <section class="ns-section ns-section--freeform ns-testify-1 pcmac-testimonial-wrapper">
-  <div class="row">
-    <div class="pcmac-testimonial col-md-12">
-  <div class="testimonial--data row">
-    <div class="testimonial--attribution col-md-4">
-      <img src="https://www.quicken.com/sites/default/files/pcmag_logo.png" alt="PC Mag logo" class="testimonial--attribution--author-logo" />
-      <img src="https://www.quicken.com/sites/default/files/pcmag_stars.png" alt="PC Mag rating of Quicken"
-        class="testimonial--attribution--author-rating" />
-    </div>
-    <div class="testimonial--body col-md-8">
-      <blockquote>
-        “No other personal financial management application offers the depth and breadth of tools found in Quicken.”
-      </blockquote>
-    </div>
-  </div>
-  <div class="testimonial--links">
-  </div>
-</div>  </div>
-</section>
-    <section class="b-lazy ns-section ns-section--left-right " data-src="">
-  <div class="row">
-          <div class="ns-column ns-section--image col-xs-12 col-sm-6 order-sm-2">
-        <img class="b-lazy" src="img/all-in-one.svg" alt="See your financial life in one place with Quicken" />
-              </div>
-        <div class="ns-column col-xs-12 col-sm-6 order-sm-1">
-      <div class="ns-column-inner">
-        <h2 class="ns-section__heading">See your financial life all in one place</h2>
-        <div class="ns-section__body">
-          <p>Get your complete financial picture at a glance. With Quicken, you can view your banking, investment, retirement, and credit card accounts - all in one place.<sup>*</sup></p>        </div>
-                  <p class="ns-section__cta"><a class="btn btn-primary btn-lg" href="compare.html">Learn More</a></p>
-              </div>
-    </div>
-  </div>
-</section>
-    <section class="b-lazy ns-section ns-section--left-right ns-section--product-peek background-lightblue" data-src="">
-  <div class="row">
-          <div class="ns-column ns-section--image col-xs-12 col-sm-6 order-sm-1">
-        <img class="b-lazy" src="img/qkn-mobile-screenshot.png" alt="Quicken mobile app on iPhone" />
-              </div>
-        <div class="ns-column col-xs-12 col-sm-6 order-sm-2">
-      <div class="ns-column-inner">
-        <h2 class="ns-section__heading">Manage your spending and save</h2>
-        <div class="ns-section__body">
-          <p>Stay on top of your spending by tracking what’s left after the bills are paid. Make more informed money decisions by creating custom budgets you’ll stick to.</p>        </div>
-                  <p class="ns-section__cta"><a class="btn btn-primary btn-lg" href="compare.html">Learn More</a></p>
-              </div>
-    </div>
-  </div>
-</section>
-    <section class="b-lazy ns-section ns-section--left-right " data-src="">
-  <div class="row">
-          <div class="ns-column ns-section--image col-xs-12 col-sm-6 order-sm-2">
-        <img class="b-lazy" src="img/qkn-billpay-screenshot.png" alt="Quicken Bill Pay" />
-              </div>
-        <div class="ns-column col-xs-12 col-sm-6 order-sm-1">
-      <div class="ns-column-inner">
-        <h2 class="ns-section__heading">Easily view and manage your&nbsp;bills</h2>
-        <div class="ns-section__body">
-          <p>See what’s coming in and what’s going out. Check what your balances will be after paying bills. And get alerts so you never miss a due date.<sup>*</sup></p>        </div>
-                  <p class="ns-section__cta"><a class="btn btn-primary btn-lg" href="compare.html">Learn More</a></p>
-              </div>
-    </div>
-  </div>
-</section>
-    <section class="b-lazy ns-section ns-section--left-right ns-section--bg-img background-gray">
-  <div class="row">
-          <div class="ns-column ns-section--image col-xs-12 col-sm-6 order-sm-1">
-        <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="https://www.quicken.com/sites/default/files/qkn-laptop-investments.png" alt="Laptop running Quicken" />
-              </div>
-        <div class="ns-column col-xs-12 col-sm-6 order-sm-2">
-      <div class="ns-column-inner">
-        <h2 class="ns-section__heading">Track your investments</h2>
-        <div class="ns-section__body">
-          <p>Review your portfolio, monitor performance, and see market comparisons to have more confidence in your buy/sell decisions.<sup>*</sup></p>        </div>
-                  <p class="ns-section__cta"><a class="btn btn-primary btn-lg" href="compare.html">Learn More</a></p>
-              </div>
-    </div>
-  </div>
-</section>
-  </div>
-</div>
-  </div>
-</div>
-  </div>
-  </div>
-</main>
-
-  <div class="region prefooter-region">
-      <div class="region region-prefooter">
-    <section class="ns-prefooter">
-<div id="block-quicken-ns-driver-prefooter-featurettes" class="block block-quicken-ns-driver">
-    
-  <div class="content">
-    <h2 class="ns-prefooter__title">You are our top priority</h2>
-<div class="ns-prefooter-featurette-container">
-  <div class="ns-prefooter--featurette ns-column col-sm-4">
-    <div class="ns-prefooter--featurette__image">
-      <span><img src="img/featurette-trusted.svg" alt="" /></span>
-    </div>
-    <h3 class="ns-prefooter--featurette__title">Trusted for over 30&nbsp;years</h3>
-    <div class="ns-prefooter--featurette__body">
-      <p>Over 17 million members have trusted Quicken to plan and grow their ﬁnances for over three decades.</p>
-    </div>
-  </div>
-  <div class="ns-prefooter--featurette ns-column col-sm-4">
-    <div class="ns-prefooter--featurette__image">
-      <span href="#"><img src="img/featurette-guarantee.svg" alt="" /></span>
-    </div>
-    <h3 class="ns-prefooter--featurette__title">30-day money-back guarantee</h3>
-    <div class="ns-prefooter--featurette__body">
-      <p>Quicken ﬁnancial products are backed by a 30-day money-back guarantee.<sup>*</sup></p>
-    </div>
-  </div>
-  <div class="ns-prefooter--featurette ns-column col-sm-4">
-    <div class="ns-prefooter--featurette__image">
-      <span href="#"><img src="img/featurette-secure.svg" alt="" /></span>
-    </div>
-    <h3 class="ns-prefooter--featurette__title">Safe and secure</h3>
-    <div class="ns-prefooter--featurette__body">
-      <p>Quicken protects your data with robust 256-bit encryption.</p>
-    </div>
-  </div>
-</div>  </div>
-</div>
-</section>
-  </div>
-  </div>
-
-  <footer id="footer" class="footer-main">
-    <div class="footer-menu-container container">
-      <div class="row">
-          <div class="footer-bottom">
-
-              <ul class="social">
-                  <li class="social__item">
-                      <a class="social-link" href="#">
-                          <svg>
-                              <use xlink:href="#instagram"></use>
-                          </svg>
-                          Мы в Телеграм
-                      </a>
-                  </li>
-                  <li class="social__item">
-                      <a class="social-link" href="#">
-                          <svg>
-                              <use xlink:href="#facebook"></use>
-                          </svg>
-                          Мы в Фейсбуке
-                      </a>
-                  </li>
-                  <li class="social__item">
-                      <a class="social-link" href="#">
-                          <svg>
-                              <use xlink:href="#telegram"></use>
-                          </svg>
-                          Мы в Инстаграме
-                      </a>
-                  </li>
-                  <li class="social__item social--vk">
-                      <a class="social-link" href="#">
-                          <svg>
-                              <use xlink:href="#vk"></use>
-                          </svg>
-                          Мы в Вконтакте
-                      </a>
-                  </li>
-              </ul>
-
-
-              <p class="novpromo-footer">† Limited time offer of 10% off the list price applies only to the purchase of Quicken Deluxe, Premier, Home, Business &amp; Rental Property for the first year only when you order directly from Quicken by September 30, 2021, 11:59 PM PST. Offer good for new memberships only. Offer listed above cannot be combined with any other offers. Terms, conditions, pricing, features, offers and service options subject to change without notice.</p>
-
-              <small class="copyright">
-              © 2020 Quicken Inc. All rights reserved. Quicken is a registered trademark of Intuit Inc., used under license.
-          </small>
-              <small>
-                  iPhone, iPod, iPad Touch are trademarks of Apple Inc., registered in the U.S. and other countries. Android is a trademark of Google Inc.
-              </small>
-              <small>
-                  Dropbox, PayPal, Yelp, and other parties’ marks are trademarks of their respective companies.
-              </small>
-              <small>
-                  Terms, conditions, features, availability, pricing, fees, service and support options subject change without notice.
-              </small>
-              <small>
-                  Corporate Headquarters: 3760 Haven Avenue, Menlo Park, CA  94025
-              </small>
-          </div>
-      </div>
-
-    </div>
-  </footer>
-<!--  <script type="text/javascript">
-&lt;!&ndash;//&ndash;&gt;<![CDATA[//>&lt;!&ndash;
-'use strict'; (function() {var abjs = {"tests":[{"name":"t_3","conditions":["return \/^\\\/support\/i.test(window.location.pathname);"],"experiences":[{"name":"e_4","fraction":"1","script":"document.addEventListener(\"DOMContentLoaded\", function(event) {\r\n  $div = jQuery('<div>Pop-up blockers may prevent chat from opening. Please turn off any pop-up blockers on your browser before opening chat.<\/div>');\r\n  $div.css({\r\n    \"float\": \"right\",\r\n    \"width\": \"60%\",\r\n    \"color\": \"#c60c30\"\r\n  });\r\n  jQuery('.quicken-care-chat-selector-container').prepend($div);\r\n});"}]},{"name":"t_1","conditions":["return (document.cookie.indexOf('qkn_sow_eligible') > -1)","return \/^\\\/shoppingcart\\\/confirmation\/i.test(window.location.pathname);"],"experiences":[{"name":"e_1","fraction":"0","script":"var throttleCare123Interval;\ndocument.addEventListener('DOMContentLoaded', function () {\n  var timeRun = 0;\n  var intervalTime = 100;\n  var maxTotalTime = 3000;\n  \/\/ Since we can't consistently attach to a Optimize event we have to check\n  \/\/ manually on an interval after the page has loaded.\n  throttleCare123Interval = setInterval(function () {\n    timeRun += intervalTime;\n    if (timeRun > maxTotalTime) {\n      clearInterval(throttleCare123Interval);\n    }\n\n    if (document.body.classList.contains('page-shoppingcart-confirmation-sow')) {\n      var care123 = document.querySelectorAll('.confirm-content&#45;&#45;section&#45;&#45;care123');\n      if (care123.length > 0) {\n        care123[0].style.display = 'none';\n      }\n      clearInterval(throttleCare123Interval);\n    }\n  }, intervalTime);\n});\n"},{"name":"e_2","fraction":"1","script":""}]},{"name":"t_6","conditions":["return \/^\\\/shoppingcart\\\/confirmation\/i.test(window.location.pathname);"],"experiences":[{"name":"e_7","fraction":".5","script":"console.log('running experiment JS...');\r\nfunction runOnLoad() {\r\n  if (document.getElementsByClassName('simplifi-success').length === 0) {\r\n    if (document.getElementsByClassName('checkout-confirmation-sow-only').length) {\r\n      document.getElementsByClassName('checkout-confirmation-sow-only')[0].style.display = 'block';\r\n      document.getElementsByClassName('checkout-confirmation-sow-only')[1].style.display = 'block';\r\n      document.getElementsByClassName('checkout-confirmation-sow-only')[2].style.display = 'block';\r\n    }\r\n    if (document.getElementsByClassName('checkout-confirmation-original-only').length) {\r\n      document.getElementsByClassName('checkout-confirmation-original-only')[0].style.display = 'none';\r\n      document.getElementsByClassName('checkout-confirmation-original-only')[1].style.display = 'none'\r\n    }\r\n  }\r\n}\r\nif (document.readyState != 'loading') {\r\n  console.log('Document was ready when experiment started. Running immediately.');\r\n  runOnLoad();\r\n} \r\nelse {\r\n  console.log('Document was NOT ready when experiment started. Attaching to DOMContentLoaded event.');\r\n  document.addEventListener('DOMContentLoaded', runOnLoad);\r\n}"},{"name":"e_2","fraction":".5","script":""}]}],"cookiePrefix":"abjs_","cookieDomain":"","cookieLifetime":30,"cookieSecure":"; secure"};
-/**
- * @file
- * Adds common javascript functionality.
- *
- * Note that this file does not stand alone, and is included as an inline
- * script along with the dynamic tests, experiences, and conditions.
- */
-
-// Cookie functions for getting and setting abjs cookies.
-var abCookies = {
-  getCookie: function (sKey) {
-    'use strict';
-    if (!sKey) {
-      return null;
-    }
-    var abKey = abjs.cookiePrefix + sKey;
-    return decodeURIComponent(document.cookie.replace(new RegExp('(?:(?:^|.*;)\\s*' + encodeURIComponent(abKey).replace(/[\-\.\+\*]/g, '\\$&') + '\\s*\\=\\s*([^;]*).*$)|^.*$'), '$1')) || null;
-  },
-  setCookie: function (sKey, sValue) {
-    'use strict';
-    var abKey = abjs.cookiePrefix + sKey;
-    document.cookie = encodeURIComponent(abKey) + '=' + encodeURIComponent(sValue) + '; max-age=' + abjs.cookieLifetime * 24 * 60 * 60 + abjs.cookieDomain + '; path=/' + abjs.cookieSecure;
-    return true;
-  }
-};
-
-var i;
-var j;
-var fracArray;
-
-// Convert condition and experience function strings into real functions,
-// and convert experience fraction strings into numbers.
-for (i = 0; i < abjs.tests.length; i++) {
-  for (j = 0; j < abjs.tests[i].conditions.length; j++) {
-    abjs.tests[i].conditions[j] = new Function(abjs.tests[i].conditions[j] + '\r\n');
-  }
-  for (j = 0; j < abjs.tests[i].experiences.length; j++) {
-    abjs.tests[i].experiences[j].script = new Function(abjs.tests[i].experiences[j].script + '\r\n');
-    if (abjs.tests[i].experiences[j].fraction.match('/')) {
-      fracArray = abjs.tests[i].experiences[j].fraction.split('/');
-      abjs.tests[i].experiences[j].fraction = fracArray[0] / fracArray[1];
-    }
-    abjs.tests[i].experiences[j].fraction = isNaN(1 * abjs.tests[i].experiences[j].fraction) ? 0 : 1 * abjs.tests[i].experiences[j].fraction;
-  }
-}
-
-// First, for each test, check if all conditions evaluate to true. If any
-// condition evaluates to false, remove that test from the abjs.tests array.
-for (i = 0; i < abjs.tests.length; i++) {
-  for (j = 0; j < abjs.tests[i].conditions.length; j++) {
-    if (!abjs.tests[i].conditions[j]()) {
-      abjs.tests.splice(i, 1);
-      i&#45;&#45;;
-      break;
-    }
-  }
-}
-
-// For each test that passses all conditions, determine the experience for this
-// user.
-for (i = 0; i < abjs.tests.length; i++) {
-  // First, check if a cookie exists for this test by checking the cookie's name.
-  // If so, the value of the cookie is the index of the experience that this
-  // user should have.
-  if (abCookies.getCookie(abjs.tests[i].name)) {
-    for (j = 0; j < abjs.tests[i].experiences.length; j++) {
-      if (abCookies.getCookie(abjs.tests[i].name) === abjs.tests[i].experiences[j].name) {
-        abjs.tests[i].activeExperience = j;
-        break;
-      }
-    }
-  }
-  // If a cookie does not yet exist for this test, generate a random number to
-  // determine what experience this user should have by comparing the random
-  // number to the fractions assigned for each experience. Set a cookie for
-  // this test and experience.
-  else {
-    var randomNum = Math.random();
-    var fractionSum = 0;
-    for (j = 0; j < abjs.tests[i].experiences.length; j++) {
-      if (randomNum >= fractionSum && randomNum < fractionSum + abjs.tests[i].experiences[j].fraction) {
-        abCookies.setCookie(abjs.tests[i].name, abjs.tests[i].experiences[j].name);
-        abjs.tests[i].activeExperience = j;
-        break;
-      }
-      fractionSum += abjs.tests[i].experiences[j].fraction;
-    }
-  }
-}
-
-// Run all experience scripts for this user.
-for (i = 0; i < abjs.tests.length; i++) {
-  if (typeof abjs.tests[i].activeExperience !== 'undefined') {
-    abjs.tests[i].experiences[abjs.tests[i].activeExperience].script();
-  }
-}
-})();
-//&ndash;&gt;<!]]>
-</script>
-<script type="text/javascript" src="https://www.quicken.com/sites/default/files/js/js_bOVUfjvb62jxTmVvPplpe68f4kej2yByCyZv-u3T7do.js"></script>
-<script type="text/javascript" src="https://www.quicken.com/sites/default/files/js/js_XomvYCNrjJziL_QPwU-ZLKTfbyWU4Gn6OfWoETz-pEE.js"></script>
-<script type="text/javascript">
-&lt;!&ndash;//&ndash;&gt;<![CDATA[//>&lt;!&ndash;
-document.createElement( "picture" );
-//&ndash;&gt;<!]]>
-</script>
-<script type="text/javascript" src="https://www.quicken.com/sites/default/files/js/js_WUbBSPtkrgpLDbd3Q2axI9vC5gDDH2yC8PjAcc4tD88.js"></script>
-<script type="text/javascript" src="https://www.quicken.com/sites/default/files/js/js_DaZJsh_AotqXs2iYBMTmIDC1-GJBTeHG7OzDf5msxhw.js"></script>
-<script type="text/javascript" src="https://www.quicken.com/sites/default/files/js/js_v3oaByXFUWxbKTa329MugyjViYvA4Ime8cs8uGvgu4Q.js"></script>
-<script type="text/javascript">
-&lt;!&ndash;//&ndash;&gt;<![CDATA[//>&lt;!&ndash;
-jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"quicken_nessie","theme_token":"3zZGRfYMZPjDZAVU0c2hnekY8noPporH7AhPun1qBw8","jquery_version":"1.8","js":{"sites\/all\/modules\/contrib\/picture\/picturefill2\/picturefill.min.js":1,"sites\/all\/modules\/contrib\/picture\/picture.min.js":1,"sites\/all\/modules\/custom\/quicken_ccpa\/js\/quicken_ccpa.js":1,"sites\/all\/modules\/custom\/quicken_smart_banner\/dist\/smartbanner.min.js":1,"sites\/all\/modules\/custom\/quicken_smart_banner\/js\/quicken-smart-banner.js":1,"sites\/all\/modules\/custom\/quicken_activation\/js\/quicken-activation.js":1,"sites\/all\/modules\/custom\/quicken_activation\/js\/activation-renewal.js":1,"sites\/all\/modules\/custom\/quicken_akamai\/js\/akamai-popup.js":1,"sites\/all\/modules\/custom\/quicken_capital_one_lp\/js\/quicken-capital-one.js":1,"sites\/all\/modules\/custom\/quicken_care\/js\/fancy-selects.js":1,"sites\/all\/modules\/custom\/quicken_care\/js\/care-states.js":1,"sites\/all\/modules\/custom\/quicken_care\/js\/chat-redirect.js":1,"sites\/all\/modules\/custom\/quicken_care\/js\/prioritized-chat.js":1,"sites\/all\/modules\/custom\/quicken_coupon\/js\/quicken_coupons.js":1,"sites\/all\/modules\/custom\/quicken_faq\/js\/faq.js":1,"sites\/all\/modules\/custom\/quicken_global_nav\/js\/quicken_global_nav.js":1,"sites\/all\/modules\/custom\/quicken_landing_pages\/js\/set-url-for-shop-quicken-mac-or-win-link.js":1,"sites\/all\/modules\/custom\/quicken_landing_pages\/js\/burstpromo.js":1,"sites\/all\/modules\/custom\/quicken_refunds\/js\/quicken_refunds.js":1,"sites\/all\/modules\/custom\/quicken_support\/js\/quicken_support.js":1,"sites\/all\/modules\/custom\/quicken_checkout\/js\/shoppingcart.js":1,"sites\/all\/modules\/custom\/quicken_checkout\/js\/checkout.js":1,"sites\/all\/modules\/custom\/quicken_checkout\/js\/customer-info.js":1,"sites\/all\/modules\/custom\/quicken_checkout\/js\/billing-info.js":1,"sites\/all\/modules\/custom\/quicken_checkout\/js\/review.js":1,"sites\/all\/modules\/custom\/quicken_products\/js\/mac-products.js":1,"sites\/all\/modules\/custom\/quicken_products\/js\/system-requirements-modal.js":1,"sites\/all\/modules\/custom\/quicken_price\/js\/quicken_price.js":1,"sites\/all\/modules\/custom\/quicken_compare\/js\/quicken-compare-reset-offer.js":1,"sites\/all\/modules\/custom\/quicken_compare\/js\/quicken-compare-table.js":1,"sites\/all\/modules\/custom\/quicken_ns_promo\/js\/quicken_ns_promo.js":1,"sites\/all\/modules\/custom\/quicken_ns_driver\/js\/ns-carousel.js":1,"sites\/all\/modules\/custom\/quicken_tealium\/js\/quicken_tealium.js":1,"0":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/blazy\/blazy.min.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/contrib\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/contrib\/jquery_update\/js\/jquery_update.js":1,"1":1,"sites\/all\/modules\/custom\/quicken_chat\/js\/chat.js":1,"sites\/all\/modules\/custom\/quicken_global\/js\/quicken_global.js":1,"sites\/all\/modules\/custom\/quicken_rprp\/js\/quicken_rprp.js":1,"sites\/all\/modules\/contrib\/lazy\/lazy.js":1,"misc\/progress.js":1,"sites\/all\/modules\/contrib\/ctools\/js\/modal.js":1,"sites\/all\/modules\/contrib\/modal_forms\/js\/modal_forms_popup.js":1,"sites\/all\/modules\/contrib\/moment\/js\/moment.js":1,"sites\/all\/modules\/contrib\/moment\/js\/moment.locale.js":1,"sites\/all\/libraries\/moment\/min\/moment.min.js":1,"sites\/all\/libraries\/moment-timezone\/builds\/moment-timezone-with-data-2012-2022.min.js":1,"sites\/all\/modules\/custom\/quicken_global\/js\/quicken_global_polyfill.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/custom\/quicken_global\/js\/warnflash.js":1,"sites\/all\/modules\/custom\/quicken_qam\/js\/quicken-qam.js":1,"sites\/all\/modules\/contrib\/responsive_menus\/styles\/meanMenu\/jquery.meanmenu.min.js":1,"sites\/all\/modules\/contrib\/responsive_menus\/styles\/meanMenu\/responsive_menus_mean_menu.js":1,"sites\/all\/libraries\/ba-debounce\/jquery.ba-throttle-debounce.min.js":1,"sites\/all\/libraries\/slick\/slick\/slick.min.js":1,"sites\/all\/libraries\/url\/url.min.js":1,"sites\/all\/modules\/contrib\/stanford_date_timepicker\/js\/stanford_date_timepicker.js":1,"sites\/all\/themes\/custom\/quicken_nessie\/js\/dist\/popper.min.js":1,"sites\/all\/themes\/custom\/quicken_nessie\/js\/dist\/bootstrap.min.js":1,"sites\/all\/themes\/custom\/quicken_nessie\/js\/dist\/script.js":1},"css":{"modules\/system\/system.messages.css":1,"sites\/all\/libraries\/jquery-ui-timepicker\/jquery-ui-timepicker-addon.css":1,"sites\/all\/modules\/custom\/quicken_ccpa\/css\/quicken_ccpa.css":1,"sites\/all\/modules\/custom\/quicken_smart_banner\/dist\/smartbanner.min.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/custom\/intuit_care\/css\/intuit-care.css":1,"sites\/all\/modules\/custom\/quicken_care\/css\/care-states.css":1,"sites\/all\/modules\/contrib\/youtube\/css\/youtube.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/modal.css":1,"sites\/all\/modules\/contrib\/modal_forms\/css\/modal_forms_popup.css":1,"sites\/all\/libraries\/colorbox\/colorbox.css":1,"sites\/all\/modules\/custom\/quicken_global\/css\/quicken-colorbox.css":1,"sites\/all\/modules\/contrib\/responsive_menus\/styles\/meanMenu\/meanmenu.min.css":1,"sites\/all\/libraries\/slick\/slick\/slick.css":1,"sites\/all\/libraries\/slick\/slick\/slick-theme.css":1,"https:\/\/fonts.googleapis.com\/css?family=Open+Sans:300,400,400i,600,700|Source+Sans+Pro:300,400,600":1,"sites\/all\/themes\/custom\/quicken_nessie\/css\/styles.css":1}},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"CToolsModal":{"loadingText":"Loading...","closeText":"Close Window","closeImage":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.quicken.com\/sites\/all\/modules\/contrib\/ctools\/images\/icon-close-window.png\u0022 alt=\u0022Close window\u0022 title=\u0022Close window\u0022 \/\u003E","throbber":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.quicken.com\/sites\/all\/modules\/contrib\/ctools\/images\/throbber.gif\u0022 alt=\u0022Loading\u0022 title=\u0022Loading...\u0022 \/\u003E"},"modal-popup-small":{"modalSize":{"type":"fixed","width":300,"height":300},"modalOptions":{"opacity":0.85,"background":"#000"},"animation":"fadeIn","modalTheme":"ModalFormsPopup","throbber":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.quicken.com\/sites\/all\/modules\/contrib\/modal_forms\/images\/loading_animation.gif\u0022 alt=\u0022Loading...\u0022 title=\u0022Loading\u0022 \/\u003E","closeText":"Close"},"modal-popup-medium":{"modalSize":{"type":"fixed","width":550,"height":450},"modalOptions":{"opacity":0.85,"background":"#000"},"animation":"fadeIn","modalTheme":"ModalFormsPopup","throbber":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.quicken.com\/sites\/all\/modules\/contrib\/modal_forms\/images\/loading_animation.gif\u0022 alt=\u0022Loading...\u0022 title=\u0022Loading\u0022 \/\u003E","closeText":"Close"},"modal-popup-large":{"modalSize":{"type":"scale","width":0.6,"height":0.6},"modalOptions":{"opacity":0.85,"background":"#000"},"animation":"fadeIn","modalTheme":"ModalFormsPopup","throbber":"\u003Cimg typeof=\u0022foaf:Image\u0022 src=\u0022https:\/\/www.quicken.com\/sites\/all\/modules\/contrib\/modal_forms\/images\/loading_animation.gif\u0022 alt=\u0022Loading...\u0022 title=\u0022Loading\u0022 \/\u003E","closeText":"Close"},"quicken_burst_promo":{"is_active":1,"active_promo":"evergreen_10percent","burst_pages":[],"product_disclaimers":[],"end_date":"2119-01-01T08:00:00Z","show_countdown_clock":"0","countdown_format":"Get the Best Deal this Year. Hurry \u2013 Sale ends soon!","countdown_format_lastday":"Hurry \u2013 Sale ends today!"},"refund-form":{"modalTheme":"refundModalHtml","modalSize":{"type":"fixed","width":800,"height":400}},"quickenRefunds":{"modalHtml":"\u003Cdiv id=\u0022ctools-modal\u0022 class=\u0022ctools-modal ctools-modal&#45;&#45;custom\u0022\u003E\n  \u003Cdiv class=\u0022ctools-modal__content ctools-modal-custom-help-content modal-box\u0022\u003E\n    \u003Cdiv class=\u0022ctools-modal__header modal-header\u0022\u003E\n      \u003Ch3 class=\u0022ctools-modal__title\u0022\u003ERefund Form\u003C\/h3\u003E\n      \u003Ca class=\u0022ctools-modal__close close\u0022 href=\u0022#\u0022\u003EClose\u003C\/a\u003E\n    \u003C\/div\u003E\n    \u003Cdiv id=\u0022modal-content\u0022 class=\u0022ctools-modal__body modal-content-custom modal-body\u0022\u003E\u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n"},"quickenPrice":{"frontendOverrides":{"monthly":{"\/tsm\/win\/discopulse2":[],"\/tsm\/mac\/discopulse2":[],"\/pulse\/email\/deluxe":{"query":"mp=1"},"\/pulse\/email\/premier":{"query":"mp=1"},"\/pulse\/email\/premier2y":{"query":"mp=1"},"\/pulse\/email\/hbr":{"query":"mp=1"},"\/pulse\/email\/hbr2y":{"query":"mp=1"},"\/pulse\/email\/mac\/deluxe":{"query":"mp=1"},"\/pulse\/email\/mac\/deluxe2y":{"query":"mp=1"},"\/pulse\/email\/mac\/premier":{"query":"mp=1"},"\/email\/1yr\/dsc":{"query":"mp=1"},"\/email\/2yr\/dsc":{"query":"mp=1"},"\/email\/1yr\/nf":{"query":"mp=1"},"\/email\/2yr\/nf":{"query":"mp=1"},"\/tsm\/1yr\/nf\/25":{"query":"mp=1"},"\/tsm\/2yr\/nf\/25":{"query":"mp=1"}},"yearlyPlus3":{"\/email\/1yr\/nf\/3mo":{"message":"+ 3 bonus months FREE!","excludeQuery":"mp=1"},"\/email\/2yr\/nf\/3mo":{"message":"+ 3 bonus months FREE!","excludeQuery":"mp=1"},"\/tsm\/1yr\/nf\/3mo":{"message":"+ 3 bonus months FREE!","excludeQuery":"mp=1"},"\/tsm\/2yr\/nf\/3mo":{"message":"+ 3 bonus months FREE!","excludeQuery":"mp=1"}},"monthlyPlus3":{"\/email\/1yr\/nf\/3mo":{"billedText1y":"Billed once:","billedText2y":"Billed once:","months1y":15,"months2y":27,"query":"mp=1"},"\/email\/2yr\/nf\/3mo":{"billedText1y":"Billed once:","billedText2y":"Billed once:","months1y":15,"months2y":27,"query":"mp=1"},"\/tsm\/1yr\/nf\/3mo":{"billedText1y":"Billed once:","billedText2y":"Billed once:","months1y":15,"months2y":27,"query":"mp=1"},"\/tsm\/2yr\/nf\/3mo":{"billedText1y":"Billed once:","billedText2y":"Billed once:","months1y":15,"months2y":27,"query":"mp=1"}}}},"quicken":{"cookie_domain":"quicken.com","breakout_pages":["\/my-account","\/change-plan","\/compare","\/mac\/compare","\/shoppingcart","\/shoppingcart\/customer-info","\/canada\/my-account","\/canada\/change-plan","\/canada\/compare"]},"quicken_global":{"theme":"quicken_nessie","os_redirect_enabled":1,"sign_in_preload_url":"https:\/\/signin.quicken.com\/signin","sign_in_preload":false},"quicken_landing_pages":{"quicken_compare_table_new_parent_node_title":"Latest Features"},"responsive_menus":[{"selectors":".main-menu","container":".menus-container","trigger_txt":"\u003Cspan \/\u003E\u003Cspan \/\u003E\u003Cspan \/\u003E","close_txt":"X","close_size":"18px","position":"right","media_size":"991","show_children":"1","expand_children":"1","expand_txt":"+","contract_txt":"-","remove_attrs":"0","responsive_menus_style":"mean_menu"}],"currentPath":"node\/24690","currentPathIsAdmin":false,"quicken_care":{"support_search":false},"quicken_ajax":{"ajax_keys":[".js-2y-price-nid-23726",".js-2y-addtocart-nid-23726",".js-2y-price-nid-23731",".js-2y-addtocart-nid-23731",".js-2y-price-nid-23736",".js-2y-addtocart-nid-23736",".js-2y-price-nid-23741",".js-2y-addtocart-nid-23741",".js-replace-promo-homepage-title",".js-replace-promo-homepage-content",".js-replace-promo-homepage-mac-title",".js-replace-promo-homepage-mac-content",".js-replace-promo-title",".js-replace-promo-subheadline",".js-cart-qty"],"ajax_path":"\/quicken-ajax-data"},"quicken_akamai":{"timeout":900,"timeout_warning_path":"\/quicken-akamai\/timeout-warning"},"quicken_coupon":{"set_coupon_callback":"\/set-coupon","get_coupon_callback":"\/get-coupon","seo_coupon":"32QNIQ8ARA46R9","default_coupon":"32QNIQ8ARA46R9"},"QknNSPromo":{"activePromo":"evergreen_10percent","currentPath":"\u003Cfront\u003E","isCanada":false,"shouldShowRibbon":true,"parentSelector":".hero-section","ribbonPages":"\u003Cfront\u003E|.hero-section\r\ncompare|.ns-promo-banner-container\r\nmac\/compare|.ns-promo-banner-container\r\npersonal-finance\/retirement|.hero-section\r\npersonal-finance\/budget|.hero-section\r\npersonal-finance\/home-business|.hero-section\r\npersonal-finance\/bills|.hero-section\r\npersonal-finance\/spending|.hero-section\r\npersonal-finance\/investments|.hero-section\r\ncontent\/solutions-investments|.hero-section\r\npersonal-finance\/rental-property|.hero-section\r\nppc\/riskfree|.ns-promo-banner-container\r\nppc\/compare|.ns-promo-banner-container","ribbonContent":"\u003Cdiv class=\u0022promo-banner&#45;&#45;ribbon-decoration\u0022\u003E\u003C\/div\u003E\r\n\u003Cdiv class=\u0022promo-banner&#45;&#45;ribbon\u0022\u003E\r\n  \u003Cdiv class=\u0022promo-banner&#45;&#45;ribbon__body\u0022\u003E\r\n    \u003Ch2\u003ENew Member Offer\u003C\/h2\u003E\r\n    \u003Ch4\u003E10%\u003C\/h4\u003E\r\n    \u003Ch5\u003ETODAY ONLY\u003C\/h5\u003E\r\n  \u003C\/div\u003E\r\n  \u003Cp class=\u0022promo-banner&#45;&#45;ribbon__cta\u0022\u003E\u003Ca href=\u0022\/compare\u0022\u003ELearn More \u0026gt;\u003C\/a\u003E\u003C\/p\u003E\r\n\u003C\/div\u003E","burstClass":"","burstPages":[]},"QknNSSupernav":{"isAffectedBySubscriberCookie":1},"QknNSCarousel":{"initialSlide":3},"quickenTealium":{"site":"US","userType":"anonymous user","pageType":"flexible","productData":{"170163":{"productSKU":"170163","productEdition":"StarterCD","productPrice":"40.98","productPlatform":"win","productFreeTrial":"","productRenewalSku":""},"170183":{"productSKU":"170183","productEdition":"SE","productPrice":"35.99","productPlatform":"mac","productFreeTrial":"","productRenewalSku":""},"170086":{"productSKU":"170086","productEdition":"RPM","productPlatform":"win","productRenewalSku":"","productFreeTrial":"","productPrice":"164.99"},"170015":{"productSKU":"170015","productEdition":"RPM","productPrice":"164.99","productPlatform":"win","productFreeTrial":"","productRenewalSku":""},"170164":{"productSKU":"170164","productEdition":"PremierCD","productPrice":"82.98","productPlatform":"win","productFreeTrial":"","productRenewalSku":""},"170184":{"productSKU":"170184","productEdition":"Premier","productPrice":"77.99","productPlatform":"mac","productFreeTrial":"","productRenewalSku":""},"170081":{"productSKU":"170081","productEdition":"Mac","productPlatform":"mac","productRenewalSku":"","productFreeTrial":"","productPrice":"74.99"},"170003":{"productSKU":"170003","productEdition":"Mac","productPrice":"74.99","productPlatform":"mac","productFreeTrial":"","productRenewalSku":""},"170166":{"productSKU":"170166","productEdition":"HBRCD","productPrice":"108.98","productPlatform":"win","productFreeTrial":"","productRenewalSku":""},"170186":{"productSKU":"170186","productEdition":"HB","productPrice":"103.99","productPlatform":"win","productFreeTrial":"0","productRenewalSku":""},"170165":{"productSKU":"170165","productEdition":"DeluxeCD","productPrice":"56.98","productPlatform":"win","productFreeTrial":"","productRenewalSku":""},"170185":{"productSKU":"170185","productEdition":"Deluxe","productPrice":"51.99","productPlatform":"mac","productFreeTrial":"0","productRenewalSku":""},"sku_qkn16macdl":{"productSKU":"sku_qkn16macdl","productEdition":"Mac","productPlatform":"mac","productRenewalSku":"","productFreeTrial":"","productPrice":"0.00"},"170104":{"productSKU":"170104","productEdition":"SE","productPlatform":"win","productRenewalSku":"","productFreeTrial":"","productPrice":"29.99"},"170122":{"productSKU":"170122","productEdition":"PS","productPlatform":"win","productRenewalSku":"","productFreeTrial":"","productPrice":"49.99"},"170176":{"productSKU":"170176","productEdition":"StarterAmazonTurboTax","productPlatform":"win","productRenewalSku":"","productFreeTrial":"0","productPrice":"35.99"},"N\/A":{"productSKU":"N\/A","productEdition":"Deluxe","productPrice":"49.99","productPlatform":"win","productFreeTrial":"","productRenewalSku":""},"170175":{"productSKU":"170175","productEdition":"DeluxeWalmartTT","productPlatform":"win","productRenewalSku":"","productFreeTrial":"0","productPrice":"49.99"},"170173":{"productSKU":"170173","productEdition":"Premier5yr","productPlatform":"win","productRenewalSku":"","productFreeTrial":"0","productPrice":"74.99"},"170177":{"productSKU":"170177","productEdition":"StarterPress","productPlatform":"win","productRenewalSku":"","productFreeTrial":"0","productPrice":"0.00"},"170178":{"productSKU":"170178","productEdition":"DeluxePress","productPlatform":"win","productRenewalSku":"","productFreeTrial":"0","productPrice":"0.00"},"170179":{"productSKU":"170179","productEdition":"PremierPress","productPlatform":"win","productRenewalSku":"","productFreeTrial":"0","productPrice":"0.00"},"170180":{"productSKU":"170180","productEdition":"HBRCPress","productPlatform":"win","productRenewalSku":"","productFreeTrial":"0","productPrice":"0.00"},"170167":{"productSKU":"170167","productEdition":"Starter2YCD","productPrice":"74.97","productPlatform":"win","productFreeTrial":"","productRenewalSku":""},"170187":{"productSKU":"170187","productEdition":"Starter2Y","productPrice":"69.98","productPlatform":"win","productFreeTrial":"","productRenewalSku":""},"170169":{"productSKU":"170169","productEdition":"Deluxe2YCD","productPrice":"104.97","productPlatform":"win","productFreeTrial":"","productRenewalSku":""},"170189":{"productSKU":"170189","productEdition":"Deluxe2Y","productPrice":"99.98","productPlatform":"win","productFreeTrial":"","productRenewalSku":""},"170168":{"productSKU":"170168","productEdition":"Premier2YCD","productPrice":"154.97","productPlatform":"win","productFreeTrial":"","productRenewalSku":""},"170188":{"productSKU":"170188","productEdition":"Premier2Y","productPrice":"149.98","productPlatform":"win","productFreeTrial":"","productRenewalSku":""},"170170":{"productSKU":"170170","productEdition":"HBR2YCD","productPrice":"204.97","productPlatform":"win","productFreeTrial":"","productRenewalSku":""},"170190":{"productSKU":"170190","productEdition":"HBR2Y","productPrice":"199.98","productPlatform":"win","productFreeTrial":"","productRenewalSku":""},"170116":{"productSKU":"170116","productEdition":"HB","productPlatform":"win","productRenewalSku":"","productFreeTrial":"0","productPrice":"89.99"},"170115":{"productSKU":"170115","productEdition":"CM","productPlatform":"win","productRenewalSku":"","productFreeTrial":"","productPrice":"39.99"},"170193":{"productSKU":"170193","productEdition":"SE","productPlatform":"win","productRenewalSku":"","productFreeTrial":"","productPrice":"39.99"},"170194":{"productSKU":"170194","productEdition":"Deluxe","productPlatform":"win","productRenewalSku":"","productFreeTrial":"","productPrice":"62.99"},"170195":{"productSKU":"170195","productEdition":"HB","productPlatform":"win","productRenewalSku":"","productFreeTrial":"","productPrice":"94.99"},"170213":{"productSKU":"170213","productEdition":"HB","productPrice":"83.94","productPlatform":"win","productFreeTrial":"","productRenewalSku":""},"170215":{"productSKU":"170215","productEdition":"HB","productPrice":"79.99","productPlatform":"win","productFreeTrial":"","productRenewalSku":""},"170214":{"productSKU":"170214","productEdition":"HB","productPrice":"93.94","productPlatform":"win","productFreeTrial":"","productRenewalSku":""},"170216":{"productSKU":"170216","productEdition":"HB","productPrice":"89.99","productPlatform":"win","productFreeTrial":"","productRenewalSku":""},"170295":{"productSKU":"170295","productEdition":"Simplifi3monthTrialMonthly","productPlatform":"win","productRenewalSku":"170299","productFreeTrial":"1","productPrice":"0.00"},"170304":{"productSKU":"170304","productEdition":"Simplifi3monthTrialAnnual","productPlatform":"web","productRenewalSku":"170298","productFreeTrial":"1","productPrice":"0.00"},"170296":{"productSKU":"170296","productEdition":"Simplifi1Year","productPlatform":"win","productRenewalSku":"170296","productFreeTrial":"0","productPrice":"29.99"},"170297":{"productSKU":"170297","productEdition":"Simplifi1Month","productPlatform":"win","productRenewalSku":"170297","productFreeTrial":"0","productPrice":"2.99"},"170298":{"productSKU":"170298","productEdition":"Simplifi1YearAlt","productPlatform":"win","productRenewalSku":"170298","productFreeTrial":"0","productPrice":"39.99"},"170299":{"productSKU":"170299","productEdition":"Simplifi1MonthAlt","productPlatform":"win","productRenewalSku":"170299","productFreeTrial":"0","productPrice":"3.99"},"170308":{"productSKU":"170308","productEdition":"Simplifi3m1mv2","productPlatform":"win","productRenewalSku":"170297","productFreeTrial":"1","productPrice":"0.00"},"170309":{"productSKU":"170309","productEdition":"Simplifi3molyv2","productPlatform":"win","productRenewalSku":"170296","productFreeTrial":"1","productPrice":"0.00"},"170310":{"productSKU":"170310","productEdition":"Simplifi3month-1Monthv3","productPlatform":"win","productRenewalSku":"170312","productFreeTrial":"1","productPrice":"0.00"},"170312":{"productSKU":"170312","productEdition":"Simplifi1mv3","productPlatform":"win","productRenewalSku":"","productFreeTrial":"0","productPrice":"4.99"},"170313":{"productSKU":"170313","productEdition":"Simplifi1yv3","productPlatform":"win","productRenewalSku":"","productFreeTrial":"0","productPrice":"49.99"},"170323":{"productSKU":"170323","productEdition":"SimplifiEdu1m1m","productPlatform":"win","productRenewalSku":"170324","productFreeTrial":"1","productPrice":"0.00"},"170324":{"productSKU":"170324","productEdition":"SimplifiEdu1m1mr","productPlatform":"win","productRenewalSku":"170324","productFreeTrial":"0","productPrice":"3.99"},"170325":{"productSKU":"170325","productEdition":"SimplifiEdu1yr","productPlatform":"win","productRenewalSku":"170325","productFreeTrial":"0","productPrice":"35.99"},"170332":{"productSKU":"170332","productEdition":"Simplifi1m1mv4","productPlatform":"web","productRenewalSku":"170333","productFreeTrial":"1","productPrice":"0.00"},"170333":{"productSKU":"170333","productEdition":"Simplifilyv4","productPlatform":"web","productRenewalSku":"170333","productFreeTrial":"0","productPrice":"35.99"},"170326":{"productSKU":"170326","productEdition":"billmanagertopup","productPlatform":"web","productRenewalSku":"170326","productFreeTrial":"0","productPrice":"3.00"},"170327":{"productSKU":"170327","productEdition":"billmanagerstd","productPlatform":"web","productRenewalSku":"170327","productFreeTrial":"0","productPrice":"17.95"},"170328":{"productSKU":"170328","productEdition":"billmanagerextra","productPlatform":"web","productRenewalSku":"170328","productFreeTrial":"0","productPrice":"0.00"},"170329":{"productSKU":"170329","productEdition":"billmanagerplus","productPlatform":"web","productRenewalSku":"170329","productFreeTrial":"0","productPrice":"9.95"},"170330":{"productSKU":"170330","productEdition":"billmanagerprof100","productPlatform":"web","productRenewalSku":"170330","productFreeTrial":"0","productPrice":"44.95"},"170331":{"productSKU":"170331","productEdition":"billmanagerprof200","productPlatform":"web","productRenewalSku":"170331","productFreeTrial":"0","productPrice":"89.95"},"170338":{"productSKU":"170338","productEdition":"familyplanstarter","productPlatform":"win","productRenewalSku":"170338","productFreeTrial":"0","productPrice":"84.99"},"170339":{"productSKU":"170339","productEdition":"familyplandeluxe","productPlatform":"win","productRenewalSku":"170339","productFreeTrial":"0","productPrice":"94.99"},"170365":{"productSKU":"170365","productEdition":"SimplifiEduMU1mf","productPlatform":"win","productRenewalSku":"170367","productFreeTrial":"1","productPrice":"0.00"},"170366":{"productSKU":"170366","productEdition":"SimplifiEdumu1yrf","productPlatform":"win","productRenewalSku":"170368","productFreeTrial":"1","productPrice":"0.00"},"170367":{"productSKU":"170367","productEdition":"SimplifiEdumu1mp","productPlatform":"win","productRenewalSku":"170367","productFreeTrial":"0","productPrice":"3.99"},"170368":{"productSKU":"170368","productEdition":"SimplifiEdumu1yrp","productPlatform":"win","productRenewalSku":"170368","productFreeTrial":"0","productPrice":"29.99"},"170340":{"productSKU":"170340","productEdition":"PremierStarterFamilyPlan","productPlatform":"win","productRenewalSku":"170340","productFreeTrial":"0","productPrice":"109.99"},"170341":{"productSKU":"170341","productEdition":"PremierDeluxeFamilyPlan","productPlatform":"win","productRenewalSku":"170341","productFreeTrial":"0","productPrice":"119.99"},"170369":{"productSKU":"170369","productEdition":"HABStarterFamilyPlan","productPlatform":"win","productRenewalSku":"170369","productFreeTrial":"0","productPrice":"134.99"},"170370":{"productSKU":"170370","productEdition":"HABDeluxeFamilyPlan","productPlatform":"win","productRenewalSku":"170370","productFreeTrial":"0","productPrice":"144.99"},"170383":{"productSKU":"170383","productEdition":"SimplifiEduJMU3mf","productPlatform":"win","productRenewalSku":"170384","productFreeTrial":"1","productPrice":"0.00"},"170384":{"productSKU":"170384","productEdition":"SimplifiEduJMU1mp","productPlatform":"win","productRenewalSku":"170384","productFreeTrial":"0","productPrice":"3.99"},"170385":{"productSKU":"170385","productEdition":"SimplifiEduJMU3mf","productPlatform":"win","productRenewalSku":"170386","productFreeTrial":"1","productPrice":"0.00"},"170386":{"productSKU":"170386","productEdition":"SimplifiEduJMU1yp","productPlatform":"win","productRenewalSku":"170386","productFreeTrial":"0","productPrice":"35.99"},"170379":{"productSKU":"170379","productEdition":"SimplifiEduOM1mf","productPlatform":"win","productRenewalSku":"170380","productFreeTrial":"1","productPrice":"0.00"},"170380":{"productSKU":"170380","productEdition":"SimplifiEduOM1m","productPlatform":"win","productRenewalSku":"170380","productFreeTrial":"0","productPrice":"3.99"},"170381":{"productSKU":"170381","productEdition":"SimplifiEduOM1mf_a","productPlatform":"win","productRenewalSku":"170382","productFreeTrial":"1","productPrice":"0.00"},"170382":{"productSKU":"170382","productEdition":"SimplifiEduOM1yr","productPlatform":"win","productRenewalSku":"170382","productFreeTrial":"0","productPrice":"29.99"},"170400":{"productSKU":"170400","productEdition":"SimplifiEduBSC1mf","productPlatform":"win","productRenewalSku":"170401","productFreeTrial":"1","productPrice":"0.00"},"170401":{"productSKU":"170401","productEdition":"SimplifiEduBSC1m","productPlatform":"win","productRenewalSku":"170401","productFreeTrial":"0","productPrice":"3.99"},"170402":{"productSKU":"170402","productEdition":"SimplifiEduBSC1mf","productPlatform":"win","productRenewalSku":"170403","productFreeTrial":"1","productPrice":"0.00"},"170403":{"productSKU":"170403","productEdition":"SimplifiEduBSC1y","productPlatform":"win","productRenewalSku":"170403","productFreeTrial":"0","productPrice":"29.99"},"170387":{"productSKU":"170387","productEdition":"SimplifiEduUO1mf","productPlatform":"win","productRenewalSku":"170388","productFreeTrial":"1","productPrice":"0.00"},"170388":{"productSKU":"170388","productEdition":"SimplifiEduUO1mp","productPlatform":"win","productRenewalSku":"170388","productFreeTrial":"0","productPrice":"3.99"},"170389":{"productSKU":"170389","productEdition":"SimplifiEduUO1mf","productPlatform":"win","productRenewalSku":"170390","productFreeTrial":"1","productPrice":"0.00"},"170390":{"productSKU":"170390","productEdition":"SimplifiEduUO1mp","productPlatform":"win","productRenewalSku":"170390","productFreeTrial":"0","productPrice":"29.99"},"170404":{"productSKU":"170404","productEdition":"SimplifiEduTX1mf","productPlatform":"win","productRenewalSku":"170325","productFreeTrial":"1","productPrice":"0.00"}},"set_local_storage_callback":"\/set-local-storage","environment":"prod","internal_referrers":{"base_url":"https:\/\/www.quicken.com","qam_base":"https:\/\/signin.quicken.com\/signin","legacy":"quicken.intuit.com"},"utm_patterns":{"organic":"\/^https?:\\\/\\\/(.*\\.search\\.|www\\.)?(google|bing|aol|yahoo|ask|comcast).([a-z]+)([\\.a-z]{3,5})?\\\/\/","social":"\/^https?:\\\/\\\/(www.)?(blogspot\\.com|delicious\\.com|deviantart\\.com|disqus\\.com|facebook\\.com|faceparty\\.com|fc2\\.com|flickr\\.com|flixster\\.com|foursquare\\.com|friendfeed\\.com|friendster\\.com|hi5\\.com|linkedin\\.com|livejournal\\.com|myspace\\.com|photobucket\\.com|pinterest\\.com|plus\\.google\\.com|reddit\\.com|slideshare\\.net|smugmug\\.com|stumbleupon\\.com|t\\.co|tumblr\\.com|twitter\\.com|vimeo\\.com|yelp\\.com|youtube\\.com)($|\\\/)\/","referral":"\/^https?:\\\/\\\/([^\\\/]+)\\\/?(.*)$\/"},"debug":true,"ignorePrerender":true},"stanford_date_timepicker":{"classes":"","default_date_format":"yy-mm-dd","default_time_format":"hh:mm","default_separator":" "},"lazy":{"bLazy":{"errorClass":"b-error","loadInvisible":false,"offset":250,"saveViewportOffsetDelay":50,"selector":".b-lazy","src":"data-src","successClass":"b-loaded","validateDelay":25,"breakpoints":[{"width":420,"src":"data-src-sm"},{"width":768,"src":"data-src-md"}]}}});
-//&ndash;&gt;<!]]>
-</script>
-  <script type="text/javascript" src="https://www.quicken.com/sites/default/files/js/js_-mK80O1nXCytSIfEvxDCeC8dVArIFHksNtCKLaJKW-s.js"></script>
-<script type="text/javascript" src="https://www.quicken.com/sites/default/files/js/js_EzpSl2NVkmbM1IKp9Aohjm74a5e56g9FTshGPLLM1OY.js"></script>-->
-  </div>
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"4c035afe33","applicationID":"158560502","transactionName":"NQEEMEBTWBVUWkFZWAxLMxZbHV8IUVxNHkcKFA==","queueTime":0,"applicationTime":15,"atts":"GUYHRghJSxs=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</body>
 </html>
